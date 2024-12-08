@@ -345,9 +345,9 @@
             this.lblTotalFood.Location = new System.Drawing.Point(19, 13);
             this.lblTotalFood.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTotalFood.Name = "lblTotalFood";
-            this.lblTotalFood.Size = new System.Drawing.Size(133, 20);
+            this.lblTotalFood.Size = new System.Drawing.Size(175, 20);
             this.lblTotalFood.TabIndex = 3;
-            this.lblTotalFood.Text = "Tổng danh mục:";
+            this.lblTotalFood.Text = "Tổng danh mục quán ";
             // 
             // panel2
             // 
