@@ -63,6 +63,36 @@ namespace QuanLyQuanAn_DongPhongNha.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _469095960_1607615440150776_5157970610393270350_n {
+            get {
+                object obj = ResourceManager.GetObject("469095960_1607615440150776_5157970610393270350_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap background_am_thuc_dep_nhat_081312859 {
+            get {
+                object obj = ResourceManager.GetObject("background-am-thuc-dep-nhat_081312859", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2024_12_05_181838 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2024-12-05 181838", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap z6082482714773_bf623f5af48e7aae891ba3ff45a42b3a {
             get {
                 object obj = ResourceManager.GetObject("z6082482714773_bf623f5af48e7aae891ba3ff45a42b3a", resourceCulture);
