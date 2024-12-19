@@ -33,8 +33,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +55,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Account.cs">
+      <DependentUpon>QLNH_Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Admin\frmAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +99,27 @@
     </Compile>
     <Compile Include="Admin\frmAdminTable.Designer.cs">
       <DependentUpon>frmAdminTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttendanceList.cs">
+      <DependentUpon>QLNH_Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bill.cs">
+      <DependentUpon>QLNH_Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BillInfo.cs">
+      <DependentUpon>QLNH_Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BillInfoOfWareHouse.cs">
+      <DependentUpon>QLNH_Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BillOfWareHouse.cs">
+      <DependentUpon>QLNH_Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Food.cs">
+      <DependentUpon>QLNH_Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FoodCategory.cs">
+      <DependentUpon>QLNH_Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Manager\frmAccount.cs">
       <SubType>Form</SubType>
@@ -160,8 +193,71 @@
     <Compile Include="Manager\MessageBox.Designer.cs">
       <DependentUpon>MessageBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="Material.cs">
+      <DependentUpon>QLNH_Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Position.cs">
+      <DependentUpon>QLNH_Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLNH_Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNH_Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QLNH_Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNH_Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QLNH_Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNH_Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>QLNH_Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams_Result.cs">
+      <DependentUpon>QLNH_Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Staff.cs">
+      <DependentUpon>QLNH_Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TableFood.cs">
+      <DependentUpon>QLNH_Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Unit.cs">
+      <DependentUpon>QLNH_Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="USP_CheckExitsAttendanceList_Result.cs">
+      <DependentUpon>QLNH_Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="USP_GetAccountByName_Result.cs">
+      <DependentUpon>QLNH_Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="USP_GetFoodTop5_Result.cs">
+      <DependentUpon>QLNH_Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="USP_GetListBillByDate_Result.cs">
+      <DependentUpon>QLNH_Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="USP_GetTableList_Result.cs">
+      <DependentUpon>QLNH_Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="USP_GetTopFood_Result.cs">
+      <DependentUpon>QLNH_Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="USP_GetTotalAttendanceList_Result.cs">
+      <DependentUpon>QLNH_Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="USP_GetTotalBillsInDay_Result.cs">
+      <DependentUpon>QLNH_Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="USP_Login_Result.cs">
+      <DependentUpon>QLNH_Model1.tt</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Admin\frmAdmin.resx">
       <DependentUpon>frmAdmin.cs</DependentUpon>
     </EmbeddedResource>
@@ -229,6 +325,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -248,7 +345,38 @@
     <Folder Include="Image\Icon\" />
   </ItemGroup>
   <ItemGroup>
+    <EntityDeploy Include="QLNH_Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>QLNH_Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="QLNH_Model1.edmx.diagram">
+      <DependentUpon>QLNH_Model1.edmx</DependentUpon>
+    </None>
     <None Include="Resources\z6082482714773_bf623f5af48e7aae891ba3ff45a42b3a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2024-12-05 181838.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\469095960_1607615440150776_5157970610393270350_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background-am-thuc-dep-nhat_081312859.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="QLNH_Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>QLNH_Model1.Context.cs</LastGenOutput>
+      <DependentUpon>QLNH_Model1.edmx</DependentUpon>
+    </Content>
+    <Content Include="QLNH_Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QLNH_Model1.edmx</DependentUpon>
+      <LastGenOutput>QLNH_Model1.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
