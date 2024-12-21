@@ -47,7 +47,7 @@ namespace QuanLyQuanAn_DongPhongNha.Admin
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -156,6 +156,48 @@ namespace QuanLyQuanAn_DongPhongNha.Admin
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void btnAddAccount_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                errorProvider1.Clear();
+                bool check = true;
+                if (string.IsNullOrEmpty(txtAccountName.Text))
+                {
+                    errorProvider1.SetError(txtAccountName, "Vui lòng nhập đầy đủ thông tin");
+                    check = false;
+                }
+                if (string.IsNullOrEmpty(txtPassword.Text))
+                {
+                    errorProvider1.SetError(txtPassword, "Vui lòng nhập đầy đủ thông tin");
+                    check = false;
+                }
+                if (string.IsNullOrEmpty(txtRetypePassword.Text))
+                {
+                    errorProvider1.SetError(txtRetypePassword, "Vui lòng nhập đầy đủ thông tin");
+                    check = false;
+                }
+                if (string.IsNullOrEmpty(txtIdStaff.Text))
+                {
+                    errorProvider1.SetError(txtIdStaff, "Vui lòng nhập đầy đủ thông tin");
+                    check = false;
+                }
+                if (string.IsNullOrEmpty(txtDisplayName.Text))
+                {
+                    errorProvider1.SetError(txtDisplayName, "Vui lòng nhập đầy đủ thông tin");
+                    check = false;
+                }
+                if (!check)
+                {
+                    MessageBox.Show("Vui Lòng Nhập Đầy Đủ Thông Tin ", "Thông Báo ", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

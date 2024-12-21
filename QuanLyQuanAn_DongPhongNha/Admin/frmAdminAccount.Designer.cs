@@ -74,14 +74,14 @@
             // 
             this.txtFindAccountByName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtFindAccountByName.Name = "txtFindAccountByName";
-            this.txtFindAccountByName.Size = new System.Drawing.Size(500, 39);
+            this.txtFindAccountByName.Size = new System.Drawing.Size(500, 27);
             // 
             // toolStripButton1
             // 
             this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(29, 36);
+            this.toolStripButton1.Size = new System.Drawing.Size(29, 24);
             this.toolStripButton1.Text = "toolStripButton1";
             // 
             // toolStrip1
@@ -95,7 +95,7 @@
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.toolStrip1.Size = new System.Drawing.Size(883, 39);
+            this.toolStrip1.Size = new System.Drawing.Size(706, 27);
             this.toolStrip1.TabIndex = 39;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -103,7 +103,7 @@
             // 
             this.toolstripTim.Font = new System.Drawing.Font("Cambria", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolstripTim.Name = "toolstripTim";
-            this.toolstripTim.Size = new System.Drawing.Size(160, 36);
+            this.toolstripTim.Size = new System.Drawing.Size(160, 24);
             this.toolstripTim.Text = "Tìm kiếm tài khoản";
             // 
             // lblTotalAccount
@@ -154,6 +154,7 @@
             this.btnAddAccount.TabIndex = 27;
             this.btnAddAccount.Text = "Thêm";
             this.btnAddAccount.UseVisualStyleBackColor = true;
+            this.btnAddAccount.Click += new System.EventHandler(this.btnAddAccount_Click);
             // 
             // btnDeleteAccount
             // 

@@ -16,5 +16,31 @@ namespace QuanLyQuanAn_DongPhongNha.Manager
         {
             InitializeComponent();
         }
+
+        private void txtFoodName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+                errorProvider1.SetError(txtFoodName, "Tên thức ăn không chứa số ");
+            }
+            else
+            {
+                errorProvider1.SetError(txtFoodName, null);
+            }
+        }
+
+        private void txtPrice_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+                errorProvider1.SetError(txtPrice, "giá chỉ cho phép nhập số ");
+            }
+            else
+            {
+                errorProvider1.SetError(txtPrice, null);
+            }
+        }
     }
 }
