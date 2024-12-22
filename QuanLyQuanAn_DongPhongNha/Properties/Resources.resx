@@ -118,19 +118,25 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="z6082482714773_bf623f5af48e7aae891ba3ff45a42b3a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\z6082482714773_bf623f5af48e7aae891ba3ff45a42b3a.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="background-am-thuc-dep-nhat_081312859" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\background-am-thuc-dep-nhat_081312859.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Screenshot 2024-12-05 181838" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Screenshot 2024-12-05 181838.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="469095960_1607615440150776_5157970610393270350_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\469095960_1607615440150776_5157970610393270350_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="z6082482714773_bf623f5af48e7aae891ba3ff45a42b3a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\z6082482714773_bf623f5af48e7aae891ba3ff45a42b3a.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="background-am-thuc-dep-nhat_081312859" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\background-am-thuc-dep-nhat_081312859.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="z6153558315492_216ed1d11f34b02d6bd7e6a7bfdbd6af" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\z6153558315492_216ed1d11f34b02d6bd7e6a7bfdbd6af.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Screenshot 2024-12-21 033255" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Screenshot 2024-12-21 033255.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="469095960_1607615440150776_5157970610393270350_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\469095960_1607615440150776_5157970610393270350_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="z6153570384406_f9d6f96bab6a29a8cea819ba4fbcbb64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\z6153570384406_f9d6f96bab6a29a8cea819ba4fbcbb64.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

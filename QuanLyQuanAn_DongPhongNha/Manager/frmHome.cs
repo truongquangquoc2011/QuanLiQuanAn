@@ -16,5 +16,10 @@ namespace QuanLyQuanAn_DongPhongNha.Manager
         {
             InitializeComponent();
         }
+
+        private void frmHome_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

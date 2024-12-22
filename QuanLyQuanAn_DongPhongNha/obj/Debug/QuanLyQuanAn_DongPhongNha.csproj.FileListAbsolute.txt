@@ -87,3 +87,8 @@ D:\QLNH_winform\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\bin\Debug\EntityFramework
 D:\QLNH_winform\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\bin\Debug\EntityFramework.xml
 D:\QLNH_winform\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\bin\Debug\EntityFramework.SqlServer.xml
 D:\QLNH_winform\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQu.5F8A0BEF.Up2Date
+C:\QuanLyQuanAn_winform\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\bin\Debug\EntityFramework.dll
+C:\QuanLyQuanAn_winform\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\bin\Debug\EntityFramework.SqlServer.dll
+C:\QuanLyQuanAn_winform\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\bin\Debug\EntityFramework.xml
+C:\QuanLyQuanAn_winform\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\bin\Debug\EntityFramework.SqlServer.xml
+C:\QuanLyQuanAn_winform\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQu.5F8A0BEF.Up2Date

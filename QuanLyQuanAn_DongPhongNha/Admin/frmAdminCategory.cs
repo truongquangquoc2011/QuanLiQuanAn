@@ -16,5 +16,10 @@ namespace QuanLyQuanAn_DongPhongNha.Admin
         {
             InitializeComponent();
         }
+
+        private void btnAddCategory_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

@@ -109,5 +109,25 @@ namespace QuanLyQuanAn_DongPhongNha.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap z6153558315492_216ed1d11f34b02d6bd7e6a7bfdbd6af {
+            get {
+                object obj = ResourceManager.GetObject("z6153558315492_216ed1d11f34b02d6bd7e6a7bfdbd6af", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap z6153570384406_f9d6f96bab6a29a8cea819ba4fbcbb64 {
+            get {
+                object obj = ResourceManager.GetObject("z6153570384406_f9d6f96bab6a29a8cea819ba4fbcbb64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
