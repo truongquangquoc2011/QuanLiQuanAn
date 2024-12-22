@@ -374,6 +374,8 @@
       <DependentUpon>QLNH_Model1.edmx</DependentUpon>
       <LastGenOutput>QLNH_Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\z6153570384406_f9d6f96bab6a29a8cea819ba4fbcbb64.jpg" />
+    <None Include="Resources\z6153558315492_216ed1d11f34b02d6bd7e6a7bfdbd6af.jpg" />
     <None Include="Resources\Screenshot 2024-12-21 033255.png" />
   </ItemGroup>
   <ItemGroup>
