@@ -92,3 +92,69 @@ C:\QuanLyQuanAn_winform\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\bin\Debug\EntityF
 C:\QuanLyQuanAn_winform\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\bin\Debug\EntityFramework.xml
 C:\QuanLyQuanAn_winform\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\bin\Debug\EntityFramework.SqlServer.xml
 C:\QuanLyQuanAn_winform\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQu.5F8A0BEF.Up2Date
+D:\DoAn_QLQuanAn\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\bin\Debug\QuanLyQuanAn_DongPhongNha.exe.config
+D:\DoAn_QLQuanAn\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\bin\Debug\QuanLyQuanAn_DongPhongNha.exe
+D:\DoAn_QLQuanAn\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\bin\Debug\QuanLyQuanAn_DongPhongNha.pdb
+D:\DoAn_QLQuanAn\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\bin\Debug\EntityFramework.dll
+D:\DoAn_QLQuanAn\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\bin\Debug\EntityFramework.SqlServer.dll
+D:\DoAn_QLQuanAn\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\bin\Debug\EntityFramework.xml
+D:\DoAn_QLQuanAn\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\bin\Debug\EntityFramework.SqlServer.xml
+D:\DoAn_QLQuanAn\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.csproj.AssemblyReference.cache
+D:\DoAn_QLQuanAn\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Admin.frmAdmin.resources
+D:\DoAn_QLQuanAn\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Admin.frmAdminAccount.resources
+D:\DoAn_QLQuanAn\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Admin.frmAdminCategory.resources
+D:\DoAn_QLQuanAn\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Admin.frmAdminFood.resources
+D:\DoAn_QLQuanAn\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Admin.frmAdminRevenue.resources
+D:\DoAn_QLQuanAn\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Admin.frmAdminStaff.resources
+D:\DoAn_QLQuanAn\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Admin.frmAdminTable.resources
+D:\DoAn_QLQuanAn\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.frmAccount.resources
+D:\DoAn_QLQuanAn\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.frmAddWareHouse.resources
+D:\DoAn_QLQuanAn\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.frmAttendanceList.resources
+D:\DoAn_QLQuanAn\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.frmEditPosition.resources
+D:\DoAn_QLQuanAn\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.frmHome.resources
+D:\DoAn_QLQuanAn\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.frmInfomation.resources
+D:\DoAn_QLQuanAn\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.frmLogin.resources
+D:\DoAn_QLQuanAn\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.frmMain.resources
+D:\DoAn_QLQuanAn\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.frmManagerFood.resources
+D:\DoAn_QLQuanAn\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.frmTableManager.resources
+D:\DoAn_QLQuanAn\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.frmWareHouse.resources
+D:\DoAn_QLQuanAn\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.msg.resources
+D:\DoAn_QLQuanAn\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Properties.Resources.resources
+D:\DoAn_QLQuanAn\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.csproj.GenerateResource.cache
+D:\DoAn_QLQuanAn\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.csproj.CoreCompileInputs.cache
+D:\DoAn_QLQuanAn\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQu.5F8A0BEF.Up2Date
+D:\DoAn_QLQuanAn\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.exe
+D:\DoAn_QLQuanAn\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.pdb
+D:\DoAn_QLQuanAn - Copy\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\bin\Debug\QuanLyQuanAn_DongPhongNha.exe.config
+D:\DoAn_QLQuanAn - Copy\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\bin\Debug\QuanLyQuanAn_DongPhongNha.exe
+D:\DoAn_QLQuanAn - Copy\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\bin\Debug\QuanLyQuanAn_DongPhongNha.pdb
+D:\DoAn_QLQuanAn - Copy\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\bin\Debug\EntityFramework.dll
+D:\DoAn_QLQuanAn - Copy\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\bin\Debug\EntityFramework.SqlServer.dll
+D:\DoAn_QLQuanAn - Copy\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\bin\Debug\EntityFramework.xml
+D:\DoAn_QLQuanAn - Copy\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\bin\Debug\EntityFramework.SqlServer.xml
+D:\DoAn_QLQuanAn - Copy\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.csproj.AssemblyReference.cache
+D:\DoAn_QLQuanAn - Copy\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Admin.frmAdmin.resources
+D:\DoAn_QLQuanAn - Copy\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Admin.frmAdminAccount.resources
+D:\DoAn_QLQuanAn - Copy\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Admin.frmAdminCategory.resources
+D:\DoAn_QLQuanAn - Copy\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Admin.frmAdminFood.resources
+D:\DoAn_QLQuanAn - Copy\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Admin.frmAdminRevenue.resources
+D:\DoAn_QLQuanAn - Copy\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Admin.frmAdminStaff.resources
+D:\DoAn_QLQuanAn - Copy\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Admin.frmAdminTable.resources
+D:\DoAn_QLQuanAn - Copy\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.frmAccount.resources
+D:\DoAn_QLQuanAn - Copy\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.frmAddWareHouse.resources
+D:\DoAn_QLQuanAn - Copy\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.frmAttendanceList.resources
+D:\DoAn_QLQuanAn - Copy\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.frmEditPosition.resources
+D:\DoAn_QLQuanAn - Copy\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.frmHome.resources
+D:\DoAn_QLQuanAn - Copy\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.frmInfomation.resources
+D:\DoAn_QLQuanAn - Copy\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.frmLogin.resources
+D:\DoAn_QLQuanAn - Copy\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.frmMain.resources
+D:\DoAn_QLQuanAn - Copy\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.frmManagerFood.resources
+D:\DoAn_QLQuanAn - Copy\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.frmTableManager.resources
+D:\DoAn_QLQuanAn - Copy\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.frmWareHouse.resources
+D:\DoAn_QLQuanAn - Copy\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.msg.resources
+D:\DoAn_QLQuanAn - Copy\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Properties.Resources.resources
+D:\DoAn_QLQuanAn - Copy\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.csproj.GenerateResource.cache
+D:\DoAn_QLQuanAn - Copy\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.csproj.CoreCompileInputs.cache
+D:\DoAn_QLQuanAn - Copy\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQu.5F8A0BEF.Up2Date
+D:\DoAn_QLQuanAn - Copy\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.exe
+D:\DoAn_QLQuanAn - Copy\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.pdb
