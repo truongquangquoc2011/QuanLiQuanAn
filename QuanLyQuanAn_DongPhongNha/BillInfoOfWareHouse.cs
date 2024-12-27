@@ -27,23 +27,11 @@ namespace QuanLyQuanAn_DongPhongNha
         public virtual BillOfWareHouse BillOfWareHouse3 { get; set; }
         public virtual BillOfWareHouse BillOfWareHouse4 { get; set; }
         public virtual BillOfWareHouse BillOfWareHouse5 { get; set; }
-        public virtual BillOfWareHouse BillOfWareHouse6 { get; set; }
-        public virtual BillOfWareHouse BillOfWareHouse7 { get; set; }
-        public virtual BillOfWareHouse BillOfWareHouse8 { get; set; }
-        public virtual BillOfWareHouse BillOfWareHouse9 { get; set; }
-        public virtual BillOfWareHouse BillOfWareHouse10 { get; set; }
-        public virtual BillOfWareHouse BillOfWareHouse11 { get; set; }
         public virtual Material Material { get; set; }
         public virtual Material Material1 { get; set; }
         public virtual Material Material2 { get; set; }
         public virtual Material Material3 { get; set; }
         public virtual Material Material4 { get; set; }
         public virtual Material Material5 { get; set; }
-        public virtual Material Material6 { get; set; }
-        public virtual Material Material7 { get; set; }
-        public virtual Material Material8 { get; set; }
-        public virtual Material Material9 { get; set; }
-        public virtual Material Material10 { get; set; }
-        public virtual Material Material11 { get; set; }
     }
 }

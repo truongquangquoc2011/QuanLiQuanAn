@@ -26,11 +26,5 @@ namespace QuanLyQuanAn_DongPhongNha
         public virtual Food Food3 { get; set; }
         public virtual Food Food4 { get; set; }
         public virtual Food Food5 { get; set; }
-        public virtual Food Food6 { get; set; }
-        public virtual Food Food7 { get; set; }
-        public virtual Food Food8 { get; set; }
-        public virtual Food Food9 { get; set; }
-        public virtual Food Food10 { get; set; }
-        public virtual Food Food11 { get; set; }
     }
 }

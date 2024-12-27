@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.ptbExit = new System.Windows.Forms.PictureBox();
             this.btnShowPosition = new System.Windows.Forms.Button();
             this.btnEditPosition = new System.Windows.Forms.Button();
@@ -48,11 +49,13 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnAddPosition = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ptbExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPosition)).BeginInit();
             this.panel2.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // ptbExit
@@ -65,6 +68,7 @@
             this.ptbExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptbExit.TabIndex = 19;
             this.ptbExit.TabStop = false;
+            this.ptbExit.Click += new System.EventHandler(this.ptbExit_Click);
             // 
             // btnShowPosition
             // 
@@ -78,6 +82,7 @@
             this.btnShowPosition.Text = "Hiển thị";
             this.btnShowPosition.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnShowPosition.UseVisualStyleBackColor = true;
+            this.btnShowPosition.Click += new System.EventHandler(this.btnShowPosition_Click);
             // 
             // btnEditPosition
             // 
@@ -90,6 +95,7 @@
             this.btnEditPosition.TabIndex = 16;
             this.btnEditPosition.Text = "Sửa";
             this.btnEditPosition.UseVisualStyleBackColor = true;
+            this.btnEditPosition.Click += new System.EventHandler(this.btnEditPosition_Click);
             // 
             // btnDeletePosition
             // 
@@ -102,6 +108,7 @@
             this.btnDeletePosition.TabIndex = 17;
             this.btnDeletePosition.Text = "Xóa";
             this.btnDeletePosition.UseVisualStyleBackColor = true;
+            this.btnDeletePosition.Click += new System.EventHandler(this.btnDeletePosition_Click);
             // 
             // txtPositionName
             // 
@@ -111,6 +118,7 @@
             this.txtPositionName.Name = "txtPositionName";
             this.txtPositionName.Size = new System.Drawing.Size(228, 22);
             this.txtPositionName.TabIndex = 13;
+            this.txtPositionName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPositionName_KeyPress);
             // 
             // txtPositionID
             // 
@@ -121,6 +129,7 @@
             this.txtPositionID.ReadOnly = true;
             this.txtPositionID.Size = new System.Drawing.Size(228, 22);
             this.txtPositionID.TabIndex = 14;
+            this.txtPositionID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPositionID_KeyPress);
             // 
             // label1
             // 
@@ -190,6 +199,7 @@
             this.dgvPosition.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvPosition.Size = new System.Drawing.Size(685, 590);
             this.dgvPosition.TabIndex = 24;
+            this.dgvPosition.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPosition_CellMouseClick);
             // 
             // lblTotalPosition
             // 
@@ -212,12 +222,14 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(684, 53);
             this.panel2.TabIndex = 23;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // txtFindPositionByName
             // 
             this.txtFindPositionByName.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFindPositionByName.Name = "txtFindPositionByName";
             this.txtFindPositionByName.Size = new System.Drawing.Size(200, 25);
+            this.txtFindPositionByName.TextChanged += new System.EventHandler(this.txtFindPositionByName_TextChanged);
             // 
             // toolstripTim
             // 
@@ -260,6 +272,7 @@
             this.btnAddPosition.TabIndex = 15;
             this.btnAddPosition.Text = "Thêm";
             this.btnAddPosition.UseVisualStyleBackColor = true;
+            this.btnAddPosition.Click += new System.EventHandler(this.btnAddPosition_Click);
             // 
             // panel1
             // 
@@ -279,6 +292,10 @@
             this.panel1.Size = new System.Drawing.Size(391, 691);
             this.panel1.TabIndex = 25;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // frmEditPosition
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -288,9 +305,11 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmEditPosition";
             this.Text = "frmEditPosition";
+            this.Load += new System.EventHandler(this.frmEditPosition_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ptbExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPosition)).EndInit();
             this.panel2.ResumeLayout(false);
@@ -299,6 +318,7 @@
             this.toolStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -326,5 +346,6 @@
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.Button btnAddPosition;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

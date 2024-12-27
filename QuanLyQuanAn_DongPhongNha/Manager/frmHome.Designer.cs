@@ -62,7 +62,8 @@
             this.ClientSize = new System.Drawing.Size(1097, 702);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmHome";
             this.Text = "frmHome";
             this.Load += new System.EventHandler(this.frmHome_Load);

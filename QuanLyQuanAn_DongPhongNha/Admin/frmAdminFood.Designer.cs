@@ -124,6 +124,7 @@
             this.btnOpenImage.TabIndex = 6;
             this.btnOpenImage.Text = "Cập nhật ảnh";
             this.btnOpenImage.UseVisualStyleBackColor = true;
+            this.btnOpenImage.Click += new System.EventHandler(this.btnOpenImage_Click);
             // 
             // cbStatus
             // 
@@ -136,6 +137,7 @@
             this.cbStatus.TabIndex = 5;
             this.cbStatus.Text = "Đang bán";
             this.cbStatus.UseVisualStyleBackColor = true;
+            this.cbStatus.CheckedChanged += new System.EventHandler(this.cbStatus_CheckedChanged);
             // 
             // cbbFoodCategory
             // 
@@ -208,6 +210,7 @@
             this.btnShowFood.Text = "Hiển thị";
             this.btnShowFood.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnShowFood.UseVisualStyleBackColor = true;
+            this.btnShowFood.Click += new System.EventHandler(this.btnShowFood_Click);
             // 
             // btnDeleteFood
             // 
@@ -220,6 +223,7 @@
             this.btnDeleteFood.TabIndex = 2;
             this.btnDeleteFood.Text = "Xóa";
             this.btnDeleteFood.UseVisualStyleBackColor = true;
+            this.btnDeleteFood.Click += new System.EventHandler(this.btnDeleteFood_Click);
             // 
             // btnEditFood
             // 
@@ -232,6 +236,7 @@
             this.btnEditFood.TabIndex = 1;
             this.btnEditFood.Text = "Sửa";
             this.btnEditFood.UseVisualStyleBackColor = true;
+            this.btnEditFood.Click += new System.EventHandler(this.btnEditFood_Click);
             // 
             // btnAddFood
             // 
@@ -254,6 +259,7 @@
             this.txtSearchFood.Name = "txtSearchFood";
             this.txtSearchFood.Size = new System.Drawing.Size(432, 24);
             this.txtSearchFood.TabIndex = 17;
+            this.txtSearchFood.TextChanged += new System.EventHandler(this.txtSearchFood_TextChanged);
             // 
             // label4
             // 
@@ -362,9 +368,9 @@
             this.lblTotalFood.Font = new System.Drawing.Font("Cambria", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalFood.Location = new System.Drawing.Point(14, 11);
             this.lblTotalFood.Name = "lblTotalFood";
-            this.lblTotalFood.Size = new System.Drawing.Size(139, 16);
+            this.lblTotalFood.Size = new System.Drawing.Size(128, 16);
             this.lblTotalFood.TabIndex = 3;
-            this.lblTotalFood.Text = "Tổng danh mục quán ";
+            this.lblTotalFood.Text = "Tổng Món Ăn Quán ";
             // 
             // panel2
             // 
@@ -434,6 +440,7 @@
             this.dgvFoodList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvFoodList.Size = new System.Drawing.Size(716, 440);
             this.dgvFoodList.TabIndex = 16;
+            this.dgvFoodList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFoodList_CellContentClick);
             // 
             // errorProvider1
             // 

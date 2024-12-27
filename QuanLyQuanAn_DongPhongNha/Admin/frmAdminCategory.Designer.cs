@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdminCategory));
             this.colSomon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colMaDM = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvFoodCategory = new System.Windows.Forms.DataGridView();
@@ -47,17 +48,17 @@
             this.lblMaDM = new System.Windows.Forms.Label();
             this.lblThongtin = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtFindCategoryByName = new System.Windows.Forms.ToolStripTextBox();
-            this.toolStripTracuu = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripTracuu = new System.Windows.Forms.ToolStripLabel();
+            this.txtFindCategoryByName = new System.Windows.Forms.ToolStripTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFoodCategory)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // colSomon
@@ -83,15 +84,16 @@
             this.colMaDM,
             this.colTenDM,
             this.colSomon});
-            this.dgvFoodCategory.Location = new System.Drawing.Point(0, 63);
+            this.dgvFoodCategory.Location = new System.Drawing.Point(0, 101);
             this.dgvFoodCategory.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvFoodCategory.Name = "dgvFoodCategory";
             this.dgvFoodCategory.ReadOnly = true;
             this.dgvFoodCategory.RowHeadersWidth = 51;
             this.dgvFoodCategory.RowTemplate.Height = 24;
             this.dgvFoodCategory.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvFoodCategory.Size = new System.Drawing.Size(745, 526);
+            this.dgvFoodCategory.Size = new System.Drawing.Size(745, 484);
             this.dgvFoodCategory.TabIndex = 9;
+            this.dgvFoodCategory.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvFoodCategory_CellMouseClick);
             // 
             // colTenDM
             // 
@@ -112,6 +114,7 @@
             this.btnShowCategory.Text = "Hiển thị";
             this.btnShowCategory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnShowCategory.UseVisualStyleBackColor = true;
+            this.btnShowCategory.Click += new System.EventHandler(this.btnShowCategory_Click);
             // 
             // btnDeleteCategory
             // 
@@ -124,6 +127,7 @@
             this.btnDeleteCategory.TabIndex = 2;
             this.btnDeleteCategory.Text = "Xóa";
             this.btnDeleteCategory.UseVisualStyleBackColor = true;
+            this.btnDeleteCategory.Click += new System.EventHandler(this.btnDeleteCategory_Click);
             // 
             // btnEditCategory
             // 
@@ -136,6 +140,7 @@
             this.btnEditCategory.TabIndex = 1;
             this.btnEditCategory.Text = "Sửa";
             this.btnEditCategory.UseVisualStyleBackColor = true;
+            this.btnEditCategory.Click += new System.EventHandler(this.btnEditCategory_Click);
             // 
             // btnAddCategory
             // 
@@ -191,7 +196,7 @@
             this.panel2.Controls.Add(this.lblTotalCategory);
             this.panel2.Controls.Add(this.lblTongDM);
             this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Location = new System.Drawing.Point(0, 42);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(745, 53);
@@ -205,6 +210,7 @@
             this.txtCategoryName.Name = "txtCategoryName";
             this.txtCategoryName.Size = new System.Drawing.Size(193, 23);
             this.txtCategoryName.TabIndex = 4;
+            this.txtCategoryName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCategoryName_KeyPress);
             // 
             // txtCategoryID
             // 
@@ -267,27 +273,9 @@
             this.panel1.Size = new System.Drawing.Size(358, 740);
             this.panel1.TabIndex = 6;
             // 
-            // txtFindCategoryByName
+            // errorProvider1
             // 
-            this.txtFindCategoryByName.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFindCategoryByName.Name = "txtFindCategoryByName";
-            this.txtFindCategoryByName.Size = new System.Drawing.Size(350, 25);
-            // 
-            // toolStripTracuu
-            // 
-            this.toolStripTracuu.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.toolStripTracuu.Font = new System.Drawing.Font("Cambria", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripTracuu.Name = "toolStripTracuu";
-            this.toolStripTracuu.Size = new System.Drawing.Size(132, 22);
-            this.toolStripTracuu.Text = "Tra cứu danh mục";
-            // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton1.Text = "Tra cứu danh mục";
+            this.errorProvider1.ContainerControl = this;
             // 
             // toolStrip1
             // 
@@ -297,27 +285,47 @@
             this.toolStripButton1,
             this.toolStripTracuu,
             this.txtFindCategoryByName});
-            this.toolStrip1.Location = new System.Drawing.Point(0, -75);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.toolStrip1.Size = new System.Drawing.Size(521, 25);
-            this.toolStrip1.TabIndex = 5;
+            this.toolStrip1.Size = new System.Drawing.Size(522, 27);
+            this.toolStrip1.TabIndex = 10;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // errorProvider1
+            // toolStripButton1
             // 
-            this.errorProvider1.ContainerControl = this;
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(24, 24);
+            this.toolStripButton1.Text = "Tra cứu danh mục";
+            // 
+            // toolStripTracuu
+            // 
+            this.toolStripTracuu.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.toolStripTracuu.Font = new System.Drawing.Font("Cambria", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripTracuu.Name = "toolStripTracuu";
+            this.toolStripTracuu.Size = new System.Drawing.Size(132, 22);
+            this.toolStripTracuu.Text = "Tra cứu danh mục";
+            // 
+            // txtFindCategoryByName
+            // 
+            this.txtFindCategoryByName.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFindCategoryByName.Name = "txtFindCategoryByName";
+            this.txtFindCategoryByName.Size = new System.Drawing.Size(350, 25);
+            this.txtFindCategoryByName.TextChanged += new System.EventHandler(this.txtFindCategoryByName_TextChanged);
             // 
             // frmAdminCategory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1111, 740);
+            this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.dgvFoodCategory);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.toolStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmAdminCategory";
@@ -328,9 +336,9 @@
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -356,10 +364,10 @@
         private System.Windows.Forms.Label lblMaDM;
         private System.Windows.Forms.Label lblThongtin;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ToolStripTextBox txtFindCategoryByName;
-        private System.Windows.Forms.ToolStripLabel toolStripTracuu;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripLabel toolStripTracuu;
+        private System.Windows.Forms.ToolStripTextBox txtFindCategoryByName;
     }
 }
