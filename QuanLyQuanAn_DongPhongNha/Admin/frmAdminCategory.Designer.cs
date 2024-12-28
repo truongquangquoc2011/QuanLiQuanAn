@@ -41,6 +41,8 @@
             this.lblTotalCategory = new System.Windows.Forms.Label();
             this.lblTongDM = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtFindCategory = new System.Windows.Forms.TextBox();
             this.txtCategoryName = new System.Windows.Forms.TextBox();
             this.txtCategoryID = new System.Windows.Forms.TextBox();
             this.lblTenDM = new System.Windows.Forms.Label();
@@ -92,6 +94,7 @@
             this.dgvFoodCategory.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvFoodCategory.Size = new System.Drawing.Size(745, 526);
             this.dgvFoodCategory.TabIndex = 9;
+            this.dgvFoodCategory.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvFoodCategory_CellMouseClick);
             // 
             // colTenDM
             // 
@@ -112,6 +115,7 @@
             this.btnShowCategory.Text = "Hiển thị";
             this.btnShowCategory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnShowCategory.UseVisualStyleBackColor = true;
+            this.btnShowCategory.Click += new System.EventHandler(this.btnShowCategory_Click);
             // 
             // btnDeleteCategory
             // 
@@ -124,6 +128,7 @@
             this.btnDeleteCategory.TabIndex = 2;
             this.btnDeleteCategory.Text = "Xóa";
             this.btnDeleteCategory.UseVisualStyleBackColor = true;
+            this.btnDeleteCategory.Click += new System.EventHandler(this.btnDeleteCategory_Click);
             // 
             // btnEditCategory
             // 
@@ -136,6 +141,7 @@
             this.btnEditCategory.TabIndex = 1;
             this.btnEditCategory.Text = "Sửa";
             this.btnEditCategory.UseVisualStyleBackColor = true;
+            this.btnEditCategory.Click += new System.EventHandler(this.btnEditCategory_Click);
             // 
             // btnAddCategory
             // 
@@ -188,6 +194,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Silver;
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.txtFindCategory);
             this.panel2.Controls.Add(this.lblTotalCategory);
             this.panel2.Controls.Add(this.lblTongDM);
             this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -196,6 +204,24 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(745, 53);
             this.panel2.TabIndex = 7;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.Location = new System.Drawing.Point(350, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(149, 18);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Tra Cứu Danh Mục";
+            // 
+            // txtFindCategory
+            // 
+            this.txtFindCategory.Location = new System.Drawing.Point(505, 3);
+            this.txtFindCategory.Name = "txtFindCategory";
+            this.txtFindCategory.Size = new System.Drawing.Size(237, 18);
+            this.txtFindCategory.TabIndex = 10;
+            this.txtFindCategory.TextChanged += new System.EventHandler(this.txtFindCategory_TextChanged);
             // 
             // txtCategoryName
             // 
@@ -361,5 +387,7 @@
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtFindCategory;
     }
 }
