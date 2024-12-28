@@ -334,10 +334,7 @@ namespace QuanLyQuanAn_DongPhongNha.Admin
                 {
                     errorProvider1.SetError(txtPrice, "Giá không được để trống, vui lòng nhập vào "); check = false;
                 }
-                if (!check)
-                {
-                    MessageBox.Show("Vui Lòng Nhập Đầy Đủ Thông Tin ", "Thông Báo ",MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
+                
                 AddFood();
 
 
