@@ -225,6 +225,9 @@
     <Compile Include="Staff.cs">
       <DependentUpon>QLNH_Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>QLNH_Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="TableFood.cs">
       <DependentUpon>QLNH_Model1.tt</DependentUpon>
     </Compile>
@@ -325,6 +328,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="App.Config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -335,9 +339,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Database\" />
@@ -364,22 +365,24 @@
     <None Include="Resources\background-am-thuc-dep-nhat_081312859.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="QLNH_Model1.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>QLNH_Model1.Context.cs</LastGenOutput>
-      <DependentUpon>QLNH_Model1.edmx</DependentUpon>
-    </Content>
-    <Content Include="QLNH_Model1.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>QLNH_Model1.edmx</DependentUpon>
-      <LastGenOutput>QLNH_Model1.cs</LastGenOutput>
-    </Content>
     <None Include="Resources\z6153570384406_f9d6f96bab6a29a8cea819ba4fbcbb64.jpg" />
     <None Include="Resources\z6153558315492_216ed1d11f34b02d6bd7e6a7bfdbd6af.jpg" />
     <None Include="Resources\Screenshot 2024-12-21 033255.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="QLNH_Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QLNH_Model1.edmx</DependentUpon>
+      <LastGenOutput>QLNH_Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="QLNH_Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QLNH_Model1.edmx</DependentUpon>
+      <LastGenOutput>QLNH_Model1.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
