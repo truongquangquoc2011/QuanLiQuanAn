@@ -68,7 +68,6 @@ D:\QLNH_winform\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_Do
 D:\QLNH_winform\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.frmAccount.resources
 D:\QLNH_winform\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.frmAddWareHouse.resources
 D:\QLNH_winform\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.frmAttendanceList.resources
-D:\QLNH_winform\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.frmEditPosition.resources
 D:\QLNH_winform\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.frmHome.resources
 D:\QLNH_winform\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.frmInfomation.resources
 D:\QLNH_winform\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.frmLogin.resources
@@ -92,3 +91,4 @@ C:\QuanLyQuanAn_winform\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\bin\Debug\EntityF
 C:\QuanLyQuanAn_winform\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\bin\Debug\EntityFramework.xml
 C:\QuanLyQuanAn_winform\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\bin\Debug\EntityFramework.SqlServer.xml
 C:\QuanLyQuanAn_winform\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQu.5F8A0BEF.Up2Date
+D:\QLNH_winform\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\quanLyNhaHang_Nhom4.Manager.frmEditPosition.resources
