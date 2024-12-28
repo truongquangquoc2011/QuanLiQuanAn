@@ -264,5 +264,10 @@ namespace QuanLyQuanAn_DongPhongNha.Admin
             }
         }
         #endregion
+
+        private void frmAdminCategory_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

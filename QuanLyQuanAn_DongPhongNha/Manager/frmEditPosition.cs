@@ -1,4 +1,4 @@
-﻿//using quanLyNhaHang_Nhom4.Database;
+﻿
 using QuanLyQuanAn_DongPhongNha.Manager;
 using QuanLyQuanAn_DongPhongNha;
 using System;
@@ -74,7 +74,7 @@ namespace quanLyNhaHang_Nhom4.Manager
                 dgvPosition.Rows[index].Cells[0].Value = item.idPosition;
                 dgvPosition.Rows[index].Cells[1].Value = item.namePosition;
             }
-            lblTotalPosition.Text = "Tổng chức vụ: " + (dgvPosition.Rows.Count - 1);
+            lblTotalPosition.Text = "Tổng chức vụ: " + dgvPosition.Rows.Count.ToString();
             setDataGridView(dgvPosition);
         }
 
@@ -89,8 +89,7 @@ namespace quanLyNhaHang_Nhom4.Manager
                 dgvPosition.Rows[index].Cells[0].Value = item.idPosition;
                 dgvPosition.Rows[index].Cells[1].Value = item.namePosition;
             }
-            int totalRows = dgvPosition.Rows.Count > 0 ? dgvPosition.Rows.Count - 1 : 0;
-            lblTotalPosition.Text = "Tổng chức vụ: " + totalRows;
+            lblTotalPosition.Text = "Tổng chức vụ: " + dgvPosition.Rows.Count.ToString();
             setDataGridView(dgvPosition);
         }
 

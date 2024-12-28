@@ -294,7 +294,7 @@ namespace QuanLyQuanAn_DongPhongNha.Admin
             }
             catch
             {
-                msg.Show("Đã xảy ra lỗi khi load data, vui lòng kiểm tra lại !", "THÀNH CÔNG", msg.Buttons.No, msg.Icon.Error);
+                msg.Show("Hãy click đúng vào bảng ", "THÔNG BÁO ", msg.Buttons.No, msg.Icon.Error);
             }
         }
         private void btnAddStaff_Click(object sender, EventArgs e)
