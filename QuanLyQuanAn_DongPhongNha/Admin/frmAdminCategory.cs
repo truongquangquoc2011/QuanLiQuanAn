@@ -57,7 +57,8 @@ namespace QuanLyQuanAn_DongPhongNha.Admin
                 txtCategoryName.Text = row.Cells[1].Value.ToString();
 
             }
-            catch
+            //Sang note lai phan nay
+            catch (Exception ex)
             {
                 msg.Show("Không có dữ liệu để hiển thị. Vui lòng chọn một dòng hợp lệ!", "Lỗi", msg.Buttons.Yes, msg.Icon.Error);
             }
@@ -264,5 +265,10 @@ namespace QuanLyQuanAn_DongPhongNha.Admin
             }
         }
         #endregion
+
+        private void frmAdminCategory_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
