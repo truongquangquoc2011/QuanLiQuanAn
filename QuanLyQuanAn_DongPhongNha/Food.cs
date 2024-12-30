@@ -20,9 +20,6 @@ namespace QuanLyQuanAn_DongPhongNha
             this.BillInfo = new HashSet<BillInfo>();
             this.BillInfo1 = new HashSet<BillInfo>();
             this.BillInfo2 = new HashSet<BillInfo>();
-            this.BillInfo3 = new HashSet<BillInfo>();
-            this.BillInfo4 = new HashSet<BillInfo>();
-            this.BillInfo5 = new HashSet<BillInfo>();
         }
     
         public int idFood { get; set; }
@@ -38,17 +35,8 @@ namespace QuanLyQuanAn_DongPhongNha
         public virtual ICollection<BillInfo> BillInfo1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<BillInfo> BillInfo2 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<BillInfo> BillInfo3 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<BillInfo> BillInfo4 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<BillInfo> BillInfo5 { get; set; }
         public virtual FoodCategory FoodCategory { get; set; }
         public virtual FoodCategory FoodCategory1 { get; set; }
         public virtual FoodCategory FoodCategory2 { get; set; }
-        public virtual FoodCategory FoodCategory3 { get; set; }
-        public virtual FoodCategory FoodCategory4 { get; set; }
-        public virtual FoodCategory FoodCategory5 { get; set; }
     }
 }

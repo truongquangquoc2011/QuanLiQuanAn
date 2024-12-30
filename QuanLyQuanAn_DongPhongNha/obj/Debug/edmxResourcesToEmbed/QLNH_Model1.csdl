@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="QuanLyNhaHangModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+<Schema Namespace="QLNHModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityType Name="Account">
     <Key>
       <PropertyRef Name="userName" />
@@ -9,19 +9,13 @@
     <Property Name="displayName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="typeAccount" Type="Int32" Nullable="false" />
     <Property Name="idStaff" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
-    <NavigationProperty Name="Staff" Relationship="Self.FK__Account__idStaff__245D67DE" FromRole="Account" ToRole="Staff" />
-    <NavigationProperty Name="Staff1" Relationship="Self.FK__Account__idStaff__25518C17" FromRole="Account" ToRole="Staff" />
-    <NavigationProperty Name="Staff2" Relationship="Self.FK__Account__idStaff__2645B050" FromRole="Account" ToRole="Staff" />
-    <NavigationProperty Name="Staff3" Relationship="Self.FK__Account__idStaff__628FA481" FromRole="Account" ToRole="Staff" />
-    <NavigationProperty Name="Staff4" Relationship="Self.FK__Account__idStaff__6383C8BA" FromRole="Account" ToRole="Staff" />
-    <NavigationProperty Name="Staff5" Relationship="Self.FK__Account__idStaff__6477ECF3" FromRole="Account" ToRole="Staff" />
+    <NavigationProperty Name="Staff" Relationship="Self.FK__Account__idStaff__628FA481" FromRole="Account" ToRole="Staff" />
+    <NavigationProperty Name="Staff1" Relationship="Self.FK__Account__idStaff__6383C8BA" FromRole="Account" ToRole="Staff" />
+    <NavigationProperty Name="Staff2" Relationship="Self.FK__Account__idStaff__6477ECF3" FromRole="Account" ToRole="Staff" />
     <NavigationProperty Name="Bill" Relationship="Self.FK__Bill__payerId__4316F928" FromRole="Account" ToRole="Bill" />
-    <NavigationProperty Name="BillOfWareHouse" Relationship="Self.FK__BillOfWar__userN__32AB8735" FromRole="Account" ToRole="BillOfWareHouse" />
-    <NavigationProperty Name="BillOfWareHouse1" Relationship="Self.FK__BillOfWar__userN__339FAB6E" FromRole="Account" ToRole="BillOfWareHouse" />
-    <NavigationProperty Name="BillOfWareHouse2" Relationship="Self.FK__BillOfWar__userN__3493CFA7" FromRole="Account" ToRole="BillOfWareHouse" />
-    <NavigationProperty Name="BillOfWareHouse3" Relationship="Self.FK__BillOfWar__userN__73BA3083" FromRole="Account" ToRole="BillOfWareHouse" />
-    <NavigationProperty Name="BillOfWareHouse4" Relationship="Self.FK__BillOfWar__userN__74AE54BC" FromRole="Account" ToRole="BillOfWareHouse" />
-    <NavigationProperty Name="BillOfWareHouse5" Relationship="Self.FK__BillOfWar__userN__75A278F5" FromRole="Account" ToRole="BillOfWareHouse" />
+    <NavigationProperty Name="BillOfWareHouse" Relationship="Self.FK__BillOfWar__userN__73BA3083" FromRole="Account" ToRole="BillOfWareHouse" />
+    <NavigationProperty Name="BillOfWareHouse1" Relationship="Self.FK__BillOfWar__userN__74AE54BC" FromRole="Account" ToRole="BillOfWareHouse" />
+    <NavigationProperty Name="BillOfWareHouse2" Relationship="Self.FK__BillOfWar__userN__75A278F5" FromRole="Account" ToRole="BillOfWareHouse" />
   </EntityType>
   <EntityType Name="AttendanceList">
     <Key>
@@ -30,12 +24,9 @@
     <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="idStaff" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
     <Property Name="dateCheckIn" Type="DateTime" Nullable="false" Precision="3" />
-    <NavigationProperty Name="Staff" Relationship="Self.FK__Attendanc__idSta__2739D489" FromRole="AttendanceList" ToRole="Staff" />
-    <NavigationProperty Name="Staff1" Relationship="Self.FK__Attendanc__idSta__282DF8C2" FromRole="AttendanceList" ToRole="Staff" />
-    <NavigationProperty Name="Staff2" Relationship="Self.FK__Attendanc__idSta__29221CFB" FromRole="AttendanceList" ToRole="Staff" />
-    <NavigationProperty Name="Staff3" Relationship="Self.FK__Attendanc__idSta__656C112C" FromRole="AttendanceList" ToRole="Staff" />
-    <NavigationProperty Name="Staff4" Relationship="Self.FK__Attendanc__idSta__66603565" FromRole="AttendanceList" ToRole="Staff" />
-    <NavigationProperty Name="Staff5" Relationship="Self.FK__Attendanc__idSta__6754599E" FromRole="AttendanceList" ToRole="Staff" />
+    <NavigationProperty Name="Staff" Relationship="Self.FK__Attendanc__idSta__656C112C" FromRole="AttendanceList" ToRole="Staff" />
+    <NavigationProperty Name="Staff1" Relationship="Self.FK__Attendanc__idSta__66603565" FromRole="AttendanceList" ToRole="Staff" />
+    <NavigationProperty Name="Staff2" Relationship="Self.FK__Attendanc__idSta__6754599E" FromRole="AttendanceList" ToRole="Staff" />
   </EntityType>
   <EntityType Name="Bill">
     <Key>
@@ -62,12 +53,9 @@
     <Property Name="idFood" Type="Int32" Nullable="false" />
     <Property Name="countFood" Type="Int32" Nullable="false" />
     <NavigationProperty Name="Bill" Relationship="Self.FK__BillInfo__idBill__46E78A0C" FromRole="BillInfo" ToRole="Bill" />
-    <NavigationProperty Name="Food" Relationship="Self.FK__BillInfo__idFood__2A164134" FromRole="BillInfo" ToRole="Food" />
-    <NavigationProperty Name="Food1" Relationship="Self.FK__BillInfo__idFood__2B0A656D" FromRole="BillInfo" ToRole="Food" />
-    <NavigationProperty Name="Food2" Relationship="Self.FK__BillInfo__idFood__2BFE89A6" FromRole="BillInfo" ToRole="Food" />
-    <NavigationProperty Name="Food3" Relationship="Self.FK__BillInfo__idFood__6B24EA82" FromRole="BillInfo" ToRole="Food" />
-    <NavigationProperty Name="Food4" Relationship="Self.FK__BillInfo__idFood__6C190EBB" FromRole="BillInfo" ToRole="Food" />
-    <NavigationProperty Name="Food5" Relationship="Self.FK__BillInfo__idFood__6D0D32F4" FromRole="BillInfo" ToRole="Food" />
+    <NavigationProperty Name="Food" Relationship="Self.FK__BillInfo__idFood__6B24EA82" FromRole="BillInfo" ToRole="Food" />
+    <NavigationProperty Name="Food1" Relationship="Self.FK__BillInfo__idFood__6C190EBB" FromRole="BillInfo" ToRole="Food" />
+    <NavigationProperty Name="Food2" Relationship="Self.FK__BillInfo__idFood__6D0D32F4" FromRole="BillInfo" ToRole="Food" />
   </EntityType>
   <EntityType Name="BillInfoOfWareHouse">
     <Key>
@@ -79,18 +67,12 @@
     <Property Name="number" Type="Int32" />
     <Property Name="price" Type="Int32" Nullable="false" />
     <Property Name="totalPrice" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="BillOfWareHouse" Relationship="Self.FK__BillInfoO__idBil__2CF2ADDF" FromRole="BillInfoOfWareHouse" ToRole="BillOfWareHouse" />
-    <NavigationProperty Name="BillOfWareHouse1" Relationship="Self.FK__BillInfoO__idBil__2DE6D218" FromRole="BillInfoOfWareHouse" ToRole="BillOfWareHouse" />
-    <NavigationProperty Name="BillOfWareHouse2" Relationship="Self.FK__BillInfoO__idBil__2EDAF651" FromRole="BillInfoOfWareHouse" ToRole="BillOfWareHouse" />
-    <NavigationProperty Name="BillOfWareHouse3" Relationship="Self.FK__BillInfoO__idBil__6E01572D" FromRole="BillInfoOfWareHouse" ToRole="BillOfWareHouse" />
-    <NavigationProperty Name="BillOfWareHouse4" Relationship="Self.FK__BillInfoO__idBil__6EF57B66" FromRole="BillInfoOfWareHouse" ToRole="BillOfWareHouse" />
-    <NavigationProperty Name="BillOfWareHouse5" Relationship="Self.FK__BillInfoO__idBil__6FE99F9F" FromRole="BillInfoOfWareHouse" ToRole="BillOfWareHouse" />
-    <NavigationProperty Name="Material" Relationship="Self.FK__BillInfoO__idMat__2FCF1A8A" FromRole="BillInfoOfWareHouse" ToRole="Material" />
-    <NavigationProperty Name="Material1" Relationship="Self.FK__BillInfoO__idMat__30C33EC3" FromRole="BillInfoOfWareHouse" ToRole="Material" />
-    <NavigationProperty Name="Material2" Relationship="Self.FK__BillInfoO__idMat__31B762FC" FromRole="BillInfoOfWareHouse" ToRole="Material" />
-    <NavigationProperty Name="Material3" Relationship="Self.FK__BillInfoO__idMat__70DDC3D8" FromRole="BillInfoOfWareHouse" ToRole="Material" />
-    <NavigationProperty Name="Material4" Relationship="Self.FK__BillInfoO__idMat__71D1E811" FromRole="BillInfoOfWareHouse" ToRole="Material" />
-    <NavigationProperty Name="Material5" Relationship="Self.FK__BillInfoO__idMat__72C60C4A" FromRole="BillInfoOfWareHouse" ToRole="Material" />
+    <NavigationProperty Name="BillOfWareHouse" Relationship="Self.FK__BillInfoO__idBil__6E01572D" FromRole="BillInfoOfWareHouse" ToRole="BillOfWareHouse" />
+    <NavigationProperty Name="BillOfWareHouse1" Relationship="Self.FK__BillInfoO__idBil__6EF57B66" FromRole="BillInfoOfWareHouse" ToRole="BillOfWareHouse" />
+    <NavigationProperty Name="BillOfWareHouse2" Relationship="Self.FK__BillInfoO__idBil__6FE99F9F" FromRole="BillInfoOfWareHouse" ToRole="BillOfWareHouse" />
+    <NavigationProperty Name="Material" Relationship="Self.FK__BillInfoO__idMat__70DDC3D8" FromRole="BillInfoOfWareHouse" ToRole="Material" />
+    <NavigationProperty Name="Material1" Relationship="Self.FK__BillInfoO__idMat__71D1E811" FromRole="BillInfoOfWareHouse" ToRole="Material" />
+    <NavigationProperty Name="Material2" Relationship="Self.FK__BillInfoO__idMat__72C60C4A" FromRole="BillInfoOfWareHouse" ToRole="Material" />
   </EntityType>
   <EntityType Name="BillOfWareHouse">
     <Key>
@@ -101,18 +83,12 @@
     <Property Name="supplier" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="note" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
     <Property Name="userName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-    <NavigationProperty Name="Account" Relationship="Self.FK__BillOfWar__userN__32AB8735" FromRole="BillOfWareHouse" ToRole="Account" />
-    <NavigationProperty Name="Account1" Relationship="Self.FK__BillOfWar__userN__339FAB6E" FromRole="BillOfWareHouse" ToRole="Account" />
-    <NavigationProperty Name="Account2" Relationship="Self.FK__BillOfWar__userN__3493CFA7" FromRole="BillOfWareHouse" ToRole="Account" />
-    <NavigationProperty Name="Account3" Relationship="Self.FK__BillOfWar__userN__73BA3083" FromRole="BillOfWareHouse" ToRole="Account" />
-    <NavigationProperty Name="Account4" Relationship="Self.FK__BillOfWar__userN__74AE54BC" FromRole="BillOfWareHouse" ToRole="Account" />
-    <NavigationProperty Name="Account5" Relationship="Self.FK__BillOfWar__userN__75A278F5" FromRole="BillOfWareHouse" ToRole="Account" />
-    <NavigationProperty Name="BillInfoOfWareHouse" Relationship="Self.FK__BillInfoO__idBil__2CF2ADDF" FromRole="BillOfWareHouse" ToRole="BillInfoOfWareHouse" />
-    <NavigationProperty Name="BillInfoOfWareHouse1" Relationship="Self.FK__BillInfoO__idBil__2DE6D218" FromRole="BillOfWareHouse" ToRole="BillInfoOfWareHouse" />
-    <NavigationProperty Name="BillInfoOfWareHouse2" Relationship="Self.FK__BillInfoO__idBil__2EDAF651" FromRole="BillOfWareHouse" ToRole="BillInfoOfWareHouse" />
-    <NavigationProperty Name="BillInfoOfWareHouse3" Relationship="Self.FK__BillInfoO__idBil__6E01572D" FromRole="BillOfWareHouse" ToRole="BillInfoOfWareHouse" />
-    <NavigationProperty Name="BillInfoOfWareHouse4" Relationship="Self.FK__BillInfoO__idBil__6EF57B66" FromRole="BillOfWareHouse" ToRole="BillInfoOfWareHouse" />
-    <NavigationProperty Name="BillInfoOfWareHouse5" Relationship="Self.FK__BillInfoO__idBil__6FE99F9F" FromRole="BillOfWareHouse" ToRole="BillInfoOfWareHouse" />
+    <NavigationProperty Name="Account" Relationship="Self.FK__BillOfWar__userN__73BA3083" FromRole="BillOfWareHouse" ToRole="Account" />
+    <NavigationProperty Name="Account1" Relationship="Self.FK__BillOfWar__userN__74AE54BC" FromRole="BillOfWareHouse" ToRole="Account" />
+    <NavigationProperty Name="Account2" Relationship="Self.FK__BillOfWar__userN__75A278F5" FromRole="BillOfWareHouse" ToRole="Account" />
+    <NavigationProperty Name="BillInfoOfWareHouse" Relationship="Self.FK__BillInfoO__idBil__6E01572D" FromRole="BillOfWareHouse" ToRole="BillInfoOfWareHouse" />
+    <NavigationProperty Name="BillInfoOfWareHouse1" Relationship="Self.FK__BillInfoO__idBil__6EF57B66" FromRole="BillOfWareHouse" ToRole="BillInfoOfWareHouse" />
+    <NavigationProperty Name="BillInfoOfWareHouse2" Relationship="Self.FK__BillInfoO__idBil__6FE99F9F" FromRole="BillOfWareHouse" ToRole="BillInfoOfWareHouse" />
   </EntityType>
   <EntityType Name="Food">
     <Key>
@@ -124,18 +100,12 @@
     <Property Name="price" Type="Double" Nullable="false" />
     <Property Name="imageFood" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
     <Property Name="statusFood" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
-    <NavigationProperty Name="BillInfo" Relationship="Self.FK__BillInfo__idFood__2A164134" FromRole="Food" ToRole="BillInfo" />
-    <NavigationProperty Name="BillInfo1" Relationship="Self.FK__BillInfo__idFood__2B0A656D" FromRole="Food" ToRole="BillInfo" />
-    <NavigationProperty Name="BillInfo2" Relationship="Self.FK__BillInfo__idFood__2BFE89A6" FromRole="Food" ToRole="BillInfo" />
-    <NavigationProperty Name="BillInfo3" Relationship="Self.FK__BillInfo__idFood__6B24EA82" FromRole="Food" ToRole="BillInfo" />
-    <NavigationProperty Name="BillInfo4" Relationship="Self.FK__BillInfo__idFood__6C190EBB" FromRole="Food" ToRole="BillInfo" />
-    <NavigationProperty Name="BillInfo5" Relationship="Self.FK__BillInfo__idFood__6D0D32F4" FromRole="Food" ToRole="BillInfo" />
-    <NavigationProperty Name="FoodCategory" Relationship="Self.FK__Food__idFC__3587F3E0" FromRole="Food" ToRole="FoodCategory" />
-    <NavigationProperty Name="FoodCategory1" Relationship="Self.FK__Food__idFC__367C1819" FromRole="Food" ToRole="FoodCategory" />
-    <NavigationProperty Name="FoodCategory2" Relationship="Self.FK__Food__idFC__37703C52" FromRole="Food" ToRole="FoodCategory" />
-    <NavigationProperty Name="FoodCategory3" Relationship="Self.FK__Food__idFC__76969D2E" FromRole="Food" ToRole="FoodCategory" />
-    <NavigationProperty Name="FoodCategory4" Relationship="Self.FK__Food__idFC__778AC167" FromRole="Food" ToRole="FoodCategory" />
-    <NavigationProperty Name="FoodCategory5" Relationship="Self.FK__Food__idFC__787EE5A0" FromRole="Food" ToRole="FoodCategory" />
+    <NavigationProperty Name="BillInfo" Relationship="Self.FK__BillInfo__idFood__6B24EA82" FromRole="Food" ToRole="BillInfo" />
+    <NavigationProperty Name="BillInfo1" Relationship="Self.FK__BillInfo__idFood__6C190EBB" FromRole="Food" ToRole="BillInfo" />
+    <NavigationProperty Name="BillInfo2" Relationship="Self.FK__BillInfo__idFood__6D0D32F4" FromRole="Food" ToRole="BillInfo" />
+    <NavigationProperty Name="FoodCategory" Relationship="Self.FK__Food__idFC__76969D2E" FromRole="Food" ToRole="FoodCategory" />
+    <NavigationProperty Name="FoodCategory1" Relationship="Self.FK__Food__idFC__778AC167" FromRole="Food" ToRole="FoodCategory" />
+    <NavigationProperty Name="FoodCategory2" Relationship="Self.FK__Food__idFC__787EE5A0" FromRole="Food" ToRole="FoodCategory" />
   </EntityType>
   <EntityType Name="FoodCategory">
     <Key>
@@ -143,12 +113,9 @@
     </Key>
     <Property Name="idFC" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="nameFC" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
-    <NavigationProperty Name="Food" Relationship="Self.FK__Food__idFC__3587F3E0" FromRole="FoodCategory" ToRole="Food" />
-    <NavigationProperty Name="Food1" Relationship="Self.FK__Food__idFC__367C1819" FromRole="FoodCategory" ToRole="Food" />
-    <NavigationProperty Name="Food2" Relationship="Self.FK__Food__idFC__37703C52" FromRole="FoodCategory" ToRole="Food" />
-    <NavigationProperty Name="Food3" Relationship="Self.FK__Food__idFC__76969D2E" FromRole="FoodCategory" ToRole="Food" />
-    <NavigationProperty Name="Food4" Relationship="Self.FK__Food__idFC__778AC167" FromRole="FoodCategory" ToRole="Food" />
-    <NavigationProperty Name="Food5" Relationship="Self.FK__Food__idFC__787EE5A0" FromRole="FoodCategory" ToRole="Food" />
+    <NavigationProperty Name="Food" Relationship="Self.FK__Food__idFC__76969D2E" FromRole="FoodCategory" ToRole="Food" />
+    <NavigationProperty Name="Food1" Relationship="Self.FK__Food__idFC__778AC167" FromRole="FoodCategory" ToRole="Food" />
+    <NavigationProperty Name="Food2" Relationship="Self.FK__Food__idFC__787EE5A0" FromRole="FoodCategory" ToRole="Food" />
   </EntityType>
   <EntityType Name="Material">
     <Key>
@@ -157,18 +124,12 @@
     <Property Name="idMaterial" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="nameMaterial" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="idUnit" Type="Int32" />
-    <NavigationProperty Name="BillInfoOfWareHouse" Relationship="Self.FK__BillInfoO__idMat__2FCF1A8A" FromRole="Material" ToRole="BillInfoOfWareHouse" />
-    <NavigationProperty Name="BillInfoOfWareHouse1" Relationship="Self.FK__BillInfoO__idMat__30C33EC3" FromRole="Material" ToRole="BillInfoOfWareHouse" />
-    <NavigationProperty Name="BillInfoOfWareHouse2" Relationship="Self.FK__BillInfoO__idMat__31B762FC" FromRole="Material" ToRole="BillInfoOfWareHouse" />
-    <NavigationProperty Name="BillInfoOfWareHouse3" Relationship="Self.FK__BillInfoO__idMat__70DDC3D8" FromRole="Material" ToRole="BillInfoOfWareHouse" />
-    <NavigationProperty Name="BillInfoOfWareHouse4" Relationship="Self.FK__BillInfoO__idMat__71D1E811" FromRole="Material" ToRole="BillInfoOfWareHouse" />
-    <NavigationProperty Name="BillInfoOfWareHouse5" Relationship="Self.FK__BillInfoO__idMat__72C60C4A" FromRole="Material" ToRole="BillInfoOfWareHouse" />
-    <NavigationProperty Name="Unit" Relationship="Self.FK__Material__idUnit__3864608B" FromRole="Material" ToRole="Unit" />
-    <NavigationProperty Name="Unit1" Relationship="Self.FK__Material__idUnit__395884C4" FromRole="Material" ToRole="Unit" />
-    <NavigationProperty Name="Unit2" Relationship="Self.FK__Material__idUnit__3A4CA8FD" FromRole="Material" ToRole="Unit" />
-    <NavigationProperty Name="Unit3" Relationship="Self.FK__Material__idUnit__797309D9" FromRole="Material" ToRole="Unit" />
-    <NavigationProperty Name="Unit4" Relationship="Self.FK__Material__idUnit__7A672E12" FromRole="Material" ToRole="Unit" />
-    <NavigationProperty Name="Unit5" Relationship="Self.FK__Material__idUnit__7B5B524B" FromRole="Material" ToRole="Unit" />
+    <NavigationProperty Name="BillInfoOfWareHouse" Relationship="Self.FK__BillInfoO__idMat__70DDC3D8" FromRole="Material" ToRole="BillInfoOfWareHouse" />
+    <NavigationProperty Name="BillInfoOfWareHouse1" Relationship="Self.FK__BillInfoO__idMat__71D1E811" FromRole="Material" ToRole="BillInfoOfWareHouse" />
+    <NavigationProperty Name="BillInfoOfWareHouse2" Relationship="Self.FK__BillInfoO__idMat__72C60C4A" FromRole="Material" ToRole="BillInfoOfWareHouse" />
+    <NavigationProperty Name="Unit" Relationship="Self.FK__Material__idUnit__797309D9" FromRole="Material" ToRole="Unit" />
+    <NavigationProperty Name="Unit1" Relationship="Self.FK__Material__idUnit__7A672E12" FromRole="Material" ToRole="Unit" />
+    <NavigationProperty Name="Unit2" Relationship="Self.FK__Material__idUnit__7B5B524B" FromRole="Material" ToRole="Unit" />
   </EntityType>
   <EntityType Name="Position">
     <Key>
@@ -177,12 +138,9 @@
     <Property Name="idPosition" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="namePosition" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
     <Property Name="coefficientSalary" Type="Double" />
-    <NavigationProperty Name="Staff" Relationship="Self.FK__Staff__idPositio__3B40CD36" FromRole="Position" ToRole="Staff" />
-    <NavigationProperty Name="Staff1" Relationship="Self.FK__Staff__idPositio__3C34F16F" FromRole="Position" ToRole="Staff" />
-    <NavigationProperty Name="Staff2" Relationship="Self.FK__Staff__idPositio__3D2915A8" FromRole="Position" ToRole="Staff" />
-    <NavigationProperty Name="Staff3" Relationship="Self.FK__Staff__idPositio__7C4F7684" FromRole="Position" ToRole="Staff" />
-    <NavigationProperty Name="Staff4" Relationship="Self.FK__Staff__idPositio__7D439ABD" FromRole="Position" ToRole="Staff" />
-    <NavigationProperty Name="Staff5" Relationship="Self.FK__Staff__idPositio__7E37BEF6" FromRole="Position" ToRole="Staff" />
+    <NavigationProperty Name="Staff" Relationship="Self.FK__Staff__idPositio__7C4F7684" FromRole="Position" ToRole="Staff" />
+    <NavigationProperty Name="Staff1" Relationship="Self.FK__Staff__idPositio__7D439ABD" FromRole="Position" ToRole="Staff" />
+    <NavigationProperty Name="Staff2" Relationship="Self.FK__Staff__idPositio__7E37BEF6" FromRole="Position" ToRole="Staff" />
   </EntityType>
   <EntityType Name="Staff">
     <Key>
@@ -196,24 +154,15 @@
     <Property Name="identityCard" Type="String" MaxLength="12" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="phoneNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="address" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
-    <NavigationProperty Name="Account" Relationship="Self.FK__Account__idStaff__245D67DE" FromRole="Staff" ToRole="Account" />
-    <NavigationProperty Name="Account1" Relationship="Self.FK__Account__idStaff__25518C17" FromRole="Staff" ToRole="Account" />
-    <NavigationProperty Name="Account2" Relationship="Self.FK__Account__idStaff__2645B050" FromRole="Staff" ToRole="Account" />
-    <NavigationProperty Name="Account3" Relationship="Self.FK__Account__idStaff__628FA481" FromRole="Staff" ToRole="Account" />
-    <NavigationProperty Name="Account4" Relationship="Self.FK__Account__idStaff__6383C8BA" FromRole="Staff" ToRole="Account" />
-    <NavigationProperty Name="Account5" Relationship="Self.FK__Account__idStaff__6477ECF3" FromRole="Staff" ToRole="Account" />
-    <NavigationProperty Name="AttendanceList" Relationship="Self.FK__Attendanc__idSta__2739D489" FromRole="Staff" ToRole="AttendanceList" />
-    <NavigationProperty Name="AttendanceList1" Relationship="Self.FK__Attendanc__idSta__282DF8C2" FromRole="Staff" ToRole="AttendanceList" />
-    <NavigationProperty Name="AttendanceList2" Relationship="Self.FK__Attendanc__idSta__29221CFB" FromRole="Staff" ToRole="AttendanceList" />
-    <NavigationProperty Name="AttendanceList3" Relationship="Self.FK__Attendanc__idSta__656C112C" FromRole="Staff" ToRole="AttendanceList" />
-    <NavigationProperty Name="AttendanceList4" Relationship="Self.FK__Attendanc__idSta__66603565" FromRole="Staff" ToRole="AttendanceList" />
-    <NavigationProperty Name="AttendanceList5" Relationship="Self.FK__Attendanc__idSta__6754599E" FromRole="Staff" ToRole="AttendanceList" />
-    <NavigationProperty Name="Position" Relationship="Self.FK__Staff__idPositio__3B40CD36" FromRole="Staff" ToRole="Position" />
-    <NavigationProperty Name="Position1" Relationship="Self.FK__Staff__idPositio__3C34F16F" FromRole="Staff" ToRole="Position" />
-    <NavigationProperty Name="Position2" Relationship="Self.FK__Staff__idPositio__3D2915A8" FromRole="Staff" ToRole="Position" />
-    <NavigationProperty Name="Position3" Relationship="Self.FK__Staff__idPositio__7C4F7684" FromRole="Staff" ToRole="Position" />
-    <NavigationProperty Name="Position4" Relationship="Self.FK__Staff__idPositio__7D439ABD" FromRole="Staff" ToRole="Position" />
-    <NavigationProperty Name="Position5" Relationship="Self.FK__Staff__idPositio__7E37BEF6" FromRole="Staff" ToRole="Position" />
+    <NavigationProperty Name="Account" Relationship="Self.FK__Account__idStaff__628FA481" FromRole="Staff" ToRole="Account" />
+    <NavigationProperty Name="Account1" Relationship="Self.FK__Account__idStaff__6383C8BA" FromRole="Staff" ToRole="Account" />
+    <NavigationProperty Name="Account2" Relationship="Self.FK__Account__idStaff__6477ECF3" FromRole="Staff" ToRole="Account" />
+    <NavigationProperty Name="AttendanceList" Relationship="Self.FK__Attendanc__idSta__656C112C" FromRole="Staff" ToRole="AttendanceList" />
+    <NavigationProperty Name="AttendanceList1" Relationship="Self.FK__Attendanc__idSta__66603565" FromRole="Staff" ToRole="AttendanceList" />
+    <NavigationProperty Name="AttendanceList2" Relationship="Self.FK__Attendanc__idSta__6754599E" FromRole="Staff" ToRole="AttendanceList" />
+    <NavigationProperty Name="Position" Relationship="Self.FK__Staff__idPositio__7C4F7684" FromRole="Staff" ToRole="Position" />
+    <NavigationProperty Name="Position1" Relationship="Self.FK__Staff__idPositio__7D439ABD" FromRole="Staff" ToRole="Position" />
+    <NavigationProperty Name="Position2" Relationship="Self.FK__Staff__idPositio__7E37BEF6" FromRole="Staff" ToRole="Position" />
   </EntityType>
   <EntityType Name="sysdiagrams">
     <Key>
@@ -240,49 +189,10 @@
     </Key>
     <Property Name="idUnit" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="nameUnit" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
-    <NavigationProperty Name="Material" Relationship="Self.FK__Material__idUnit__3864608B" FromRole="Unit" ToRole="Material" />
-    <NavigationProperty Name="Material1" Relationship="Self.FK__Material__idUnit__395884C4" FromRole="Unit" ToRole="Material" />
-    <NavigationProperty Name="Material2" Relationship="Self.FK__Material__idUnit__3A4CA8FD" FromRole="Unit" ToRole="Material" />
-    <NavigationProperty Name="Material3" Relationship="Self.FK__Material__idUnit__797309D9" FromRole="Unit" ToRole="Material" />
-    <NavigationProperty Name="Material4" Relationship="Self.FK__Material__idUnit__7A672E12" FromRole="Unit" ToRole="Material" />
-    <NavigationProperty Name="Material5" Relationship="Self.FK__Material__idUnit__7B5B524B" FromRole="Unit" ToRole="Material" />
+    <NavigationProperty Name="Material" Relationship="Self.FK__Material__idUnit__797309D9" FromRole="Unit" ToRole="Material" />
+    <NavigationProperty Name="Material1" Relationship="Self.FK__Material__idUnit__7A672E12" FromRole="Unit" ToRole="Material" />
+    <NavigationProperty Name="Material2" Relationship="Self.FK__Material__idUnit__7B5B524B" FromRole="Unit" ToRole="Material" />
   </EntityType>
-  <Association Name="FK__Account__idStaff__245D67DE">
-    <End Role="Staff" Type="Self.Staff" Multiplicity="1" />
-    <End Role="Account" Type="Self.Account" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Staff">
-        <PropertyRef Name="idStaff" />
-      </Principal>
-      <Dependent Role="Account">
-        <PropertyRef Name="idStaff" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Account__idStaff__25518C17">
-    <End Role="Staff" Type="Self.Staff" Multiplicity="1" />
-    <End Role="Account" Type="Self.Account" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Staff">
-        <PropertyRef Name="idStaff" />
-      </Principal>
-      <Dependent Role="Account">
-        <PropertyRef Name="idStaff" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Account__idStaff__2645B050">
-    <End Role="Staff" Type="Self.Staff" Multiplicity="1" />
-    <End Role="Account" Type="Self.Account" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Staff">
-        <PropertyRef Name="idStaff" />
-      </Principal>
-      <Dependent Role="Account">
-        <PropertyRef Name="idStaff" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK__Account__idStaff__628FA481">
     <End Role="Staff" Type="Self.Staff" Multiplicity="1" />
     <End Role="Account" Type="Self.Account" Multiplicity="*" />
@@ -331,42 +241,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__BillOfWar__userN__32AB8735">
-    <End Role="Account" Type="Self.Account" Multiplicity="0..1" />
-    <End Role="BillOfWareHouse" Type="Self.BillOfWareHouse" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Account">
-        <PropertyRef Name="userName" />
-      </Principal>
-      <Dependent Role="BillOfWareHouse">
-        <PropertyRef Name="userName" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillOfWar__userN__339FAB6E">
-    <End Role="Account" Type="Self.Account" Multiplicity="0..1" />
-    <End Role="BillOfWareHouse" Type="Self.BillOfWareHouse" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Account">
-        <PropertyRef Name="userName" />
-      </Principal>
-      <Dependent Role="BillOfWareHouse">
-        <PropertyRef Name="userName" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillOfWar__userN__3493CFA7">
-    <End Role="Account" Type="Self.Account" Multiplicity="0..1" />
-    <End Role="BillOfWareHouse" Type="Self.BillOfWareHouse" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Account">
-        <PropertyRef Name="userName" />
-      </Principal>
-      <Dependent Role="BillOfWareHouse">
-        <PropertyRef Name="userName" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK__BillOfWar__userN__73BA3083">
     <End Role="Account" Type="Self.Account" Multiplicity="0..1" />
     <End Role="BillOfWareHouse" Type="Self.BillOfWareHouse" Multiplicity="*" />
@@ -400,42 +274,6 @@
       </Principal>
       <Dependent Role="BillOfWareHouse">
         <PropertyRef Name="userName" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Attendanc__idSta__2739D489">
-    <End Role="Staff" Type="Self.Staff" Multiplicity="0..1" />
-    <End Role="AttendanceList" Type="Self.AttendanceList" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Staff">
-        <PropertyRef Name="idStaff" />
-      </Principal>
-      <Dependent Role="AttendanceList">
-        <PropertyRef Name="idStaff" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Attendanc__idSta__282DF8C2">
-    <End Role="Staff" Type="Self.Staff" Multiplicity="0..1" />
-    <End Role="AttendanceList" Type="Self.AttendanceList" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Staff">
-        <PropertyRef Name="idStaff" />
-      </Principal>
-      <Dependent Role="AttendanceList">
-        <PropertyRef Name="idStaff" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Attendanc__idSta__29221CFB">
-    <End Role="Staff" Type="Self.Staff" Multiplicity="0..1" />
-    <End Role="AttendanceList" Type="Self.AttendanceList" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Staff">
-        <PropertyRef Name="idStaff" />
-      </Principal>
-      <Dependent Role="AttendanceList">
-        <PropertyRef Name="idStaff" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -499,42 +337,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__BillInfo__idFood__2A164134">
-    <End Role="Food" Type="Self.Food" Multiplicity="1" />
-    <End Role="BillInfo" Type="Self.BillInfo" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Food">
-        <PropertyRef Name="idFood" />
-      </Principal>
-      <Dependent Role="BillInfo">
-        <PropertyRef Name="idFood" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillInfo__idFood__2B0A656D">
-    <End Role="Food" Type="Self.Food" Multiplicity="1" />
-    <End Role="BillInfo" Type="Self.BillInfo" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Food">
-        <PropertyRef Name="idFood" />
-      </Principal>
-      <Dependent Role="BillInfo">
-        <PropertyRef Name="idFood" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillInfo__idFood__2BFE89A6">
-    <End Role="Food" Type="Self.Food" Multiplicity="1" />
-    <End Role="BillInfo" Type="Self.BillInfo" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Food">
-        <PropertyRef Name="idFood" />
-      </Principal>
-      <Dependent Role="BillInfo">
-        <PropertyRef Name="idFood" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK__BillInfo__idFood__6B24EA82">
     <End Role="Food" Type="Self.Food" Multiplicity="1" />
     <End Role="BillInfo" Type="Self.BillInfo" Multiplicity="*" />
@@ -568,42 +370,6 @@
       </Principal>
       <Dependent Role="BillInfo">
         <PropertyRef Name="idFood" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillInfoO__idBil__2CF2ADDF">
-    <End Role="BillOfWareHouse" Type="Self.BillOfWareHouse" Multiplicity="0..1" />
-    <End Role="BillInfoOfWareHouse" Type="Self.BillInfoOfWareHouse" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="BillOfWareHouse">
-        <PropertyRef Name="idBillOfWareHouse" />
-      </Principal>
-      <Dependent Role="BillInfoOfWareHouse">
-        <PropertyRef Name="idBillOfWareHouse" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillInfoO__idBil__2DE6D218">
-    <End Role="BillOfWareHouse" Type="Self.BillOfWareHouse" Multiplicity="0..1" />
-    <End Role="BillInfoOfWareHouse" Type="Self.BillInfoOfWareHouse" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="BillOfWareHouse">
-        <PropertyRef Name="idBillOfWareHouse" />
-      </Principal>
-      <Dependent Role="BillInfoOfWareHouse">
-        <PropertyRef Name="idBillOfWareHouse" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillInfoO__idBil__2EDAF651">
-    <End Role="BillOfWareHouse" Type="Self.BillOfWareHouse" Multiplicity="0..1" />
-    <End Role="BillInfoOfWareHouse" Type="Self.BillInfoOfWareHouse" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="BillOfWareHouse">
-        <PropertyRef Name="idBillOfWareHouse" />
-      </Principal>
-      <Dependent Role="BillInfoOfWareHouse">
-        <PropertyRef Name="idBillOfWareHouse" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -643,42 +409,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__BillInfoO__idMat__2FCF1A8A">
-    <End Role="Material" Type="Self.Material" Multiplicity="0..1" />
-    <End Role="BillInfoOfWareHouse" Type="Self.BillInfoOfWareHouse" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Material">
-        <PropertyRef Name="idMaterial" />
-      </Principal>
-      <Dependent Role="BillInfoOfWareHouse">
-        <PropertyRef Name="idMaterial" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillInfoO__idMat__30C33EC3">
-    <End Role="Material" Type="Self.Material" Multiplicity="0..1" />
-    <End Role="BillInfoOfWareHouse" Type="Self.BillInfoOfWareHouse" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Material">
-        <PropertyRef Name="idMaterial" />
-      </Principal>
-      <Dependent Role="BillInfoOfWareHouse">
-        <PropertyRef Name="idMaterial" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillInfoO__idMat__31B762FC">
-    <End Role="Material" Type="Self.Material" Multiplicity="0..1" />
-    <End Role="BillInfoOfWareHouse" Type="Self.BillInfoOfWareHouse" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Material">
-        <PropertyRef Name="idMaterial" />
-      </Principal>
-      <Dependent Role="BillInfoOfWareHouse">
-        <PropertyRef Name="idMaterial" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK__BillInfoO__idMat__70DDC3D8">
     <End Role="Material" Type="Self.Material" Multiplicity="0..1" />
     <End Role="BillInfoOfWareHouse" Type="Self.BillInfoOfWareHouse" Multiplicity="*" />
@@ -712,42 +442,6 @@
       </Principal>
       <Dependent Role="BillInfoOfWareHouse">
         <PropertyRef Name="idMaterial" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Food__idFC__3587F3E0">
-    <End Role="FoodCategory" Type="Self.FoodCategory" Multiplicity="1" />
-    <End Role="Food" Type="Self.Food" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="FoodCategory">
-        <PropertyRef Name="idFC" />
-      </Principal>
-      <Dependent Role="Food">
-        <PropertyRef Name="idFC" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Food__idFC__367C1819">
-    <End Role="FoodCategory" Type="Self.FoodCategory" Multiplicity="1" />
-    <End Role="Food" Type="Self.Food" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="FoodCategory">
-        <PropertyRef Name="idFC" />
-      </Principal>
-      <Dependent Role="Food">
-        <PropertyRef Name="idFC" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Food__idFC__37703C52">
-    <End Role="FoodCategory" Type="Self.FoodCategory" Multiplicity="1" />
-    <End Role="Food" Type="Self.Food" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="FoodCategory">
-        <PropertyRef Name="idFC" />
-      </Principal>
-      <Dependent Role="Food">
-        <PropertyRef Name="idFC" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -787,42 +481,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Material__idUnit__3864608B">
-    <End Role="Unit" Type="Self.Unit" Multiplicity="0..1" />
-    <End Role="Material" Type="Self.Material" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Unit">
-        <PropertyRef Name="idUnit" />
-      </Principal>
-      <Dependent Role="Material">
-        <PropertyRef Name="idUnit" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Material__idUnit__395884C4">
-    <End Role="Unit" Type="Self.Unit" Multiplicity="0..1" />
-    <End Role="Material" Type="Self.Material" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Unit">
-        <PropertyRef Name="idUnit" />
-      </Principal>
-      <Dependent Role="Material">
-        <PropertyRef Name="idUnit" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Material__idUnit__3A4CA8FD">
-    <End Role="Unit" Type="Self.Unit" Multiplicity="0..1" />
-    <End Role="Material" Type="Self.Material" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Unit">
-        <PropertyRef Name="idUnit" />
-      </Principal>
-      <Dependent Role="Material">
-        <PropertyRef Name="idUnit" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK__Material__idUnit__797309D9">
     <End Role="Unit" Type="Self.Unit" Multiplicity="0..1" />
     <End Role="Material" Type="Self.Material" Multiplicity="*" />
@@ -856,42 +514,6 @@
       </Principal>
       <Dependent Role="Material">
         <PropertyRef Name="idUnit" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Staff__idPositio__3B40CD36">
-    <End Role="Position" Type="Self.Position" Multiplicity="1" />
-    <End Role="Staff" Type="Self.Staff" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Position">
-        <PropertyRef Name="idPosition" />
-      </Principal>
-      <Dependent Role="Staff">
-        <PropertyRef Name="idPosition" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Staff__idPositio__3C34F16F">
-    <End Role="Position" Type="Self.Position" Multiplicity="1" />
-    <End Role="Staff" Type="Self.Staff" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Position">
-        <PropertyRef Name="idPosition" />
-      </Principal>
-      <Dependent Role="Staff">
-        <PropertyRef Name="idPosition" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Staff__idPositio__3D2915A8">
-    <End Role="Position" Type="Self.Position" Multiplicity="1" />
-    <End Role="Staff" Type="Self.Staff" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Position">
-        <PropertyRef Name="idPosition" />
-      </Principal>
-      <Dependent Role="Staff">
-        <PropertyRef Name="idPosition" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -946,18 +568,6 @@
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
     <EntitySet Name="TableFood" EntityType="Self.TableFood" />
     <EntitySet Name="Unit" EntityType="Self.Unit" />
-    <AssociationSet Name="FK__Account__idStaff__245D67DE" Association="Self.FK__Account__idStaff__245D67DE">
-      <End Role="Staff" EntitySet="Staff" />
-      <End Role="Account" EntitySet="Account" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Account__idStaff__25518C17" Association="Self.FK__Account__idStaff__25518C17">
-      <End Role="Staff" EntitySet="Staff" />
-      <End Role="Account" EntitySet="Account" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Account__idStaff__2645B050" Association="Self.FK__Account__idStaff__2645B050">
-      <End Role="Staff" EntitySet="Staff" />
-      <End Role="Account" EntitySet="Account" />
-    </AssociationSet>
     <AssociationSet Name="FK__Account__idStaff__628FA481" Association="Self.FK__Account__idStaff__628FA481">
       <End Role="Staff" EntitySet="Staff" />
       <End Role="Account" EntitySet="Account" />
@@ -974,18 +584,6 @@
       <End Role="Account" EntitySet="Account" />
       <End Role="Bill" EntitySet="Bill" />
     </AssociationSet>
-    <AssociationSet Name="FK__BillOfWar__userN__32AB8735" Association="Self.FK__BillOfWar__userN__32AB8735">
-      <End Role="Account" EntitySet="Account" />
-      <End Role="BillOfWareHouse" EntitySet="BillOfWareHouse" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillOfWar__userN__339FAB6E" Association="Self.FK__BillOfWar__userN__339FAB6E">
-      <End Role="Account" EntitySet="Account" />
-      <End Role="BillOfWareHouse" EntitySet="BillOfWareHouse" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillOfWar__userN__3493CFA7" Association="Self.FK__BillOfWar__userN__3493CFA7">
-      <End Role="Account" EntitySet="Account" />
-      <End Role="BillOfWareHouse" EntitySet="BillOfWareHouse" />
-    </AssociationSet>
     <AssociationSet Name="FK__BillOfWar__userN__73BA3083" Association="Self.FK__BillOfWar__userN__73BA3083">
       <End Role="Account" EntitySet="Account" />
       <End Role="BillOfWareHouse" EntitySet="BillOfWareHouse" />
@@ -997,18 +595,6 @@
     <AssociationSet Name="FK__BillOfWar__userN__75A278F5" Association="Self.FK__BillOfWar__userN__75A278F5">
       <End Role="Account" EntitySet="Account" />
       <End Role="BillOfWareHouse" EntitySet="BillOfWareHouse" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Attendanc__idSta__2739D489" Association="Self.FK__Attendanc__idSta__2739D489">
-      <End Role="Staff" EntitySet="Staff" />
-      <End Role="AttendanceList" EntitySet="AttendanceList" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Attendanc__idSta__282DF8C2" Association="Self.FK__Attendanc__idSta__282DF8C2">
-      <End Role="Staff" EntitySet="Staff" />
-      <End Role="AttendanceList" EntitySet="AttendanceList" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Attendanc__idSta__29221CFB" Association="Self.FK__Attendanc__idSta__29221CFB">
-      <End Role="Staff" EntitySet="Staff" />
-      <End Role="AttendanceList" EntitySet="AttendanceList" />
     </AssociationSet>
     <AssociationSet Name="FK__Attendanc__idSta__656C112C" Association="Self.FK__Attendanc__idSta__656C112C">
       <End Role="Staff" EntitySet="Staff" />
@@ -1030,18 +616,6 @@
       <End Role="Bill" EntitySet="Bill" />
       <End Role="BillInfo" EntitySet="BillInfo" />
     </AssociationSet>
-    <AssociationSet Name="FK__BillInfo__idFood__2A164134" Association="Self.FK__BillInfo__idFood__2A164134">
-      <End Role="Food" EntitySet="Food" />
-      <End Role="BillInfo" EntitySet="BillInfo" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillInfo__idFood__2B0A656D" Association="Self.FK__BillInfo__idFood__2B0A656D">
-      <End Role="Food" EntitySet="Food" />
-      <End Role="BillInfo" EntitySet="BillInfo" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillInfo__idFood__2BFE89A6" Association="Self.FK__BillInfo__idFood__2BFE89A6">
-      <End Role="Food" EntitySet="Food" />
-      <End Role="BillInfo" EntitySet="BillInfo" />
-    </AssociationSet>
     <AssociationSet Name="FK__BillInfo__idFood__6B24EA82" Association="Self.FK__BillInfo__idFood__6B24EA82">
       <End Role="Food" EntitySet="Food" />
       <End Role="BillInfo" EntitySet="BillInfo" />
@@ -1054,18 +628,6 @@
       <End Role="Food" EntitySet="Food" />
       <End Role="BillInfo" EntitySet="BillInfo" />
     </AssociationSet>
-    <AssociationSet Name="FK__BillInfoO__idBil__2CF2ADDF" Association="Self.FK__BillInfoO__idBil__2CF2ADDF">
-      <End Role="BillOfWareHouse" EntitySet="BillOfWareHouse" />
-      <End Role="BillInfoOfWareHouse" EntitySet="BillInfoOfWareHouse" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillInfoO__idBil__2DE6D218" Association="Self.FK__BillInfoO__idBil__2DE6D218">
-      <End Role="BillOfWareHouse" EntitySet="BillOfWareHouse" />
-      <End Role="BillInfoOfWareHouse" EntitySet="BillInfoOfWareHouse" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillInfoO__idBil__2EDAF651" Association="Self.FK__BillInfoO__idBil__2EDAF651">
-      <End Role="BillOfWareHouse" EntitySet="BillOfWareHouse" />
-      <End Role="BillInfoOfWareHouse" EntitySet="BillInfoOfWareHouse" />
-    </AssociationSet>
     <AssociationSet Name="FK__BillInfoO__idBil__6E01572D" Association="Self.FK__BillInfoO__idBil__6E01572D">
       <End Role="BillOfWareHouse" EntitySet="BillOfWareHouse" />
       <End Role="BillInfoOfWareHouse" EntitySet="BillInfoOfWareHouse" />
@@ -1076,18 +638,6 @@
     </AssociationSet>
     <AssociationSet Name="FK__BillInfoO__idBil__6FE99F9F" Association="Self.FK__BillInfoO__idBil__6FE99F9F">
       <End Role="BillOfWareHouse" EntitySet="BillOfWareHouse" />
-      <End Role="BillInfoOfWareHouse" EntitySet="BillInfoOfWareHouse" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillInfoO__idMat__2FCF1A8A" Association="Self.FK__BillInfoO__idMat__2FCF1A8A">
-      <End Role="Material" EntitySet="Material" />
-      <End Role="BillInfoOfWareHouse" EntitySet="BillInfoOfWareHouse" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillInfoO__idMat__30C33EC3" Association="Self.FK__BillInfoO__idMat__30C33EC3">
-      <End Role="Material" EntitySet="Material" />
-      <End Role="BillInfoOfWareHouse" EntitySet="BillInfoOfWareHouse" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillInfoO__idMat__31B762FC" Association="Self.FK__BillInfoO__idMat__31B762FC">
-      <End Role="Material" EntitySet="Material" />
       <End Role="BillInfoOfWareHouse" EntitySet="BillInfoOfWareHouse" />
     </AssociationSet>
     <AssociationSet Name="FK__BillInfoO__idMat__70DDC3D8" Association="Self.FK__BillInfoO__idMat__70DDC3D8">
@@ -1102,18 +652,6 @@
       <End Role="Material" EntitySet="Material" />
       <End Role="BillInfoOfWareHouse" EntitySet="BillInfoOfWareHouse" />
     </AssociationSet>
-    <AssociationSet Name="FK__Food__idFC__3587F3E0" Association="Self.FK__Food__idFC__3587F3E0">
-      <End Role="FoodCategory" EntitySet="FoodCategory" />
-      <End Role="Food" EntitySet="Food" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Food__idFC__367C1819" Association="Self.FK__Food__idFC__367C1819">
-      <End Role="FoodCategory" EntitySet="FoodCategory" />
-      <End Role="Food" EntitySet="Food" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Food__idFC__37703C52" Association="Self.FK__Food__idFC__37703C52">
-      <End Role="FoodCategory" EntitySet="FoodCategory" />
-      <End Role="Food" EntitySet="Food" />
-    </AssociationSet>
     <AssociationSet Name="FK__Food__idFC__76969D2E" Association="Self.FK__Food__idFC__76969D2E">
       <End Role="FoodCategory" EntitySet="FoodCategory" />
       <End Role="Food" EntitySet="Food" />
@@ -1126,18 +664,6 @@
       <End Role="FoodCategory" EntitySet="FoodCategory" />
       <End Role="Food" EntitySet="Food" />
     </AssociationSet>
-    <AssociationSet Name="FK__Material__idUnit__3864608B" Association="Self.FK__Material__idUnit__3864608B">
-      <End Role="Unit" EntitySet="Unit" />
-      <End Role="Material" EntitySet="Material" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Material__idUnit__395884C4" Association="Self.FK__Material__idUnit__395884C4">
-      <End Role="Unit" EntitySet="Unit" />
-      <End Role="Material" EntitySet="Material" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Material__idUnit__3A4CA8FD" Association="Self.FK__Material__idUnit__3A4CA8FD">
-      <End Role="Unit" EntitySet="Unit" />
-      <End Role="Material" EntitySet="Material" />
-    </AssociationSet>
     <AssociationSet Name="FK__Material__idUnit__797309D9" Association="Self.FK__Material__idUnit__797309D9">
       <End Role="Unit" EntitySet="Unit" />
       <End Role="Material" EntitySet="Material" />
@@ -1149,18 +675,6 @@
     <AssociationSet Name="FK__Material__idUnit__7B5B524B" Association="Self.FK__Material__idUnit__7B5B524B">
       <End Role="Unit" EntitySet="Unit" />
       <End Role="Material" EntitySet="Material" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Staff__idPositio__3B40CD36" Association="Self.FK__Staff__idPositio__3B40CD36">
-      <End Role="Position" EntitySet="Position" />
-      <End Role="Staff" EntitySet="Staff" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Staff__idPositio__3C34F16F" Association="Self.FK__Staff__idPositio__3C34F16F">
-      <End Role="Position" EntitySet="Position" />
-      <End Role="Staff" EntitySet="Staff" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Staff__idPositio__3D2915A8" Association="Self.FK__Staff__idPositio__3D2915A8">
-      <End Role="Position" EntitySet="Position" />
-      <End Role="Staff" EntitySet="Staff" />
     </AssociationSet>
     <AssociationSet Name="FK__Staff__idPositio__7C4F7684" Association="Self.FK__Staff__idPositio__7C4F7684">
       <End Role="Position" EntitySet="Position" />
@@ -1190,11 +704,11 @@
       <Parameter Name="diagramname" Mode="In" Type="String" />
       <Parameter Name="owner_id" Mode="In" Type="Int32" />
     </FunctionImport>
-    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(QuanLyNhaHangModel.sp_helpdiagramdefinition_Result)">
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(QLNHModel.sp_helpdiagramdefinition_Result)">
       <Parameter Name="diagramname" Mode="In" Type="String" />
       <Parameter Name="owner_id" Mode="In" Type="Int32" />
     </FunctionImport>
-    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(QuanLyNhaHangModel.sp_helpdiagrams_Result)">
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(QLNHModel.sp_helpdiagrams_Result)">
       <Parameter Name="diagramname" Mode="In" Type="String" />
       <Parameter Name="owner_id" Mode="In" Type="Int32" />
     </FunctionImport>
@@ -1225,7 +739,7 @@
       <Parameter Name="idTable" Mode="In" Type="Int32" />
       <Parameter Name="nameTable" Mode="In" Type="String" />
     </FunctionImport>
-    <FunctionImport Name="USP_CheckExitsAttendanceList" ReturnType="Collection(QuanLyNhaHangModel.USP_CheckExitsAttendanceList_Result)">
+    <FunctionImport Name="USP_CheckExitsAttendanceList" ReturnType="Collection(QLNHModel.USP_CheckExitsAttendanceList_Result)">
       <Parameter Name="idStaff" Mode="In" Type="String" />
     </FunctionImport>
     <FunctionImport Name="USP_CheckOut">
@@ -1237,25 +751,25 @@
     <FunctionImport Name="USP_DeleteMaterial">
       <Parameter Name="idMaterial" Mode="In" Type="Int32" />
     </FunctionImport>
-    <FunctionImport Name="USP_GetAccountByName" ReturnType="Collection(QuanLyNhaHangModel.USP_GetAccountByName_Result)">
+    <FunctionImport Name="USP_GetAccountByName" ReturnType="Collection(QLNHModel.USP_GetAccountByName_Result)">
       <Parameter Name="userName" Mode="In" Type="String" />
     </FunctionImport>
-    <FunctionImport Name="USP_GetFoodTop5" ReturnType="Collection(QuanLyNhaHangModel.USP_GetFoodTop5_Result)">
+    <FunctionImport Name="USP_GetFoodTop5" ReturnType="Collection(QLNHModel.USP_GetFoodTop5_Result)">
       <Parameter Name="checkIn" Mode="In" Type="DateTime" />
       <Parameter Name="checkOut" Mode="In" Type="DateTime" />
     </FunctionImport>
-    <FunctionImport Name="USP_GetListBillByDate" ReturnType="Collection(QuanLyNhaHangModel.USP_GetListBillByDate_Result)">
+    <FunctionImport Name="USP_GetListBillByDate" ReturnType="Collection(QLNHModel.USP_GetListBillByDate_Result)">
       <Parameter Name="checkIn" Mode="In" Type="DateTime" />
       <Parameter Name="checkOut" Mode="In" Type="DateTime" />
     </FunctionImport>
     <FunctionImport Name="USP_GetMaxBill" ReturnType="Collection(Int32)" />
-    <FunctionImport Name="USP_GetTableList" ReturnType="Collection(QuanLyNhaHangModel.USP_GetTableList_Result)" />
-    <FunctionImport Name="USP_GetTopFood" ReturnType="Collection(QuanLyNhaHangModel.USP_GetTopFood_Result)">
+    <FunctionImport Name="USP_GetTableList" ReturnType="Collection(QLNHModel.USP_GetTableList_Result)" />
+    <FunctionImport Name="USP_GetTopFood" ReturnType="Collection(QLNHModel.USP_GetTopFood_Result)">
       <Parameter Name="checkIn" Mode="In" Type="DateTime" />
       <Parameter Name="checkOut" Mode="In" Type="DateTime" />
     </FunctionImport>
-    <FunctionImport Name="USP_GetTotalAttendanceList" ReturnType="Collection(QuanLyNhaHangModel.USP_GetTotalAttendanceList_Result)" />
-    <FunctionImport Name="USP_GetTotalBillsInDay" ReturnType="Collection(QuanLyNhaHangModel.USP_GetTotalBillsInDay_Result)" />
+    <FunctionImport Name="USP_GetTotalAttendanceList" ReturnType="Collection(QLNHModel.USP_GetTotalAttendanceList_Result)" />
+    <FunctionImport Name="USP_GetTotalBillsInDay" ReturnType="Collection(QLNHModel.USP_GetTotalBillsInDay_Result)" />
     <FunctionImport Name="USP_InsertAccount">
       <Parameter Name="userName" Mode="In" Type="String" />
       <Parameter Name="passWord" Mode="In" Type="String" />
@@ -1309,7 +823,7 @@
     <FunctionImport Name="USP_InsertUnit">
       <Parameter Name="name" Mode="In" Type="String" />
     </FunctionImport>
-    <FunctionImport Name="USP_Login" ReturnType="Collection(QuanLyNhaHangModel.USP_Login_Result)">
+    <FunctionImport Name="USP_Login" ReturnType="Collection(QLNHModel.USP_Login_Result)">
       <Parameter Name="userName" Mode="In" Type="String" />
       <Parameter Name="passWord" Mode="In" Type="String" />
     </FunctionImport>

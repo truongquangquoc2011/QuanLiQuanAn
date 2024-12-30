@@ -74,14 +74,14 @@
             // 
             this.txtFindAccountByName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtFindAccountByName.Name = "txtFindAccountByName";
-            this.txtFindAccountByName.Size = new System.Drawing.Size(500, 27);
+            this.txtFindAccountByName.Size = new System.Drawing.Size(500, 38);
             // 
             // toolStripButton1
             // 
             this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(29, 24);
+            this.toolStripButton1.Size = new System.Drawing.Size(34, 33);
             this.toolStripButton1.Text = "toolStripButton1";
             // 
             // toolStrip1
@@ -95,7 +95,7 @@
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.toolStrip1.Size = new System.Drawing.Size(706, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(759, 38);
             this.toolStrip1.TabIndex = 39;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -103,17 +103,17 @@
             // 
             this.toolstripTim.Font = new System.Drawing.Font("Cambria", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolstripTim.Name = "toolstripTim";
-            this.toolstripTim.Size = new System.Drawing.Size(160, 24);
+            this.toolstripTim.Size = new System.Drawing.Size(202, 33);
             this.toolstripTim.Text = "Tìm kiếm tài khoản";
             // 
             // lblTotalAccount
             // 
             this.lblTotalAccount.AutoSize = true;
             this.lblTotalAccount.Font = new System.Drawing.Font("Cambria", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalAccount.Location = new System.Drawing.Point(19, 13);
+            this.lblTotalAccount.Location = new System.Drawing.Point(21, 16);
             this.lblTotalAccount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTotalAccount.Name = "lblTotalAccount";
-            this.lblTotalAccount.Size = new System.Drawing.Size(156, 20);
+            this.lblTotalAccount.Size = new System.Drawing.Size(195, 25);
             this.lblTotalAccount.TabIndex = 3;
             this.lblTotalAccount.Text = "Tổng số tài khoản: ";
             // 
@@ -124,20 +124,20 @@
             this.panel5.BackColor = System.Drawing.Color.Silver;
             this.panel5.Controls.Add(this.lblTotalAccount);
             this.panel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel5.Location = new System.Drawing.Point(0, 60);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel5.Location = new System.Drawing.Point(0, 75);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(984, 53);
+            this.panel5.Size = new System.Drawing.Size(1107, 66);
             this.panel5.TabIndex = 38;
             // 
             // btnShowAccount
             // 
             this.btnShowAccount.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShowAccount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnShowAccount.Location = new System.Drawing.Point(737, 38);
-            this.btnShowAccount.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnShowAccount.Location = new System.Drawing.Point(829, 48);
+            this.btnShowAccount.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnShowAccount.Name = "btnShowAccount";
-            this.btnShowAccount.Size = new System.Drawing.Size(169, 72);
+            this.btnShowAccount.Size = new System.Drawing.Size(190, 90);
             this.btnShowAccount.TabIndex = 30;
             this.btnShowAccount.Text = "Hiển thị";
             this.btnShowAccount.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -147,10 +147,10 @@
             // 
             this.btnAddAccount.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddAccount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddAccount.Location = new System.Drawing.Point(109, 38);
-            this.btnAddAccount.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAddAccount.Location = new System.Drawing.Point(123, 48);
+            this.btnAddAccount.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnAddAccount.Name = "btnAddAccount";
-            this.btnAddAccount.Size = new System.Drawing.Size(174, 72);
+            this.btnAddAccount.Size = new System.Drawing.Size(196, 90);
             this.btnAddAccount.TabIndex = 27;
             this.btnAddAccount.Text = "Thêm";
             this.btnAddAccount.UseVisualStyleBackColor = true;
@@ -160,10 +160,10 @@
             // 
             this.btnDeleteAccount.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeleteAccount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDeleteAccount.Location = new System.Drawing.Point(522, 38);
-            this.btnDeleteAccount.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnDeleteAccount.Location = new System.Drawing.Point(587, 48);
+            this.btnDeleteAccount.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnDeleteAccount.Name = "btnDeleteAccount";
-            this.btnDeleteAccount.Size = new System.Drawing.Size(174, 72);
+            this.btnDeleteAccount.Size = new System.Drawing.Size(196, 90);
             this.btnDeleteAccount.TabIndex = 29;
             this.btnDeleteAccount.Text = "Xóa";
             this.btnDeleteAccount.UseVisualStyleBackColor = true;
@@ -172,10 +172,10 @@
             // 
             this.btnEditAccount.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditAccount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditAccount.Location = new System.Drawing.Point(315, 38);
-            this.btnEditAccount.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnEditAccount.Location = new System.Drawing.Point(354, 48);
+            this.btnEditAccount.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnEditAccount.Name = "btnEditAccount";
-            this.btnEditAccount.Size = new System.Drawing.Size(174, 72);
+            this.btnEditAccount.Size = new System.Drawing.Size(196, 90);
             this.btnEditAccount.TabIndex = 28;
             this.btnEditAccount.Text = "Sửa";
             this.btnEditAccount.UseVisualStyleBackColor = true;
@@ -189,9 +189,10 @@
             this.panel4.Controls.Add(this.btnAddAccount);
             this.panel4.Controls.Add(this.btnDeleteAccount);
             this.panel4.Controls.Add(this.btnEditAccount);
-            this.panel4.Location = new System.Drawing.Point(0, 746);
+            this.panel4.Location = new System.Drawing.Point(0, 932);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(984, 145);
+            this.panel4.Size = new System.Drawing.Size(1107, 181);
             this.panel4.TabIndex = 37;
             // 
             // colmanv
@@ -239,24 +240,24 @@
             this.colmanv});
             this.dgvAccount.GridColor = System.Drawing.SystemColors.ControlLightLight;
             this.dgvAccount.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dgvAccount.Location = new System.Drawing.Point(0, 122);
-            this.dgvAccount.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dgvAccount.Location = new System.Drawing.Point(0, 152);
+            this.dgvAccount.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.dgvAccount.Name = "dgvAccount";
             this.dgvAccount.ReadOnly = true;
             this.dgvAccount.RowHeadersWidth = 51;
             this.dgvAccount.RowTemplate.Height = 24;
             this.dgvAccount.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAccount.Size = new System.Drawing.Size(984, 545);
+            this.dgvAccount.Size = new System.Drawing.Size(1107, 681);
             this.dgvAccount.TabIndex = 36;
             // 
             // btnResetPassword
             // 
             this.btnResetPassword.Font = new System.Drawing.Font("Cambria", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnResetPassword.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnResetPassword.Location = new System.Drawing.Point(114, 692);
-            this.btnResetPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnResetPassword.Location = new System.Drawing.Point(128, 865);
+            this.btnResetPassword.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnResetPassword.Name = "btnResetPassword";
-            this.btnResetPassword.Size = new System.Drawing.Size(289, 90);
+            this.btnResetPassword.Size = new System.Drawing.Size(325, 112);
             this.btnResetPassword.TabIndex = 19;
             this.btnResetPassword.Text = "Đặt lại mật khẩu ";
             this.btnResetPassword.UseVisualStyleBackColor = true;
@@ -264,35 +265,35 @@
             // nudTypeAccount
             // 
             this.nudTypeAccount.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudTypeAccount.Location = new System.Drawing.Point(274, 480);
-            this.nudTypeAccount.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.nudTypeAccount.Location = new System.Drawing.Point(308, 600);
+            this.nudTypeAccount.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.nudTypeAccount.Maximum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.nudTypeAccount.Name = "nudTypeAccount";
-            this.nudTypeAccount.Size = new System.Drawing.Size(163, 25);
+            this.nudTypeAccount.Size = new System.Drawing.Size(183, 29);
             this.nudTypeAccount.TabIndex = 24;
             this.nudTypeAccount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtAccountName
             // 
             this.txtAccountName.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAccountName.Location = new System.Drawing.Point(275, 219);
-            this.txtAccountName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtAccountName.Location = new System.Drawing.Point(309, 274);
+            this.txtAccountName.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.txtAccountName.Name = "txtAccountName";
-            this.txtAccountName.Size = new System.Drawing.Size(164, 25);
+            this.txtAccountName.Size = new System.Drawing.Size(184, 29);
             this.txtAccountName.TabIndex = 10;
             this.txtAccountName.TextChanged += new System.EventHandler(this.txtAccountName_TextChanged);
             // 
             // txtDisplayName
             // 
             this.txtDisplayName.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDisplayName.Location = new System.Drawing.Point(275, 571);
-            this.txtDisplayName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtDisplayName.Location = new System.Drawing.Point(309, 714);
+            this.txtDisplayName.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.txtDisplayName.Name = "txtDisplayName";
-            this.txtDisplayName.Size = new System.Drawing.Size(164, 25);
+            this.txtDisplayName.Size = new System.Drawing.Size(184, 29);
             this.txtDisplayName.TabIndex = 13;
             this.txtDisplayName.TextChanged += new System.EventHandler(this.txtDisplayName_TextChanged);
             // 
@@ -300,20 +301,20 @@
             // 
             this.lblThongtintk.AutoSize = true;
             this.lblThongtintk.Font = new System.Drawing.Font("Cambria", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblThongtintk.Location = new System.Drawing.Point(25, 122);
+            this.lblThongtintk.Location = new System.Drawing.Point(28, 152);
             this.lblThongtintk.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblThongtintk.Name = "lblThongtintk";
-            this.lblThongtintk.Size = new System.Drawing.Size(244, 30);
+            this.lblThongtintk.Size = new System.Drawing.Size(292, 36);
             this.lblThongtintk.TabIndex = 2;
             this.lblThongtintk.Text = "Thông tin tài khoản ";
             // 
             // txtIdStaff
             // 
             this.txtIdStaff.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdStaff.Location = new System.Drawing.Point(275, 425);
-            this.txtIdStaff.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtIdStaff.Location = new System.Drawing.Point(309, 531);
+            this.txtIdStaff.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.txtIdStaff.Name = "txtIdStaff";
-            this.txtIdStaff.Size = new System.Drawing.Size(164, 25);
+            this.txtIdStaff.Size = new System.Drawing.Size(184, 29);
             this.txtIdStaff.TabIndex = 11;
             this.txtIdStaff.TextChanged += new System.EventHandler(this.txtIdStaff_TextChanged);
             // 
@@ -321,10 +322,10 @@
             // 
             this.lblmatkhau.AutoSize = true;
             this.lblmatkhau.Font = new System.Drawing.Font("Cambria", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblmatkhau.Location = new System.Drawing.Point(25, 295);
+            this.lblmatkhau.Location = new System.Drawing.Point(28, 369);
             this.lblmatkhau.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblmatkhau.Name = "lblmatkhau";
-            this.lblmatkhau.Size = new System.Drawing.Size(86, 20);
+            this.lblmatkhau.Size = new System.Drawing.Size(109, 25);
             this.lblmatkhau.TabIndex = 4;
             this.lblmatkhau.Text = "mật khẩu ";
             // 
@@ -332,10 +333,10 @@
             // 
             this.lblmanv.AutoSize = true;
             this.lblmanv.Font = new System.Drawing.Font("Cambria", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblmanv.Location = new System.Drawing.Point(25, 430);
+            this.lblmanv.Location = new System.Drawing.Point(28, 538);
             this.lblmanv.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblmanv.Name = "lblmanv";
-            this.lblmanv.Size = new System.Drawing.Size(116, 20);
+            this.lblmanv.Size = new System.Drawing.Size(148, 25);
             this.lblmanv.TabIndex = 8;
             this.lblmanv.Text = "Mã nhân viên ";
             // 
@@ -343,20 +344,20 @@
             // 
             this.lblnhaplaimk.AutoSize = true;
             this.lblnhaplaimk.Font = new System.Drawing.Font("Cambria", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblnhaplaimk.Location = new System.Drawing.Point(27, 360);
+            this.lblnhaplaimk.Location = new System.Drawing.Point(30, 450);
             this.lblnhaplaimk.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblnhaplaimk.Name = "lblnhaplaimk";
-            this.lblnhaplaimk.Size = new System.Drawing.Size(154, 20);
+            this.lblnhaplaimk.Size = new System.Drawing.Size(194, 25);
             this.lblnhaplaimk.TabIndex = 5;
             this.lblnhaplaimk.Text = "Nhập lại mật khẩu ";
             // 
             // txtRetypePassword
             // 
             this.txtRetypePassword.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRetypePassword.Location = new System.Drawing.Point(275, 355);
-            this.txtRetypePassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtRetypePassword.Location = new System.Drawing.Point(309, 444);
+            this.txtRetypePassword.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.txtRetypePassword.Name = "txtRetypePassword";
-            this.txtRetypePassword.Size = new System.Drawing.Size(164, 25);
+            this.txtRetypePassword.Size = new System.Drawing.Size(184, 29);
             this.txtRetypePassword.TabIndex = 14;
             this.txtRetypePassword.TextChanged += new System.EventHandler(this.txtRetypePassword_TextChanged);
             // 
@@ -364,10 +365,10 @@
             // 
             this.lblTentk.AutoSize = true;
             this.lblTentk.Font = new System.Drawing.Font("Cambria", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTentk.Location = new System.Drawing.Point(25, 224);
+            this.lblTentk.Location = new System.Drawing.Point(28, 280);
             this.lblTentk.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTentk.Name = "lblTentk";
-            this.lblTentk.Size = new System.Drawing.Size(115, 20);
+            this.lblTentk.Size = new System.Drawing.Size(145, 25);
             this.lblTentk.TabIndex = 3;
             this.lblTentk.Text = "Tên tài khoản";
             // 
@@ -375,10 +376,10 @@
             // 
             this.lblloaitk.AutoSize = true;
             this.lblloaitk.Font = new System.Drawing.Font("Cambria", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblloaitk.Location = new System.Drawing.Point(25, 495);
+            this.lblloaitk.Location = new System.Drawing.Point(28, 619);
             this.lblloaitk.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblloaitk.Name = "lblloaitk";
-            this.lblloaitk.Size = new System.Drawing.Size(123, 20);
+            this.lblloaitk.Size = new System.Drawing.Size(156, 25);
             this.lblloaitk.TabIndex = 7;
             this.lblloaitk.Text = "Loại tài khoản ";
             // 
@@ -386,20 +387,20 @@
             // 
             this.lblTenhienthi.AutoSize = true;
             this.lblTenhienthi.Font = new System.Drawing.Font("Cambria", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTenhienthi.Location = new System.Drawing.Point(27, 576);
+            this.lblTenhienthi.Location = new System.Drawing.Point(30, 720);
             this.lblTenhienthi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTenhienthi.Name = "lblTenhienthi";
-            this.lblTenhienthi.Size = new System.Drawing.Size(105, 20);
+            this.lblTenhienthi.Size = new System.Drawing.Size(135, 25);
             this.lblTenhienthi.TabIndex = 6;
             this.lblTenhienthi.Text = "Tên hiển thị ";
             // 
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(275, 292);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPassword.Location = new System.Drawing.Point(309, 365);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(164, 25);
+            this.txtPassword.Size = new System.Drawing.Size(184, 29);
             this.txtPassword.TabIndex = 12;
             this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
@@ -421,10 +422,10 @@
             this.panel1.Controls.Add(this.lblTenhienthi);
             this.panel1.Controls.Add(this.txtPassword);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(1023, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel1.Location = new System.Drawing.Point(1151, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(458, 911);
+            this.panel1.Size = new System.Drawing.Size(515, 1139);
             this.panel1.TabIndex = 35;
             // 
             // errorProvider1
@@ -433,15 +434,16 @@
             // 
             // frmAdminAccount
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1481, 911);
+            this.ClientSize = new System.Drawing.Size(1666, 1139);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.dgvAccount);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmAdminAccount";
             this.Text = "frmAdminAccount";
             this.toolStrip1.ResumeLayout(false);
