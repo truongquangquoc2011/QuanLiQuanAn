@@ -20,6 +20,15 @@ namespace QuanLyQuanAn_DongPhongNha
             this.Material = new HashSet<Material>();
             this.Material1 = new HashSet<Material>();
             this.Material2 = new HashSet<Material>();
+            this.Material3 = new HashSet<Material>();
+            this.Material4 = new HashSet<Material>();
+            this.Material5 = new HashSet<Material>();
+            this.Material6 = new HashSet<Material>();
+            this.Material7 = new HashSet<Material>();
+            this.Material8 = new HashSet<Material>();
+            this.Material9 = new HashSet<Material>();
+            this.Material10 = new HashSet<Material>();
+            this.Material11 = new HashSet<Material>();
         }
     
         public int idUnit { get; set; }
@@ -31,5 +40,23 @@ namespace QuanLyQuanAn_DongPhongNha
         public virtual ICollection<Material> Material1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Material> Material2 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Material> Material3 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Material> Material4 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Material> Material5 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Material> Material6 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Material> Material7 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Material> Material8 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Material> Material9 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Material> Material10 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Material> Material11 { get; set; }
     }
 }

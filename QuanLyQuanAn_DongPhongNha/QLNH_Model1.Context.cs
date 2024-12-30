@@ -38,7 +38,6 @@ namespace QuanLyQuanAn_DongPhongNha
         public virtual DbSet<Material> Material { get; set; }
         public virtual DbSet<Position> Position { get; set; }
         public virtual DbSet<Staff> Staff { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<TableFood> TableFood { get; set; }
         public virtual DbSet<Unit> Unit { get; set; }
     

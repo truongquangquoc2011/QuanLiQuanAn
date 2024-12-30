@@ -225,9 +225,6 @@
     <Compile Include="Staff.cs">
       <DependentUpon>QLNH_Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="sysdiagrams.cs">
-      <DependentUpon>QLNH_Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="TableFood.cs">
       <DependentUpon>QLNH_Model1.tt</DependentUpon>
     </Compile>
