@@ -21,5 +21,14 @@ namespace QuanLyQuanAn_DongPhongNha
         public virtual Staff Staff { get; set; }
         public virtual Staff Staff1 { get; set; }
         public virtual Staff Staff2 { get; set; }
+        public virtual Staff Staff3 { get; set; }
+        public virtual Staff Staff4 { get; set; }
+        public virtual Staff Staff5 { get; set; }
+        public virtual Staff Staff6 { get; set; }
+        public virtual Staff Staff7 { get; set; }
+        public virtual Staff Staff8 { get; set; }
+        public virtual Staff Staff9 { get; set; }
+        public virtual Staff Staff10 { get; set; }
+        public virtual Staff Staff11 { get; set; }
     }
 }
