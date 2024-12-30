@@ -325,15 +325,19 @@ namespace QuanLyQuanAn_DongPhongNha.Admin
             try
             {
                 errorProvider1.Clear();
-                bool check = true;
+                //bool check = true;
                 if (string.IsNullOrEmpty(txtFoodName.Text))
                 {
-                    errorProvider1.SetError(txtFoodName, "Tên món ăn không được bỏ trống. Vui lòng nhập vào"); check = false;
+                    errorProvider1.SetError(txtFoodName, "Tên món ăn không được bỏ trống. Vui lòng nhập vào");//check = false;
                 }
                 if (string.IsNullOrEmpty(txtPrice.Text))
                 {
-                    errorProvider1.SetError(txtPrice, "Giá không được để trống, vui lòng nhập vào "); check = false;
+                    errorProvider1.SetError(txtPrice, "Giá không được để trống, vui lòng nhập vào "); //check = false;
                 }
+                //if (!check)
+                //{
+                  //  msg.Show("Có lỗi trong quá trình thêm món ăn")
+                //}
                 
                 AddFood();
 

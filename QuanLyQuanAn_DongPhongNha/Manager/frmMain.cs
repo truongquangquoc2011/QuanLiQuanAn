@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Net.Configuration;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,7 +16,48 @@ namespace QuanLyQuanAn_DongPhongNha.Manager
     
     public partial class frmMain : Form
     {
-        
+        private Account loginAccount;
+
+        public Account LoginAccount
+        {
+            get { return loginAccount; }
+            set { loginAccount = value; changeAccount(loginAccount.typeAccount); }
+        }
+
+        public frmMain(Account acc)
+        {
+            InitializeComponent();
+            customizeDesing();
+            LoginAccount = acc;
+            this.Text = string.Empty;
+            //this.ControlBox = false;
+            this.DoubleBuffered = true;
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            lblTitle.Text = "Giới thiệu";
+            this.pnlDesktop.Controls.Clear();
+            frmHome frmHome = new frmHome()
+            {
+                Dock = DockStyle.Fill,
+                TopLevel = false,
+                TopMost = true,
+            };
+            this.pnlDesktop.Controls.Add(frmHome);
+            frmHome.Show();
+        }
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+        void changeAccount(int type)
+        {
+            btnAdmin.Enabled = type == 1;
+            btnWareHouse.Enabled = type == 1;
+            btnOpenFormAttendance.Enabled = type == 1;
+            //lblXinChao.Text = "Xin chào " + loginAccount.DisplayName + " !";
+            btnDisplayName.Text = "Xin chào " + loginAccount.displayName + " !";
+            //btnInfoAccount.Text += " (" + loginAccount.DisplayName + ")";
+        }
+
         public frmMain()
         {
             InitializeComponent();
