@@ -124,7 +124,7 @@
   <data name="toolStripButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAD9qSURBVHhe7d17rG9nWSdwe1FRiROvYxojkqYYB6VmUnSm
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAD9qSURBVHhe7d17rG9nWSdwe1FRiROvYxojkqYYB6VmUnSm
         GaRNGjwcaFpqaSiGxg6RglOGtOhEmQxYPB0gjZBewNtACXFQO4w41phoHQzRYIFCjJBCCXJSglaSAkMQ
         wx/CnuezXM/23e9e63fZl3P25fkmT9b6rd/6Xdf7/T6X97K+rlAoFAqFA42NjY1zXvOa1zzxTW9604+E
         3XD33Xe/4q677jr15je/+Z2xfS97y1ve8qm03/zN3/xS2j333PP3aXfcccfDzj116tT/iv27vI/3e93r
@@ -445,5 +445,8 @@
   </metadata>
   <metadata name="Column8.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <metadata name="errorProvider1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>122, 17</value>
   </metadata>
 </root>

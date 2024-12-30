@@ -48,15 +48,15 @@
             this.pnTimeSheetsList = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.rtbAddress = new System.Windows.Forms.RichTextBox();
+            this.txtPhoneNumber = new System.Windows.Forms.TextBox();
+            this.txtIdentityCard = new System.Windows.Forms.TextBox();
+            this.txtDateOfBirth = new System.Windows.Forms.TextBox();
+            this.txtPosition = new System.Windows.Forms.TextBox();
+            this.txtSex = new System.Windows.Forms.TextBox();
             this.txtStaffName = new System.Windows.Forms.TextBox();
             this.btnFindStaff = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.txtSex = new System.Windows.Forms.TextBox();
-            this.txtPosition = new System.Windows.Forms.TextBox();
-            this.txtDateOfBirth = new System.Windows.Forms.TextBox();
-            this.txtIdentityCard = new System.Windows.Forms.TextBox();
-            this.txtPhoneNumber = new System.Windows.Forms.TextBox();
-            this.rtbAddress = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAttendanceList)).BeginInit();
             this.pnTimeSheetsList.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -117,6 +117,7 @@
             this.btnCheckIn.TabIndex = 4;
             this.btnCheckIn.Text = "Điểm danh";
             this.btnCheckIn.UseVisualStyleBackColor = true;
+            this.btnCheckIn.Click += new System.EventHandler(this.btnCheckIn_Click);
             // 
             // label10
             // 
@@ -290,6 +291,56 @@
             this.panel1.Size = new System.Drawing.Size(603, 911);
             this.panel1.TabIndex = 20;
             // 
+            // rtbAddress
+            // 
+            this.rtbAddress.Location = new System.Drawing.Point(224, 579);
+            this.rtbAddress.Name = "rtbAddress";
+            this.rtbAddress.Size = new System.Drawing.Size(280, 90);
+            this.rtbAddress.TabIndex = 13;
+            this.rtbAddress.Text = "";
+            this.rtbAddress.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.rtbAddress_KeyPress);
+            // 
+            // txtPhoneNumber
+            // 
+            this.txtPhoneNumber.Location = new System.Drawing.Point(224, 528);
+            this.txtPhoneNumber.Name = "txtPhoneNumber";
+            this.txtPhoneNumber.Size = new System.Drawing.Size(280, 22);
+            this.txtPhoneNumber.TabIndex = 12;
+            this.txtPhoneNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPhoneNumber_KeyPress);
+            // 
+            // txtIdentityCard
+            // 
+            this.txtIdentityCard.Location = new System.Drawing.Point(224, 486);
+            this.txtIdentityCard.Name = "txtIdentityCard";
+            this.txtIdentityCard.Size = new System.Drawing.Size(280, 22);
+            this.txtIdentityCard.TabIndex = 11;
+            this.txtIdentityCard.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIdentityCard_KeyPress);
+            // 
+            // txtDateOfBirth
+            // 
+            this.txtDateOfBirth.Location = new System.Drawing.Point(224, 445);
+            this.txtDateOfBirth.Name = "txtDateOfBirth";
+            this.txtDateOfBirth.Size = new System.Drawing.Size(280, 22);
+            this.txtDateOfBirth.TabIndex = 10;
+            this.txtDateOfBirth.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDateOfBirth_KeyPress);
+            // 
+            // txtPosition
+            // 
+            this.txtPosition.Location = new System.Drawing.Point(224, 401);
+            this.txtPosition.Multiline = true;
+            this.txtPosition.Name = "txtPosition";
+            this.txtPosition.Size = new System.Drawing.Size(280, 22);
+            this.txtPosition.TabIndex = 9;
+            this.txtPosition.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPosition_KeyPress);
+            // 
+            // txtSex
+            // 
+            this.txtSex.Location = new System.Drawing.Point(224, 359);
+            this.txtSex.Name = "txtSex";
+            this.txtSex.Size = new System.Drawing.Size(142, 22);
+            this.txtSex.TabIndex = 8;
+            this.txtSex.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSex_KeyPress);
+            // 
             // txtStaffName
             // 
             this.txtStaffName.Location = new System.Drawing.Point(224, 317);
@@ -306,60 +357,11 @@
             this.btnFindStaff.Size = new System.Drawing.Size(76, 69);
             this.btnFindStaff.TabIndex = 5;
             this.btnFindStaff.UseVisualStyleBackColor = true;
+            this.btnFindStaff.Click += new System.EventHandler(this.btnFindStaff_Click);
             // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
-            // 
-            // txtSex
-            // 
-            this.txtSex.Location = new System.Drawing.Point(224, 359);
-            this.txtSex.Name = "txtSex";
-            this.txtSex.Size = new System.Drawing.Size(142, 22);
-            this.txtSex.TabIndex = 8;
-            this.txtSex.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSex_KeyPress);
-            // 
-            // txtPosition
-            // 
-            this.txtPosition.Location = new System.Drawing.Point(224, 401);
-            this.txtPosition.Multiline = true;
-            this.txtPosition.Name = "txtPosition";
-            this.txtPosition.Size = new System.Drawing.Size(280, 22);
-            this.txtPosition.TabIndex = 9;
-            this.txtPosition.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPosition_KeyPress);
-            // 
-            // txtDateOfBirth
-            // 
-            this.txtDateOfBirth.Location = new System.Drawing.Point(224, 445);
-            this.txtDateOfBirth.Name = "txtDateOfBirth";
-            this.txtDateOfBirth.Size = new System.Drawing.Size(280, 22);
-            this.txtDateOfBirth.TabIndex = 10;
-            this.txtDateOfBirth.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDateOfBirth_KeyPress);
-            // 
-            // txtIdentityCard
-            // 
-            this.txtIdentityCard.Location = new System.Drawing.Point(224, 486);
-            this.txtIdentityCard.Name = "txtIdentityCard";
-            this.txtIdentityCard.Size = new System.Drawing.Size(280, 22);
-            this.txtIdentityCard.TabIndex = 11;
-            this.txtIdentityCard.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIdentityCard_KeyPress);
-            // 
-            // txtPhoneNumber
-            // 
-            this.txtPhoneNumber.Location = new System.Drawing.Point(224, 528);
-            this.txtPhoneNumber.Name = "txtPhoneNumber";
-            this.txtPhoneNumber.Size = new System.Drawing.Size(280, 22);
-            this.txtPhoneNumber.TabIndex = 12;
-            this.txtPhoneNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPhoneNumber_KeyPress);
-            // 
-            // rtbAddress
-            // 
-            this.rtbAddress.Location = new System.Drawing.Point(224, 579);
-            this.rtbAddress.Name = "rtbAddress";
-            this.rtbAddress.Size = new System.Drawing.Size(280, 90);
-            this.rtbAddress.TabIndex = 13;
-            this.rtbAddress.Text = "";
-            this.rtbAddress.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.rtbAddress_KeyPress);
             // 
             // frmAttendanceList
             // 

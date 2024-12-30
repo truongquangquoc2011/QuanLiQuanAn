@@ -318,14 +318,6 @@ namespace QuanLyQuanAn_DongPhongNha.Admin
                 fillComboboxPosition();
             }
         }
-        private void txtStaffID_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            //if (!char.IsDigit(e.KeyChar) || char.IsControl(e.KeyChar) )
-            //{
-            //    e.Handled = true;
-            //    msg.Show("Chỉ cho phép nhập số và không vượt quá 5 kí tự.", "THÔNG BÁO", msg.Buttons.Yes, msg.Icon.Warning);
-            //}
-        }
         private void txtStaffID_TextChanged(object sender, EventArgs e)
         {
             if (txtStaffID.Text.Length > 5)
@@ -334,8 +326,64 @@ namespace QuanLyQuanAn_DongPhongNha.Admin
                 msg.Show("Chỉ cho phép không vượt quá 5 kí tự.", "THÔNG BÁO", msg.Buttons.Yes, msg.Icon.Warning);
             }
         }
-        #endregion
+        private void txtStaffID_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+                errorProvider1.SetError(txtStaffID, "Vui lòng không nhập chữ và kí tự đặc biệt");
+            }
+        }
+        private void txtStaffName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            errorProvider1.Clear();
+            if (char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+                errorProvider1.SetError(txtStaffName, "Vui lòng không nhập số và kí tự đặc biệt");
+            }
+        }
 
+        private void txtSex_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            errorProvider1.Clear();
+            if (char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+                errorProvider1.SetError(txtSex, "Vui lòng không nhập số và kí từ đặc biệt");
+            }
+        }
+
+        private void txtIdentityCard_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            errorProvider1.Clear();
+            if (char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+                errorProvider1.SetError(txtIdentityCard, "Vui lòng không nhập chữ và kí tự đặc biệt");
+            }
+        }
+
+        private void txtPhoneNumber_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            errorProvider1.Clear();
+            if (char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+                errorProvider1.SetError(txtPhoneNumber, "Vui lòng không nhập chữ và kí tự đặc biệt");
+            }
+        }
+
+        private void rtbAddress_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            errorProvider1.Clear();
+            if (!char.IsLetterOrDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != ' ' && e.KeyChar != ',' && e.KeyChar != '.')
+            {
+                e.Handled = true;
+                errorProvider1.SetError(rtbAddress, "Vui lòng không nhập kí tự đặc biệt");
+            }
+        }
+        #endregion
     }
 }
 
