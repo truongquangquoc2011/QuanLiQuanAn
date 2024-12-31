@@ -383,6 +383,7 @@
       <DependentUpon>QLNH_Model1.edmx</DependentUpon>
       <LastGenOutput>QLNH_Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\search.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
