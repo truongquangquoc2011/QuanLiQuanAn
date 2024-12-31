@@ -16,5 +16,10 @@ namespace QuanLyQuanAn_DongPhongNha.Manager
         {
             InitializeComponent();
         }
+
+        private void btnEditMaterial_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

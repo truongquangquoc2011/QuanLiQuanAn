@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblBillInfo = new System.Windows.Forms.Label();
             this.pn1 = new System.Windows.Forms.Panel();
@@ -281,7 +281,7 @@
             this.lsvBillInfoOfWH.Location = new System.Drawing.Point(575, 50);
             this.lsvBillInfoOfWH.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.lsvBillInfoOfWH.Name = "lsvBillInfoOfWH";
-            this.lsvBillInfoOfWH.Size = new System.Drawing.Size(526, 611);
+            this.lsvBillInfoOfWH.Size = new System.Drawing.Size(526, 683);
             this.lsvBillInfoOfWH.TabIndex = 35;
             this.lsvBillInfoOfWH.UseCompatibleStateImageBehavior = false;
             this.lsvBillInfoOfWH.View = System.Windows.Forms.View.Details;
@@ -484,17 +484,17 @@
             this.tpMaterial.Margin = new System.Windows.Forms.Padding(2);
             this.tpMaterial.Name = "tpMaterial";
             this.tpMaterial.Padding = new System.Windows.Forms.Padding(2);
-            this.tpMaterial.Size = new System.Drawing.Size(816, 507);
+            this.tpMaterial.Size = new System.Drawing.Size(564, 384);
             this.tpMaterial.TabIndex = 1;
             this.tpMaterial.Text = "Nguyên Liệu";
             // 
             // btnShowMaterial
             // 
             this.btnShowMaterial.Font = new System.Drawing.Font("Cambria", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShowMaterial.Location = new System.Drawing.Point(253, 304);
+            this.btnShowMaterial.Location = new System.Drawing.Point(34, 240);
             this.btnShowMaterial.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.btnShowMaterial.Name = "btnShowMaterial";
-            this.btnShowMaterial.Size = new System.Drawing.Size(135, 41);
+            this.btnShowMaterial.Size = new System.Drawing.Size(94, 46);
             this.btnShowMaterial.TabIndex = 22;
             this.btnShowMaterial.Text = "HIển thị";
             this.btnShowMaterial.UseVisualStyleBackColor = true;
@@ -502,10 +502,10 @@
             // btnDeleteMaterial
             // 
             this.btnDeleteMaterial.Font = new System.Drawing.Font("Cambria", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteMaterial.Location = new System.Drawing.Point(253, 362);
+            this.btnDeleteMaterial.Location = new System.Drawing.Point(33, 336);
             this.btnDeleteMaterial.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.btnDeleteMaterial.Name = "btnDeleteMaterial";
-            this.btnDeleteMaterial.Size = new System.Drawing.Size(135, 41);
+            this.btnDeleteMaterial.Size = new System.Drawing.Size(94, 42);
             this.btnDeleteMaterial.TabIndex = 22;
             this.btnDeleteMaterial.Text = "Xóa";
             this.btnDeleteMaterial.UseVisualStyleBackColor = true;
@@ -513,21 +513,22 @@
             // btnEditMaterial
             // 
             this.btnEditMaterial.Font = new System.Drawing.Font("Cambria", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditMaterial.Location = new System.Drawing.Point(107, 362);
+            this.btnEditMaterial.Location = new System.Drawing.Point(34, 290);
             this.btnEditMaterial.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.btnEditMaterial.Name = "btnEditMaterial";
-            this.btnEditMaterial.Size = new System.Drawing.Size(135, 41);
+            this.btnEditMaterial.Size = new System.Drawing.Size(94, 42);
             this.btnEditMaterial.TabIndex = 22;
             this.btnEditMaterial.Text = "Sửa";
             this.btnEditMaterial.UseVisualStyleBackColor = true;
+            this.btnEditMaterial.Click += new System.EventHandler(this.btnEditMaterial_Click);
             // 
             // btnAddMaterial
             // 
             this.btnAddMaterial.Font = new System.Drawing.Font("Cambria", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddMaterial.Location = new System.Drawing.Point(107, 304);
+            this.btnAddMaterial.Location = new System.Drawing.Point(34, 195);
             this.btnAddMaterial.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.btnAddMaterial.Name = "btnAddMaterial";
-            this.btnAddMaterial.Size = new System.Drawing.Size(135, 41);
+            this.btnAddMaterial.Size = new System.Drawing.Size(95, 41);
             this.btnAddMaterial.TabIndex = 21;
             this.btnAddMaterial.Text = "Thêm";
             this.btnAddMaterial.UseVisualStyleBackColor = true;
@@ -537,7 +538,7 @@
             this.cmbUnit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbUnit.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbUnit.FormattingEnabled = true;
-            this.cmbUnit.Location = new System.Drawing.Point(253, 207);
+            this.cmbUnit.Location = new System.Drawing.Point(26, 144);
             this.cmbUnit.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.cmbUnit.Name = "cmbUnit";
             this.cmbUnit.Size = new System.Drawing.Size(121, 27);
@@ -546,7 +547,7 @@
             // txtMaterialName
             // 
             this.txtMaterialName.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaterialName.Location = new System.Drawing.Point(253, 128);
+            this.txtMaterialName.Location = new System.Drawing.Point(26, 95);
             this.txtMaterialName.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.txtMaterialName.Name = "txtMaterialName";
             this.txtMaterialName.Size = new System.Drawing.Size(121, 26);
@@ -555,7 +556,7 @@
             // txtMaterialID
             // 
             this.txtMaterialID.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaterialID.Location = new System.Drawing.Point(253, 72);
+            this.txtMaterialID.Location = new System.Drawing.Point(26, 34);
             this.txtMaterialID.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.txtMaterialID.Name = "txtMaterialID";
             this.txtMaterialID.ReadOnly = true;
@@ -567,7 +568,7 @@
             this.lblUnit.AutoSize = true;
             this.lblUnit.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUnit.ForeColor = System.Drawing.Color.White;
-            this.lblUnit.Location = new System.Drawing.Point(5, 215);
+            this.lblUnit.Location = new System.Drawing.Point(22, 123);
             this.lblUnit.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblUnit.Name = "lblUnit";
             this.lblUnit.Size = new System.Drawing.Size(97, 19);
@@ -579,7 +580,7 @@
             this.lbllblMaterialName2.AutoSize = true;
             this.lbllblMaterialName2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbllblMaterialName2.ForeColor = System.Drawing.Color.White;
-            this.lbllblMaterialName2.Location = new System.Drawing.Point(5, 136);
+            this.lbllblMaterialName2.Location = new System.Drawing.Point(22, 62);
             this.lbllblMaterialName2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lbllblMaterialName2.Name = "lbllblMaterialName2";
             this.lbllblMaterialName2.Size = new System.Drawing.Size(130, 19);
@@ -591,7 +592,7 @@
             this.lblidMaterial.AutoSize = true;
             this.lblidMaterial.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblidMaterial.ForeColor = System.Drawing.Color.White;
-            this.lblidMaterial.Location = new System.Drawing.Point(5, 72);
+            this.lblidMaterial.Location = new System.Drawing.Point(22, 13);
             this.lblidMaterial.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblidMaterial.Name = "lblidMaterial";
             this.lblidMaterial.Size = new System.Drawing.Size(126, 19);
@@ -608,24 +609,24 @@
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.Column1});
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvMaterialList.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvMaterialList.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvMaterialList.Dock = System.Windows.Forms.DockStyle.Right;
-            this.dgvMaterialList.Location = new System.Drawing.Point(406, 2);
+            this.dgvMaterialList.Location = new System.Drawing.Point(171, 2);
             this.dgvMaterialList.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.dgvMaterialList.Name = "dgvMaterialList";
             this.dgvMaterialList.ReadOnly = true;
             this.dgvMaterialList.RowHeadersWidth = 62;
             this.dgvMaterialList.RowTemplate.Height = 28;
             this.dgvMaterialList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvMaterialList.Size = new System.Drawing.Size(408, 503);
+            this.dgvMaterialList.Size = new System.Drawing.Size(391, 380);
             this.dgvMaterialList.TabIndex = 4;
             // 
             // dataGridViewTextBoxColumn1
@@ -668,17 +669,17 @@
             this.tpUnit.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.tpUnit.Name = "tpUnit";
             this.tpUnit.Padding = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.tpUnit.Size = new System.Drawing.Size(816, 507);
+            this.tpUnit.Size = new System.Drawing.Size(564, 384);
             this.tpUnit.TabIndex = 2;
             this.tpUnit.Text = "Đơn vị tính";
             // 
             // btnShowUnit
             // 
             this.btnShowUnit.Font = new System.Drawing.Font("Cambria", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShowUnit.Location = new System.Drawing.Point(254, 272);
+            this.btnShowUnit.Location = new System.Drawing.Point(38, 268);
             this.btnShowUnit.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.btnShowUnit.Name = "btnShowUnit";
-            this.btnShowUnit.Size = new System.Drawing.Size(117, 41);
+            this.btnShowUnit.Size = new System.Drawing.Size(133, 30);
             this.btnShowUnit.TabIndex = 25;
             this.btnShowUnit.Text = "HIển thị";
             this.btnShowUnit.UseVisualStyleBackColor = true;
@@ -686,10 +687,10 @@
             // btnDeleteUnit
             // 
             this.btnDeleteUnit.Font = new System.Drawing.Font("Cambria", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteUnit.Location = new System.Drawing.Point(121, 340);
+            this.btnDeleteUnit.Location = new System.Drawing.Point(38, 302);
             this.btnDeleteUnit.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.btnDeleteUnit.Name = "btnDeleteUnit";
-            this.btnDeleteUnit.Size = new System.Drawing.Size(117, 41);
+            this.btnDeleteUnit.Size = new System.Drawing.Size(133, 30);
             this.btnDeleteUnit.TabIndex = 26;
             this.btnDeleteUnit.Text = "Xóa";
             this.btnDeleteUnit.UseVisualStyleBackColor = true;
@@ -697,10 +698,10 @@
             // btnEditUnit
             // 
             this.btnEditUnit.Font = new System.Drawing.Font("Cambria", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditUnit.Location = new System.Drawing.Point(254, 340);
+            this.btnEditUnit.Location = new System.Drawing.Point(38, 336);
             this.btnEditUnit.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.btnEditUnit.Name = "btnEditUnit";
-            this.btnEditUnit.Size = new System.Drawing.Size(117, 41);
+            this.btnEditUnit.Size = new System.Drawing.Size(133, 30);
             this.btnEditUnit.TabIndex = 27;
             this.btnEditUnit.Text = "Sửa";
             this.btnEditUnit.UseVisualStyleBackColor = true;
@@ -708,10 +709,10 @@
             // btnAddUnit
             // 
             this.btnAddUnit.Font = new System.Drawing.Font("Cambria", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddUnit.Location = new System.Drawing.Point(121, 272);
+            this.btnAddUnit.Location = new System.Drawing.Point(38, 234);
             this.btnAddUnit.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.btnAddUnit.Name = "btnAddUnit";
-            this.btnAddUnit.Size = new System.Drawing.Size(117, 41);
+            this.btnAddUnit.Size = new System.Drawing.Size(133, 30);
             this.btnAddUnit.TabIndex = 28;
             this.btnAddUnit.Text = "Thêm";
             this.btnAddUnit.UseVisualStyleBackColor = true;
@@ -727,13 +728,13 @@
             this.id,
             this.name});
             this.dgvUnitList.Dock = System.Windows.Forms.DockStyle.Right;
-            this.dgvUnitList.Location = new System.Drawing.Point(402, 2);
+            this.dgvUnitList.Location = new System.Drawing.Point(218, 2);
             this.dgvUnitList.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.dgvUnitList.Name = "dgvUnitList";
             this.dgvUnitList.RowHeadersWidth = 62;
             this.dgvUnitList.RowTemplate.Height = 28;
             this.dgvUnitList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvUnitList.Size = new System.Drawing.Size(413, 503);
+            this.dgvUnitList.Size = new System.Drawing.Size(345, 380);
             this.dgvUnitList.TabIndex = 3;
             // 
             // id
@@ -753,20 +754,20 @@
             // txtUnitName
             // 
             this.txtUnitName.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUnitName.Location = new System.Drawing.Point(202, 179);
+            this.txtUnitName.Location = new System.Drawing.Point(14, 174);
             this.txtUnitName.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.txtUnitName.Name = "txtUnitName";
-            this.txtUnitName.Size = new System.Drawing.Size(165, 26);
+            this.txtUnitName.Size = new System.Drawing.Size(183, 26);
             this.txtUnitName.TabIndex = 2;
             // 
             // txtUnitID
             // 
             this.txtUnitID.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUnitID.Location = new System.Drawing.Point(202, 101);
+            this.txtUnitID.Location = new System.Drawing.Point(14, 65);
             this.txtUnitID.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.txtUnitID.Name = "txtUnitID";
             this.txtUnitID.ReadOnly = true;
-            this.txtUnitID.Size = new System.Drawing.Size(165, 26);
+            this.txtUnitID.Size = new System.Drawing.Size(183, 26);
             this.txtUnitID.TabIndex = 2;
             // 
             // lblUnitName
@@ -774,7 +775,7 @@
             this.lblUnitName.AutoSize = true;
             this.lblUnitName.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUnitName.ForeColor = System.Drawing.Color.White;
-            this.lblUnitName.Location = new System.Drawing.Point(6, 183);
+            this.lblUnitName.Location = new System.Drawing.Point(10, 134);
             this.lblUnitName.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblUnitName.Name = "lblUnitName";
             this.lblUnitName.Size = new System.Drawing.Size(92, 19);
@@ -786,7 +787,7 @@
             this.lblUnitID.AutoSize = true;
             this.lblUnitID.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUnitID.ForeColor = System.Drawing.Color.White;
-            this.lblUnitID.Location = new System.Drawing.Point(10, 105);
+            this.lblUnitID.Location = new System.Drawing.Point(10, 20);
             this.lblUnitID.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblUnitID.Name = "lblUnitID";
             this.lblUnitID.Size = new System.Drawing.Size(88, 19);

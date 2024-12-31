@@ -68,10 +68,10 @@
             this.lblSupplier.AutoSize = true;
             this.lblSupplier.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSupplier.ForeColor = System.Drawing.Color.White;
-            this.lblSupplier.Location = new System.Drawing.Point(11, 149);
+            this.lblSupplier.Location = new System.Drawing.Point(1, 123);
             this.lblSupplier.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblSupplier.Name = "lblSupplier";
-            this.lblSupplier.Size = new System.Drawing.Size(150, 26);
+            this.lblSupplier.Size = new System.Drawing.Size(124, 21);
             this.lblSupplier.TabIndex = 0;
             this.lblSupplier.Text = "Nhà cung cấp:";
             // 
@@ -80,10 +80,10 @@
             this.lbl5.AutoSize = true;
             this.lbl5.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl5.ForeColor = System.Drawing.Color.White;
-            this.lbl5.Location = new System.Drawing.Point(11, 204);
+            this.lbl5.Location = new System.Drawing.Point(8, 166);
             this.lbl5.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lbl5.Name = "lbl5";
-            this.lbl5.Size = new System.Drawing.Size(113, 26);
+            this.lbl5.Size = new System.Drawing.Size(94, 21);
             this.lbl5.TabIndex = 0;
             this.lbl5.Text = "Tổng tiền:";
             // 
@@ -92,10 +92,10 @@
             this.lblDate.AutoSize = true;
             this.lblDate.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDate.ForeColor = System.Drawing.Color.White;
-            this.lblDate.Location = new System.Drawing.Point(10, 90);
+            this.lblDate.Location = new System.Drawing.Point(8, 73);
             this.lblDate.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(125, 26);
+            this.lblDate.Size = new System.Drawing.Size(103, 21);
             this.lblDate.TabIndex = 0;
             this.lblDate.Text = "Ngày Nhập:";
             // 
@@ -104,10 +104,10 @@
             this.lblBillOfWHID.AutoSize = true;
             this.lblBillOfWHID.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBillOfWHID.ForeColor = System.Drawing.Color.White;
-            this.lblBillOfWHID.Location = new System.Drawing.Point(10, 27);
+            this.lblBillOfWHID.Location = new System.Drawing.Point(8, 22);
             this.lblBillOfWHID.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblBillOfWHID.Name = "lblBillOfWHID";
-            this.lblBillOfWHID.Size = new System.Drawing.Size(138, 26);
+            this.lblBillOfWHID.Size = new System.Drawing.Size(113, 21);
             this.lblBillOfWHID.TabIndex = 0;
             this.lblBillOfWHID.Text = "Mã hóa đơn:";
             // 
@@ -124,50 +124,55 @@
             this.pn1.Controls.Add(this.lblDate);
             this.pn1.Controls.Add(this.lblNote);
             this.pn1.Controls.Add(this.lblBillOfWHID);
-            this.pn1.Location = new System.Drawing.Point(-1, 617);
+            this.pn1.Location = new System.Drawing.Point(-1, 501);
             this.pn1.Margin = new System.Windows.Forms.Padding(2);
             this.pn1.Name = "pn1";
-            this.pn1.Size = new System.Drawing.Size(792, 265);
+            this.pn1.Size = new System.Drawing.Size(594, 215);
             this.pn1.TabIndex = 9;
             // 
             // rtbNote
             // 
-            this.rtbNote.Location = new System.Drawing.Point(501, 71);
+            this.rtbNote.Location = new System.Drawing.Point(376, 58);
+            this.rtbNote.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rtbNote.Name = "rtbNote";
-            this.rtbNote.Size = new System.Drawing.Size(257, 145);
+            this.rtbNote.Size = new System.Drawing.Size(194, 119);
             this.rtbNote.TabIndex = 5;
             this.rtbNote.Text = "";
             this.rtbNote.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.rtbNote_KeyPress);
             // 
             // txtTotalPrice
             // 
-            this.txtTotalPrice.Location = new System.Drawing.Point(166, 209);
+            this.txtTotalPrice.Location = new System.Drawing.Point(124, 170);
+            this.txtTotalPrice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTotalPrice.Name = "txtTotalPrice";
-            this.txtTotalPrice.Size = new System.Drawing.Size(296, 22);
+            this.txtTotalPrice.Size = new System.Drawing.Size(223, 20);
             this.txtTotalPrice.TabIndex = 4;
             this.txtTotalPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTotalPrice_KeyPress);
             // 
             // txtSupplier
             // 
-            this.txtSupplier.Location = new System.Drawing.Point(166, 154);
+            this.txtSupplier.Location = new System.Drawing.Point(124, 125);
+            this.txtSupplier.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSupplier.Name = "txtSupplier";
-            this.txtSupplier.Size = new System.Drawing.Size(296, 22);
+            this.txtSupplier.Size = new System.Drawing.Size(223, 20);
             this.txtSupplier.TabIndex = 3;
             this.txtSupplier.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSupplier_KeyPress);
             // 
             // txtDateAdd
             // 
-            this.txtDateAdd.Location = new System.Drawing.Point(166, 95);
+            this.txtDateAdd.Location = new System.Drawing.Point(124, 77);
+            this.txtDateAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDateAdd.Name = "txtDateAdd";
-            this.txtDateAdd.Size = new System.Drawing.Size(296, 22);
+            this.txtDateAdd.Size = new System.Drawing.Size(223, 20);
             this.txtDateAdd.TabIndex = 2;
             this.txtDateAdd.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDateAdd_KeyPress);
             // 
             // txtBillOfWareHouseID
             // 
-            this.txtBillOfWareHouseID.Location = new System.Drawing.Point(166, 32);
+            this.txtBillOfWareHouseID.Location = new System.Drawing.Point(124, 26);
+            this.txtBillOfWareHouseID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtBillOfWareHouseID.Name = "txtBillOfWareHouseID";
-            this.txtBillOfWareHouseID.Size = new System.Drawing.Size(296, 22);
+            this.txtBillOfWareHouseID.Size = new System.Drawing.Size(223, 20);
             this.txtBillOfWareHouseID.TabIndex = 1;
             this.txtBillOfWareHouseID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBillOfWareHouseID_KeyPress);
             // 
@@ -176,10 +181,10 @@
             this.lblNote.AutoSize = true;
             this.lblNote.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNote.ForeColor = System.Drawing.Color.White;
-            this.lblNote.Location = new System.Drawing.Point(505, 27);
+            this.lblNote.Location = new System.Drawing.Point(379, 22);
             this.lblNote.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblNote.Name = "lblNote";
-            this.lblNote.Size = new System.Drawing.Size(93, 26);
+            this.lblNote.Size = new System.Drawing.Size(78, 21);
             this.lblNote.TabIndex = 0;
             this.lblNote.Text = "Ghi chú:";
             // 
@@ -209,10 +214,10 @@
             this.lsvBillInfoOfWH.GridLines = true;
             this.lsvBillInfoOfWH.HideSelection = false;
             this.lsvBillInfoOfWH.LabelEdit = true;
-            this.lsvBillInfoOfWH.Location = new System.Drawing.Point(795, 103);
+            this.lsvBillInfoOfWH.Location = new System.Drawing.Point(596, 84);
             this.lsvBillInfoOfWH.Margin = new System.Windows.Forms.Padding(2);
             this.lsvBillInfoOfWH.Name = "lsvBillInfoOfWH";
-            this.lsvBillInfoOfWH.Size = new System.Drawing.Size(682, 779);
+            this.lsvBillInfoOfWH.Size = new System.Drawing.Size(512, 634);
             this.lsvBillInfoOfWH.TabIndex = 10;
             this.lsvBillInfoOfWH.UseCompatibleStateImageBehavior = false;
             this.lsvBillInfoOfWH.View = System.Windows.Forms.View.Details;
@@ -275,7 +280,7 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvBillOfWareHouse.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvBillOfWareHouse.Location = new System.Drawing.Point(-1, 103);
+            this.dgvBillOfWareHouse.Location = new System.Drawing.Point(-1, 84);
             this.dgvBillOfWareHouse.Margin = new System.Windows.Forms.Padding(2);
             this.dgvBillOfWareHouse.Name = "dgvBillOfWareHouse";
             this.dgvBillOfWareHouse.ReadOnly = true;
@@ -283,17 +288,17 @@
             this.dgvBillOfWareHouse.RowHeadersWidth = 82;
             this.dgvBillOfWareHouse.RowTemplate.Height = 28;
             this.dgvBillOfWareHouse.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvBillOfWareHouse.Size = new System.Drawing.Size(792, 503);
+            this.dgvBillOfWareHouse.Size = new System.Drawing.Size(594, 409);
             this.dgvBillOfWareHouse.TabIndex = 11;
             // 
             // lblBillDetail
             // 
             this.lblBillDetail.AutoSize = true;
             this.lblBillDetail.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold);
-            this.lblBillDetail.Location = new System.Drawing.Point(11, 24);
+            this.lblBillDetail.Location = new System.Drawing.Point(8, 20);
             this.lblBillDetail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBillDetail.Name = "lblBillDetail";
-            this.lblBillDetail.Size = new System.Drawing.Size(154, 23);
+            this.lblBillDetail.Size = new System.Drawing.Size(129, 19);
             this.lblBillDetail.TabIndex = 7;
             this.lblBillDetail.Text = "Chi tiết hóa đơn";
             // 
@@ -301,20 +306,20 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Gainsboro;
             this.panel2.Controls.Add(this.lblBillDetail);
-            this.panel2.Location = new System.Drawing.Point(795, 12);
+            this.panel2.Location = new System.Drawing.Point(596, 10);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(682, 70);
+            this.panel2.Size = new System.Drawing.Size(512, 57);
             this.panel2.TabIndex = 12;
             // 
             // lblTotalBill
             // 
             this.lblTotalBill.AutoSize = true;
             this.lblTotalBill.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold);
-            this.lblTotalBill.Location = new System.Drawing.Point(11, 15);
+            this.lblTotalBill.Location = new System.Drawing.Point(8, 12);
             this.lblTotalBill.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTotalBill.Name = "lblTotalBill";
-            this.lblTotalBill.Size = new System.Drawing.Size(169, 23);
+            this.lblTotalBill.Size = new System.Drawing.Size(140, 19);
             this.lblTotalBill.TabIndex = 0;
             this.lblTotalBill.Text = "Tổng số hóa đơn: ";
             // 
@@ -322,10 +327,10 @@
             // 
             this.pnTotalBill.BackColor = System.Drawing.Color.Gainsboro;
             this.pnTotalBill.Controls.Add(this.lblTotalBill);
-            this.pnTotalBill.Location = new System.Drawing.Point(-1, 12);
+            this.pnTotalBill.Location = new System.Drawing.Point(-1, 10);
             this.pnTotalBill.Margin = new System.Windows.Forms.Padding(2);
             this.pnTotalBill.Name = "pnTotalBill";
-            this.pnTotalBill.Size = new System.Drawing.Size(792, 70);
+            this.pnTotalBill.Size = new System.Drawing.Size(594, 57);
             this.pnTotalBill.TabIndex = 8;
             // 
             // errorProvider1
@@ -334,15 +339,16 @@
             // 
             // frmWareHouse
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1851, 1139);
+            this.ClientSize = new System.Drawing.Size(1388, 894);
             this.Controls.Add(this.pn1);
             this.Controls.Add(this.dgvBillOfWareHouse);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pnTotalBill);
             this.Controls.Add(this.lsvBillInfoOfWH);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmWareHouse";
             this.Text = "frmWareHouse";
             this.pn1.ResumeLayout(false);
