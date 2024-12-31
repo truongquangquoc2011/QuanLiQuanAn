@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.txtFindAccountByName = new System.Windows.Forms.ToolStripTextBox();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolstripTim = new System.Windows.Forms.ToolStripLabel();
             this.lblTotalAccount = new System.Windows.Forms.Label();
@@ -61,6 +60,7 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -74,15 +74,8 @@
             // 
             this.txtFindAccountByName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtFindAccountByName.Name = "txtFindAccountByName";
-            this.txtFindAccountByName.Size = new System.Drawing.Size(500, 38);
-            // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(34, 33);
-            this.toolStripButton1.Text = "toolStripButton1";
+            this.txtFindAccountByName.Size = new System.Drawing.Size(500, 31);
+            this.txtFindAccountByName.Click += new System.EventHandler(this.txtFindAccountByName_TextChanged);
             // 
             // toolStrip1
             // 
@@ -95,7 +88,7 @@
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.toolStrip1.Size = new System.Drawing.Size(759, 38);
+            this.toolStrip1.Size = new System.Drawing.Size(759, 31);
             this.toolStrip1.TabIndex = 39;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -103,7 +96,7 @@
             // 
             this.toolstripTim.Font = new System.Drawing.Font("Cambria", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolstripTim.Name = "toolstripTim";
-            this.toolstripTim.Size = new System.Drawing.Size(202, 33);
+            this.toolstripTim.Size = new System.Drawing.Size(202, 26);
             this.toolstripTim.Text = "Tìm kiếm tài khoản";
             // 
             // lblTotalAccount
@@ -142,6 +135,7 @@
             this.btnShowAccount.Text = "Hiển thị";
             this.btnShowAccount.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnShowAccount.UseVisualStyleBackColor = true;
+            this.btnShowAccount.Click += new System.EventHandler(this.btnShowAccount_Click);
             // 
             // btnAddAccount
             // 
@@ -167,6 +161,7 @@
             this.btnDeleteAccount.TabIndex = 29;
             this.btnDeleteAccount.Text = "Xóa";
             this.btnDeleteAccount.UseVisualStyleBackColor = true;
+            this.btnDeleteAccount.Click += new System.EventHandler(this.btnDeleteAccount_Click);
             // 
             // btnEditAccount
             // 
@@ -179,6 +174,7 @@
             this.btnEditAccount.TabIndex = 28;
             this.btnEditAccount.Text = "Sửa";
             this.btnEditAccount.UseVisualStyleBackColor = true;
+            this.btnEditAccount.Click += new System.EventHandler(this.btnEditAccount_Click);
             // 
             // panel4
             // 
@@ -249,6 +245,7 @@
             this.dgvAccount.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvAccount.Size = new System.Drawing.Size(1107, 681);
             this.dgvAccount.TabIndex = 36;
+            this.dgvAccount.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvAccount_CellMouseClick);
             // 
             // btnResetPassword
             // 
@@ -261,6 +258,7 @@
             this.btnResetPassword.TabIndex = 19;
             this.btnResetPassword.Text = "Đặt lại mật khẩu ";
             this.btnResetPassword.UseVisualStyleBackColor = true;
+            this.btnResetPassword.Click += new System.EventHandler(this.btnResetPassword_Click);
             // 
             // nudTypeAccount
             // 
@@ -285,7 +283,6 @@
             this.txtAccountName.Name = "txtAccountName";
             this.txtAccountName.Size = new System.Drawing.Size(184, 29);
             this.txtAccountName.TabIndex = 10;
-            this.txtAccountName.TextChanged += new System.EventHandler(this.txtAccountName_TextChanged);
             // 
             // txtDisplayName
             // 
@@ -295,7 +292,6 @@
             this.txtDisplayName.Name = "txtDisplayName";
             this.txtDisplayName.Size = new System.Drawing.Size(184, 29);
             this.txtDisplayName.TabIndex = 13;
-            this.txtDisplayName.TextChanged += new System.EventHandler(this.txtDisplayName_TextChanged);
             // 
             // lblThongtintk
             // 
@@ -316,7 +312,6 @@
             this.txtIdStaff.Name = "txtIdStaff";
             this.txtIdStaff.Size = new System.Drawing.Size(184, 29);
             this.txtIdStaff.TabIndex = 11;
-            this.txtIdStaff.TextChanged += new System.EventHandler(this.txtIdStaff_TextChanged);
             // 
             // lblmatkhau
             // 
@@ -359,7 +354,6 @@
             this.txtRetypePassword.Name = "txtRetypePassword";
             this.txtRetypePassword.Size = new System.Drawing.Size(184, 29);
             this.txtRetypePassword.TabIndex = 14;
-            this.txtRetypePassword.TextChanged += new System.EventHandler(this.txtRetypePassword_TextChanged);
             // 
             // lblTentk
             // 
@@ -402,7 +396,6 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(184, 29);
             this.txtPassword.TabIndex = 12;
-            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // panel1
             // 
@@ -431,6 +424,15 @@
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = global::QuanLyQuanAn_DongPhongNha.Properties.Resources.search;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(34, 26);
+            this.toolStripButton1.Text = "toolStripButton1";
             // 
             // frmAdminAccount
             // 

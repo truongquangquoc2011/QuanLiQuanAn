@@ -48,15 +48,15 @@
             this.pnTimeSheetsList = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.rtbAddress = new System.Windows.Forms.RichTextBox();
+            this.txtPhoneNumber = new System.Windows.Forms.TextBox();
+            this.txtIdentityCard = new System.Windows.Forms.TextBox();
+            this.txtDateOfBirth = new System.Windows.Forms.TextBox();
+            this.txtPosition = new System.Windows.Forms.TextBox();
+            this.txtSex = new System.Windows.Forms.TextBox();
             this.txtStaffName = new System.Windows.Forms.TextBox();
             this.btnFindStaff = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.txtSex = new System.Windows.Forms.TextBox();
-            this.txtPosition = new System.Windows.Forms.TextBox();
-            this.txtDateOfBirth = new System.Windows.Forms.TextBox();
-            this.txtIdentityCard = new System.Windows.Forms.TextBox();
-            this.txtPhoneNumber = new System.Windows.Forms.TextBox();
-            this.rtbAddress = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAttendanceList)).BeginInit();
             this.pnTimeSheetsList.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -117,6 +117,7 @@
             this.btnCheckIn.TabIndex = 4;
             this.btnCheckIn.Text = "Điểm danh";
             this.btnCheckIn.UseVisualStyleBackColor = true;
+            this.btnCheckIn.Click += new System.EventHandler(this.btnCheckIn_Click);
             // 
             // label10
             // 
@@ -125,7 +126,7 @@
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(76, 579);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(77, 20);
+            this.label10.Size = new System.Drawing.Size(61, 16);
             this.label10.TabIndex = 1;
             this.label10.Text = "Địa Chỉ  :";
             // 
@@ -136,7 +137,7 @@
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(76, 530);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(50, 20);
+            this.label9.Size = new System.Drawing.Size(40, 16);
             this.label9.TabIndex = 1;
             this.label9.Text = "SĐT :";
             // 
@@ -145,7 +146,7 @@
             this.txtStaffID.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStaffID.Location = new System.Drawing.Point(224, 162);
             this.txtStaffID.Name = "txtStaffID";
-            this.txtStaffID.Size = new System.Drawing.Size(221, 25);
+            this.txtStaffID.Size = new System.Drawing.Size(221, 22);
             this.txtStaffID.TabIndex = 2;
             this.txtStaffID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtStaffID_KeyPress);
             // 
@@ -157,7 +158,7 @@
             this.lblTimeSheetsList.Location = new System.Drawing.Point(197, 24);
             this.lblTimeSheetsList.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTimeSheetsList.Name = "lblTimeSheetsList";
-            this.lblTimeSheetsList.Size = new System.Drawing.Size(349, 40);
+            this.lblTimeSheetsList.Size = new System.Drawing.Size(277, 32);
             this.lblTimeSheetsList.TabIndex = 18;
             this.lblTimeSheetsList.Text = "Danh sách chấm công";
             // 
@@ -168,7 +169,7 @@
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(76, 488);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(60, 20);
+            this.label8.Size = new System.Drawing.Size(48, 16);
             this.label8.TabIndex = 1;
             this.label8.Text = "CCCD :";
             // 
@@ -179,7 +180,7 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(76, 445);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(94, 20);
+            this.label7.Size = new System.Drawing.Size(75, 16);
             this.label7.TabIndex = 1;
             this.label7.Text = "Ngày Sinh :";
             // 
@@ -190,7 +191,7 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(76, 403);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(82, 20);
+            this.label6.Size = new System.Drawing.Size(66, 16);
             this.label6.TabIndex = 1;
             this.label6.Text = "Chức Vụ :";
             // 
@@ -201,7 +202,7 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(76, 361);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(91, 20);
+            this.label5.Size = new System.Drawing.Size(72, 16);
             this.label5.TabIndex = 1;
             this.label5.Text = "Giới Tính :";
             // 
@@ -212,7 +213,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(76, 163);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 20);
+            this.label2.Size = new System.Drawing.Size(55, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Mã NV :";
             // 
@@ -223,7 +224,7 @@
             this.label4.ForeColor = System.Drawing.Color.Transparent;
             this.label4.Location = new System.Drawing.Point(111, 233);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(255, 30);
+            this.label4.Size = new System.Drawing.Size(202, 23);
             this.label4.TabIndex = 0;
             this.label4.Text = "Thông Tin Nhân Viên";
             // 
@@ -234,7 +235,7 @@
             this.label1.ForeColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(194, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(165, 36);
+            this.label1.Size = new System.Drawing.Size(130, 28);
             this.label1.TabIndex = 0;
             this.label1.Text = "Chấm công";
             // 
@@ -256,7 +257,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(76, 319);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 20);
+            this.label3.Size = new System.Drawing.Size(58, 16);
             this.label3.TabIndex = 1;
             this.label3.Text = "Họ Tên :";
             // 
@@ -290,6 +291,56 @@
             this.panel1.Size = new System.Drawing.Size(603, 911);
             this.panel1.TabIndex = 20;
             // 
+            // rtbAddress
+            // 
+            this.rtbAddress.Location = new System.Drawing.Point(224, 579);
+            this.rtbAddress.Name = "rtbAddress";
+            this.rtbAddress.Size = new System.Drawing.Size(280, 90);
+            this.rtbAddress.TabIndex = 13;
+            this.rtbAddress.Text = "";
+            this.rtbAddress.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.rtbAddress_KeyPress);
+            // 
+            // txtPhoneNumber
+            // 
+            this.txtPhoneNumber.Location = new System.Drawing.Point(224, 528);
+            this.txtPhoneNumber.Name = "txtPhoneNumber";
+            this.txtPhoneNumber.Size = new System.Drawing.Size(280, 22);
+            this.txtPhoneNumber.TabIndex = 12;
+            this.txtPhoneNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPhoneNumber_KeyPress);
+            // 
+            // txtIdentityCard
+            // 
+            this.txtIdentityCard.Location = new System.Drawing.Point(224, 486);
+            this.txtIdentityCard.Name = "txtIdentityCard";
+            this.txtIdentityCard.Size = new System.Drawing.Size(280, 22);
+            this.txtIdentityCard.TabIndex = 11;
+            this.txtIdentityCard.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIdentityCard_KeyPress);
+            // 
+            // txtDateOfBirth
+            // 
+            this.txtDateOfBirth.Location = new System.Drawing.Point(224, 445);
+            this.txtDateOfBirth.Name = "txtDateOfBirth";
+            this.txtDateOfBirth.Size = new System.Drawing.Size(280, 22);
+            this.txtDateOfBirth.TabIndex = 10;
+            this.txtDateOfBirth.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDateOfBirth_KeyPress);
+            // 
+            // txtPosition
+            // 
+            this.txtPosition.Location = new System.Drawing.Point(224, 401);
+            this.txtPosition.Multiline = true;
+            this.txtPosition.Name = "txtPosition";
+            this.txtPosition.Size = new System.Drawing.Size(280, 22);
+            this.txtPosition.TabIndex = 9;
+            this.txtPosition.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPosition_KeyPress);
+            // 
+            // txtSex
+            // 
+            this.txtSex.Location = new System.Drawing.Point(224, 359);
+            this.txtSex.Name = "txtSex";
+            this.txtSex.Size = new System.Drawing.Size(142, 22);
+            this.txtSex.TabIndex = 8;
+            this.txtSex.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSex_KeyPress);
+            // 
             // txtStaffName
             // 
             this.txtStaffName.Location = new System.Drawing.Point(224, 317);
@@ -306,60 +357,11 @@
             this.btnFindStaff.Size = new System.Drawing.Size(76, 69);
             this.btnFindStaff.TabIndex = 5;
             this.btnFindStaff.UseVisualStyleBackColor = true;
+            this.btnFindStaff.Click += new System.EventHandler(this.btnFindStaff_Click);
             // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
-            // 
-            // txtSex
-            // 
-            this.txtSex.Location = new System.Drawing.Point(224, 359);
-            this.txtSex.Name = "txtSex";
-            this.txtSex.Size = new System.Drawing.Size(142, 22);
-            this.txtSex.TabIndex = 8;
-            this.txtSex.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSex_KeyPress);
-            // 
-            // txtPosition
-            // 
-            this.txtPosition.Location = new System.Drawing.Point(224, 401);
-            this.txtPosition.Multiline = true;
-            this.txtPosition.Name = "txtPosition";
-            this.txtPosition.Size = new System.Drawing.Size(280, 22);
-            this.txtPosition.TabIndex = 9;
-            this.txtPosition.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPosition_KeyPress);
-            // 
-            // txtDateOfBirth
-            // 
-            this.txtDateOfBirth.Location = new System.Drawing.Point(224, 445);
-            this.txtDateOfBirth.Name = "txtDateOfBirth";
-            this.txtDateOfBirth.Size = new System.Drawing.Size(280, 22);
-            this.txtDateOfBirth.TabIndex = 10;
-            this.txtDateOfBirth.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDateOfBirth_KeyPress);
-            // 
-            // txtIdentityCard
-            // 
-            this.txtIdentityCard.Location = new System.Drawing.Point(224, 486);
-            this.txtIdentityCard.Name = "txtIdentityCard";
-            this.txtIdentityCard.Size = new System.Drawing.Size(280, 22);
-            this.txtIdentityCard.TabIndex = 11;
-            this.txtIdentityCard.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIdentityCard_KeyPress);
-            // 
-            // txtPhoneNumber
-            // 
-            this.txtPhoneNumber.Location = new System.Drawing.Point(224, 528);
-            this.txtPhoneNumber.Name = "txtPhoneNumber";
-            this.txtPhoneNumber.Size = new System.Drawing.Size(280, 22);
-            this.txtPhoneNumber.TabIndex = 12;
-            this.txtPhoneNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPhoneNumber_KeyPress);
-            // 
-            // rtbAddress
-            // 
-            this.rtbAddress.Location = new System.Drawing.Point(224, 579);
-            this.rtbAddress.Name = "rtbAddress";
-            this.rtbAddress.Size = new System.Drawing.Size(280, 90);
-            this.rtbAddress.TabIndex = 13;
-            this.rtbAddress.Text = "";
-            this.rtbAddress.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.rtbAddress_KeyPress);
             // 
             // frmAttendanceList
             // 

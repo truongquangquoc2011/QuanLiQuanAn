@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="QLNH_Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+<Schema Namespace="QLNHModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityType Name="Account">
     <Key>
       <PropertyRef Name="userName" />
@@ -698,7 +698,7 @@
       <Parameter Name="idTable" Mode="In" Type="Int32" />
       <Parameter Name="nameTable" Mode="In" Type="String" />
     </FunctionImport>
-    <FunctionImport Name="USP_CheckExitsAttendanceList" ReturnType="Collection(QLNH_Model.USP_CheckExitsAttendanceList_Result)">
+    <FunctionImport Name="USP_CheckExitsAttendanceList" ReturnType="Collection(QLNHModel.USP_CheckExitsAttendanceList_Result)">
       <Parameter Name="idStaff" Mode="In" Type="String" />
     </FunctionImport>
     <FunctionImport Name="USP_CheckOut">
@@ -710,25 +710,25 @@
     <FunctionImport Name="USP_DeleteMaterial">
       <Parameter Name="idMaterial" Mode="In" Type="Int32" />
     </FunctionImport>
-    <FunctionImport Name="USP_GetAccountByName" ReturnType="Collection(QLNH_Model.USP_GetAccountByName_Result)">
+    <FunctionImport Name="USP_GetAccountByName" ReturnType="Collection(QLNHModel.USP_GetAccountByName_Result)">
       <Parameter Name="userName" Mode="In" Type="String" />
     </FunctionImport>
-    <FunctionImport Name="USP_GetFoodTop5" ReturnType="Collection(QLNH_Model.USP_GetFoodTop5_Result)">
+    <FunctionImport Name="USP_GetFoodTop5" ReturnType="Collection(QLNHModel.USP_GetFoodTop5_Result)">
       <Parameter Name="checkIn" Mode="In" Type="DateTime" />
       <Parameter Name="checkOut" Mode="In" Type="DateTime" />
     </FunctionImport>
-    <FunctionImport Name="USP_GetListBillByDate" ReturnType="Collection(QLNH_Model.USP_GetListBillByDate_Result)">
+    <FunctionImport Name="USP_GetListBillByDate" ReturnType="Collection(QLNHModel.USP_GetListBillByDate_Result)">
       <Parameter Name="checkIn" Mode="In" Type="DateTime" />
       <Parameter Name="checkOut" Mode="In" Type="DateTime" />
     </FunctionImport>
     <FunctionImport Name="USP_GetMaxBill" ReturnType="Collection(Int32)" />
-    <FunctionImport Name="USP_GetTableList" ReturnType="Collection(QLNH_Model.USP_GetTableList_Result)" />
-    <FunctionImport Name="USP_GetTopFood" ReturnType="Collection(QLNH_Model.USP_GetTopFood_Result)">
+    <FunctionImport Name="USP_GetTableList" ReturnType="Collection(QLNHModel.USP_GetTableList_Result)" />
+    <FunctionImport Name="USP_GetTopFood" ReturnType="Collection(QLNHModel.USP_GetTopFood_Result)">
       <Parameter Name="checkIn" Mode="In" Type="DateTime" />
       <Parameter Name="checkOut" Mode="In" Type="DateTime" />
     </FunctionImport>
-    <FunctionImport Name="USP_GetTotalAttendanceList" ReturnType="Collection(QLNH_Model.USP_GetTotalAttendanceList_Result)" />
-    <FunctionImport Name="USP_GetTotalBillsInDay" ReturnType="Collection(QLNH_Model.USP_GetTotalBillsInDay_Result)" />
+    <FunctionImport Name="USP_GetTotalAttendanceList" ReturnType="Collection(QLNHModel.USP_GetTotalAttendanceList_Result)" />
+    <FunctionImport Name="USP_GetTotalBillsInDay" ReturnType="Collection(QLNHModel.USP_GetTotalBillsInDay_Result)" />
     <FunctionImport Name="USP_InsertAccount">
       <Parameter Name="userName" Mode="In" Type="String" />
       <Parameter Name="passWord" Mode="In" Type="String" />
@@ -782,7 +782,7 @@
     <FunctionImport Name="USP_InsertUnit">
       <Parameter Name="name" Mode="In" Type="String" />
     </FunctionImport>
-    <FunctionImport Name="USP_Login" ReturnType="Collection(QLNH_Model.USP_Login_Result)">
+    <FunctionImport Name="USP_Login" ReturnType="Collection(QLNHModel.USP_Login_Result)">
       <Parameter Name="userName" Mode="In" Type="String" />
       <Parameter Name="passWord" Mode="In" Type="String" />
     </FunctionImport>

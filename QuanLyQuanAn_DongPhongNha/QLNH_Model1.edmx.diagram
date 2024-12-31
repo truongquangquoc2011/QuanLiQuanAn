@@ -4,50 +4,50 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="5cab3a8415aa450cbff6a799b65a583a" Name="Diagram1">
-        <EntityTypeShape EntityType="QLNH_Model.Account" Width="1.5" PointX="5.25" PointY="4" IsExpanded="true" />
-        <EntityTypeShape EntityType="QLNH_Model.AttendanceList" Width="1.5" PointX="5.25" PointY="8" IsExpanded="true" />
-        <EntityTypeShape EntityType="QLNH_Model.Bill" Width="1.5" PointX="7.5" PointY="4.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="QLNH_Model.BillInfo" Width="1.5" PointX="9.75" PointY="4.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="QLNH_Model.BillInfoOfWareHouse" Width="1.5" PointX="9.75" PointY="7.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="QLNH_Model.BillOfWareHouse" Width="1.5" PointX="7.5" PointY="8" IsExpanded="true" />
-        <EntityTypeShape EntityType="QLNH_Model.Food" Width="1.5" PointX="7.5" PointY="12" IsExpanded="true" />
-        <EntityTypeShape EntityType="QLNH_Model.FoodCategory" Width="1.5" PointX="5.25" PointY="12.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="QLNH_Model.Material" Width="1.5" PointX="7.5" PointY="16.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="QLNH_Model.Position" Width="1.5" PointX="0.75" PointY="6" IsExpanded="true" />
-        <EntityTypeShape EntityType="QLNH_Model.Staff" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
-        <EntityTypeShape EntityType="QLNH_Model.TableFood" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="QLNH_Model.Unit" Width="1.5" PointX="5.25" PointY="16.5" IsExpanded="true" />
-        <AssociationConnector Association="QLNH_Model.FK__Account__idStaff__628FA481" ManuallyRouted="false" />
-        <AssociationConnector Association="QLNH_Model.FK__Account__idStaff__6383C8BA" ManuallyRouted="false" />
-        <AssociationConnector Association="QLNH_Model.FK__Account__idStaff__6477ECF3" ManuallyRouted="false" />
-        <AssociationConnector Association="QLNH_Model.FK__Bill__payerId__4316F928" ManuallyRouted="false" />
-        <AssociationConnector Association="QLNH_Model.FK__BillOfWar__userN__73BA3083" ManuallyRouted="false" />
-        <AssociationConnector Association="QLNH_Model.FK__BillOfWar__userN__74AE54BC" ManuallyRouted="false" />
-        <AssociationConnector Association="QLNH_Model.FK__BillOfWar__userN__75A278F5" ManuallyRouted="false" />
-        <AssociationConnector Association="QLNH_Model.FK__Attendanc__idSta__656C112C" ManuallyRouted="false" />
-        <AssociationConnector Association="QLNH_Model.FK__Attendanc__idSta__66603565" ManuallyRouted="false" />
-        <AssociationConnector Association="QLNH_Model.FK__Attendanc__idSta__6754599E" ManuallyRouted="false" />
-        <AssociationConnector Association="QLNH_Model.FK__Bill__idTable__4222D4EF" ManuallyRouted="false" />
-        <AssociationConnector Association="QLNH_Model.FK__BillInfo__idBill__46E78A0C" ManuallyRouted="false" />
-        <AssociationConnector Association="QLNH_Model.FK__BillInfo__idFood__6B24EA82" ManuallyRouted="false" />
-        <AssociationConnector Association="QLNH_Model.FK__BillInfo__idFood__6C190EBB" ManuallyRouted="false" />
-        <AssociationConnector Association="QLNH_Model.FK__BillInfo__idFood__6D0D32F4" ManuallyRouted="false" />
-        <AssociationConnector Association="QLNH_Model.FK__BillInfoO__idBil__6E01572D" ManuallyRouted="false" />
-        <AssociationConnector Association="QLNH_Model.FK__BillInfoO__idBil__6EF57B66" ManuallyRouted="false" />
-        <AssociationConnector Association="QLNH_Model.FK__BillInfoO__idBil__6FE99F9F" ManuallyRouted="false" />
-        <AssociationConnector Association="QLNH_Model.FK__BillInfoO__idMat__70DDC3D8" ManuallyRouted="false" />
-        <AssociationConnector Association="QLNH_Model.FK__BillInfoO__idMat__71D1E811" ManuallyRouted="false" />
-        <AssociationConnector Association="QLNH_Model.FK__BillInfoO__idMat__72C60C4A" ManuallyRouted="false" />
-        <AssociationConnector Association="QLNH_Model.FK__Food__idFC__76969D2E" ManuallyRouted="false" />
-        <AssociationConnector Association="QLNH_Model.FK__Food__idFC__778AC167" ManuallyRouted="false" />
-        <AssociationConnector Association="QLNH_Model.FK__Food__idFC__787EE5A0" ManuallyRouted="false" />
-        <AssociationConnector Association="QLNH_Model.FK__Material__idUnit__797309D9" ManuallyRouted="false" />
-        <AssociationConnector Association="QLNH_Model.FK__Material__idUnit__7A672E12" ManuallyRouted="false" />
-        <AssociationConnector Association="QLNH_Model.FK__Material__idUnit__7B5B524B" ManuallyRouted="false" />
-        <AssociationConnector Association="QLNH_Model.FK__Staff__idPositio__7C4F7684" ManuallyRouted="false" />
-        <AssociationConnector Association="QLNH_Model.FK__Staff__idPositio__7D439ABD" ManuallyRouted="false" />
-        <AssociationConnector Association="QLNH_Model.FK__Staff__idPositio__7E37BEF6" ManuallyRouted="false" />
+      <Diagram DiagramId="2e414d842f8a4f8e8421374c07522a5f" Name="Diagram1">
+        <EntityTypeShape EntityType="QLNHModel.Account" Width="1.5" PointX="5.25" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNHModel.AttendanceList" Width="1.5" PointX="5.25" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNHModel.Bill" Width="1.5" PointX="7.5" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNHModel.BillInfo" Width="1.5" PointX="9.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNHModel.BillInfoOfWareHouse" Width="1.5" PointX="9.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNHModel.BillOfWareHouse" Width="1.5" PointX="7.5" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNHModel.Food" Width="1.5" PointX="7.5" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNHModel.FoodCategory" Width="1.5" PointX="5.25" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNHModel.Material" Width="1.5" PointX="7.5" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNHModel.Position" Width="1.5" PointX="0.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNHModel.Staff" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNHModel.TableFood" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNHModel.Unit" Width="1.5" PointX="5.25" PointY="16.5" IsExpanded="true" />
+        <AssociationConnector Association="QLNHModel.FK__Account__idStaff__628FA481" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHModel.FK__Account__idStaff__6383C8BA" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHModel.FK__Account__idStaff__6477ECF3" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHModel.FK__Bill__payerId__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHModel.FK__BillOfWar__userN__73BA3083" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHModel.FK__BillOfWar__userN__74AE54BC" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHModel.FK__BillOfWar__userN__75A278F5" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHModel.FK__Attendanc__idSta__656C112C" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHModel.FK__Attendanc__idSta__66603565" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHModel.FK__Attendanc__idSta__6754599E" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHModel.FK__Bill__idTable__4222D4EF" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHModel.FK__BillInfo__idBill__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHModel.FK__BillInfo__idFood__6B24EA82" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHModel.FK__BillInfo__idFood__6C190EBB" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHModel.FK__BillInfo__idFood__6D0D32F4" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHModel.FK__BillInfoO__idBil__6E01572D" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHModel.FK__BillInfoO__idBil__6EF57B66" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHModel.FK__BillInfoO__idBil__6FE99F9F" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHModel.FK__BillInfoO__idMat__70DDC3D8" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHModel.FK__BillInfoO__idMat__71D1E811" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHModel.FK__BillInfoO__idMat__72C60C4A" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHModel.FK__Food__idFC__76969D2E" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHModel.FK__Food__idFC__778AC167" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHModel.FK__Food__idFC__787EE5A0" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHModel.FK__Material__idUnit__797309D9" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHModel.FK__Material__idUnit__7A672E12" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHModel.FK__Material__idUnit__7B5B524B" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHModel.FK__Staff__idPositio__7C4F7684" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHModel.FK__Staff__idPositio__7D439ABD" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHModel.FK__Staff__idPositio__7E37BEF6" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
