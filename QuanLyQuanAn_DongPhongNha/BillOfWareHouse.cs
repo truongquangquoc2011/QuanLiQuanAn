@@ -20,6 +20,9 @@ namespace QuanLyQuanAn_DongPhongNha
             this.BillInfoOfWareHouse = new HashSet<BillInfoOfWareHouse>();
             this.BillInfoOfWareHouse1 = new HashSet<BillInfoOfWareHouse>();
             this.BillInfoOfWareHouse2 = new HashSet<BillInfoOfWareHouse>();
+            this.BillInfoOfWareHouse3 = new HashSet<BillInfoOfWareHouse>();
+            this.BillInfoOfWareHouse4 = new HashSet<BillInfoOfWareHouse>();
+            this.BillInfoOfWareHouse5 = new HashSet<BillInfoOfWareHouse>();
         }
     
         public int idBillOfWareHouse { get; set; }
@@ -31,11 +34,20 @@ namespace QuanLyQuanAn_DongPhongNha
         public virtual Account Account { get; set; }
         public virtual Account Account1 { get; set; }
         public virtual Account Account2 { get; set; }
+        public virtual Account Account3 { get; set; }
+        public virtual Account Account4 { get; set; }
+        public virtual Account Account5 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<BillInfoOfWareHouse> BillInfoOfWareHouse { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<BillInfoOfWareHouse> BillInfoOfWareHouse1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<BillInfoOfWareHouse> BillInfoOfWareHouse2 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<BillInfoOfWareHouse> BillInfoOfWareHouse3 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<BillInfoOfWareHouse> BillInfoOfWareHouse4 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<BillInfoOfWareHouse> BillInfoOfWareHouse5 { get; set; }
     }
 }

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="QLNHModelStoreContainer" CdmEntityContainer="QLNHEntities">
+  <EntityContainerMapping StorageEntityContainer="QuanLyNhaHangModelStoreContainer" CdmEntityContainer="QLNHEntities">
     <EntitySetMapping Name="Account">
-      <EntityTypeMapping TypeName="QLNHModel.Account">
+      <EntityTypeMapping TypeName="QuanLyNhaHangModel.Account">
         <MappingFragment StoreEntitySet="Account">
           <ScalarProperty Name="userName" ColumnName="userName" />
           <ScalarProperty Name="passWord" ColumnName="passWord" />
@@ -13,7 +13,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="AttendanceList">
-      <EntityTypeMapping TypeName="QLNHModel.AttendanceList">
+      <EntityTypeMapping TypeName="QuanLyNhaHangModel.AttendanceList">
         <MappingFragment StoreEntitySet="AttendanceList">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="idStaff" ColumnName="idStaff" />
@@ -22,7 +22,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Bill">
-      <EntityTypeMapping TypeName="QLNHModel.Bill">
+      <EntityTypeMapping TypeName="QuanLyNhaHangModel.Bill">
         <MappingFragment StoreEntitySet="Bill">
           <ScalarProperty Name="idBill" ColumnName="idBill" />
           <ScalarProperty Name="dateCheckIn" ColumnName="dateCheckIn" />
@@ -36,7 +36,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="BillInfo">
-      <EntityTypeMapping TypeName="QLNHModel.BillInfo">
+      <EntityTypeMapping TypeName="QuanLyNhaHangModel.BillInfo">
         <MappingFragment StoreEntitySet="BillInfo">
           <ScalarProperty Name="idBillInfo" ColumnName="idBillInfo" />
           <ScalarProperty Name="idBill" ColumnName="idBill" />
@@ -46,7 +46,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="BillInfoOfWareHouse">
-      <EntityTypeMapping TypeName="QLNHModel.BillInfoOfWareHouse">
+      <EntityTypeMapping TypeName="QuanLyNhaHangModel.BillInfoOfWareHouse">
         <MappingFragment StoreEntitySet="BillInfoOfWareHouse">
           <ScalarProperty Name="idBillInfoOfWareHouse" ColumnName="idBillInfoOfWareHouse" />
           <ScalarProperty Name="idBillOfWareHouse" ColumnName="idBillOfWareHouse" />
@@ -58,7 +58,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="BillOfWareHouse">
-      <EntityTypeMapping TypeName="QLNHModel.BillOfWareHouse">
+      <EntityTypeMapping TypeName="QuanLyNhaHangModel.BillOfWareHouse">
         <MappingFragment StoreEntitySet="BillOfWareHouse">
           <ScalarProperty Name="idBillOfWareHouse" ColumnName="idBillOfWareHouse" />
           <ScalarProperty Name="dateAdded" ColumnName="dateAdded" />
@@ -69,7 +69,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Food">
-      <EntityTypeMapping TypeName="QLNHModel.Food">
+      <EntityTypeMapping TypeName="QuanLyNhaHangModel.Food">
         <MappingFragment StoreEntitySet="Food">
           <ScalarProperty Name="idFood" ColumnName="idFood" />
           <ScalarProperty Name="nameFood" ColumnName="nameFood" />
@@ -81,7 +81,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="FoodCategory">
-      <EntityTypeMapping TypeName="QLNHModel.FoodCategory">
+      <EntityTypeMapping TypeName="QuanLyNhaHangModel.FoodCategory">
         <MappingFragment StoreEntitySet="FoodCategory">
           <ScalarProperty Name="idFC" ColumnName="idFC" />
           <ScalarProperty Name="nameFC" ColumnName="nameFC" />
@@ -89,7 +89,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Material">
-      <EntityTypeMapping TypeName="QLNHModel.Material">
+      <EntityTypeMapping TypeName="QuanLyNhaHangModel.Material">
         <MappingFragment StoreEntitySet="Material">
           <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
           <ScalarProperty Name="nameMaterial" ColumnName="nameMaterial" />
@@ -98,7 +98,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Position">
-      <EntityTypeMapping TypeName="QLNHModel.Position">
+      <EntityTypeMapping TypeName="QuanLyNhaHangModel.Position">
         <MappingFragment StoreEntitySet="Position">
           <ScalarProperty Name="idPosition" ColumnName="idPosition" />
           <ScalarProperty Name="namePosition" ColumnName="namePosition" />
@@ -107,7 +107,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Staff">
-      <EntityTypeMapping TypeName="QLNHModel.Staff">
+      <EntityTypeMapping TypeName="QuanLyNhaHangModel.Staff">
         <MappingFragment StoreEntitySet="Staff">
           <ScalarProperty Name="idStaff" ColumnName="idStaff" />
           <ScalarProperty Name="nameStaff" ColumnName="nameStaff" />
@@ -120,8 +120,19 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="QuanLyNhaHangModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="TableFood">
-      <EntityTypeMapping TypeName="QLNHModel.TableFood">
+      <EntityTypeMapping TypeName="QuanLyNhaHangModel.TableFood">
         <MappingFragment StoreEntitySet="TableFood">
           <ScalarProperty Name="idTable" ColumnName="idTable" />
           <ScalarProperty Name="nameTable" ColumnName="nameTable" />
@@ -130,31 +141,55 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Unit">
-      <EntityTypeMapping TypeName="QLNHModel.Unit">
+      <EntityTypeMapping TypeName="QuanLyNhaHangModel.Unit">
         <MappingFragment StoreEntitySet="Unit">
           <ScalarProperty Name="idUnit" ColumnName="idUnit" />
           <ScalarProperty Name="nameUnit" ColumnName="nameUnit" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <FunctionImportMapping FunctionImportName="UpdateAccount" FunctionName="QLNHModel.Store.UpdateAccount" />
-    <FunctionImportMapping FunctionImportName="UpdateFood" FunctionName="QLNHModel.Store.UpdateFood" />
-    <FunctionImportMapping FunctionImportName="UpdateFoodCategory" FunctionName="QLNHModel.Store.UpdateFoodCategory" />
-    <FunctionImportMapping FunctionImportName="UpdateTableFood" FunctionName="QLNHModel.Store.UpdateTableFood" />
-    <FunctionImportMapping FunctionImportName="USP_CheckExitsAttendanceList" FunctionName="QLNHModel.Store.USP_CheckExitsAttendanceList">
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="QuanLyNhaHangModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="QuanLyNhaHangModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="QuanLyNhaHangModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="QuanLyNhaHangModel.Store.sp_helpdiagramdefinition">
       <ResultMapping>
-        <ComplexTypeMapping TypeName="QLNHModel.USP_CheckExitsAttendanceList_Result">
+        <ComplexTypeMapping TypeName="QuanLyNhaHangModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="QuanLyNhaHangModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLyNhaHangModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="QuanLyNhaHangModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="QuanLyNhaHangModel.Store.sp_upgraddiagrams" />
+    <FunctionImportMapping FunctionImportName="UpdateAccount" FunctionName="QuanLyNhaHangModel.Store.UpdateAccount" />
+    <FunctionImportMapping FunctionImportName="UpdateFood" FunctionName="QuanLyNhaHangModel.Store.UpdateFood" />
+    <FunctionImportMapping FunctionImportName="UpdateFoodCategory" FunctionName="QuanLyNhaHangModel.Store.UpdateFoodCategory" />
+    <FunctionImportMapping FunctionImportName="UpdateTableFood" FunctionName="QuanLyNhaHangModel.Store.UpdateTableFood" />
+    <FunctionImportMapping FunctionImportName="USP_CheckExitsAttendanceList" FunctionName="QuanLyNhaHangModel.Store.USP_CheckExitsAttendanceList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuanLyNhaHangModel.USP_CheckExitsAttendanceList_Result">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="idStaff" ColumnName="idStaff" />
           <ScalarProperty Name="dateCheckIn" ColumnName="dateCheckIn" />
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
-    <FunctionImportMapping FunctionImportName="USP_CheckOut" FunctionName="QLNHModel.Store.USP_CheckOut" />
-    <FunctionImportMapping FunctionImportName="USP_DeleteMaterial" FunctionName="QLNHModel.Store.USP_DeleteMaterial" />
-    <FunctionImportMapping FunctionImportName="USP_GetAccountByName" FunctionName="QLNHModel.Store.USP_GetAccountByName">
+    <FunctionImportMapping FunctionImportName="USP_CheckOut" FunctionName="QuanLyNhaHangModel.Store.USP_CheckOut" />
+    <FunctionImportMapping FunctionImportName="USP_DeleteMaterial" FunctionName="QuanLyNhaHangModel.Store.USP_DeleteMaterial" />
+    <FunctionImportMapping FunctionImportName="USP_GetAccountByName" FunctionName="QuanLyNhaHangModel.Store.USP_GetAccountByName">
       <ResultMapping>
-        <ComplexTypeMapping TypeName="QLNHModel.USP_GetAccountByName_Result">
+        <ComplexTypeMapping TypeName="QuanLyNhaHangModel.USP_GetAccountByName_Result">
           <ScalarProperty Name="userName" ColumnName="userName" />
           <ScalarProperty Name="passWord" ColumnName="passWord" />
           <ScalarProperty Name="displayName" ColumnName="displayName" />
@@ -163,9 +198,9 @@
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
-    <FunctionImportMapping FunctionImportName="USP_GetFoodTop5" FunctionName="QLNHModel.Store.USP_GetFoodTop5">
+    <FunctionImportMapping FunctionImportName="USP_GetFoodTop5" FunctionName="QuanLyNhaHangModel.Store.USP_GetFoodTop5">
       <ResultMapping>
-        <ComplexTypeMapping TypeName="QLNHModel.USP_GetFoodTop5_Result">
+        <ComplexTypeMapping TypeName="QuanLyNhaHangModel.USP_GetFoodTop5_Result">
           <ScalarProperty Name="idFood" ColumnName="idFood" />
           <ScalarProperty Name="nameFood" ColumnName="nameFood" />
           <ScalarProperty Name="countFood" ColumnName="countFood" />
@@ -174,9 +209,9 @@
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
-    <FunctionImportMapping FunctionImportName="USP_GetListBillByDate" FunctionName="QLNHModel.Store.USP_GetListBillByDate">
+    <FunctionImportMapping FunctionImportName="USP_GetListBillByDate" FunctionName="QuanLyNhaHangModel.Store.USP_GetListBillByDate">
       <ResultMapping>
-        <ComplexTypeMapping TypeName="QLNHModel.USP_GetListBillByDate_Result">
+        <ComplexTypeMapping TypeName="QuanLyNhaHangModel.USP_GetListBillByDate_Result">
           <ScalarProperty Name="idBill" ColumnName="idBill" />
           <ScalarProperty Name="dateCheckIn" ColumnName="dateCheckIn" />
           <ScalarProperty Name="dateCheckOut" ColumnName="dateCheckOut" />
@@ -188,19 +223,19 @@
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
-    <FunctionImportMapping FunctionImportName="USP_GetMaxBill" FunctionName="QLNHModel.Store.USP_GetMaxBill" />
-    <FunctionImportMapping FunctionImportName="USP_GetTableList" FunctionName="QLNHModel.Store.USP_GetTableList">
+    <FunctionImportMapping FunctionImportName="USP_GetMaxBill" FunctionName="QuanLyNhaHangModel.Store.USP_GetMaxBill" />
+    <FunctionImportMapping FunctionImportName="USP_GetTableList" FunctionName="QuanLyNhaHangModel.Store.USP_GetTableList">
       <ResultMapping>
-        <ComplexTypeMapping TypeName="QLNHModel.USP_GetTableList_Result">
+        <ComplexTypeMapping TypeName="QuanLyNhaHangModel.USP_GetTableList_Result">
           <ScalarProperty Name="idTable" ColumnName="idTable" />
           <ScalarProperty Name="nameTable" ColumnName="nameTable" />
           <ScalarProperty Name="statusTable" ColumnName="statusTable" />
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
-    <FunctionImportMapping FunctionImportName="USP_GetTopFood" FunctionName="QLNHModel.Store.USP_GetTopFood">
+    <FunctionImportMapping FunctionImportName="USP_GetTopFood" FunctionName="QuanLyNhaHangModel.Store.USP_GetTopFood">
       <ResultMapping>
-        <ComplexTypeMapping TypeName="QLNHModel.USP_GetTopFood_Result">
+        <ComplexTypeMapping TypeName="QuanLyNhaHangModel.USP_GetTopFood_Result">
           <ScalarProperty Name="nameFood" ColumnName="nameFood" />
           <ScalarProperty Name="countFood" ColumnName="countFood" />
           <ScalarProperty Name="price" ColumnName="price" />
@@ -208,18 +243,18 @@
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
-    <FunctionImportMapping FunctionImportName="USP_GetTotalAttendanceList" FunctionName="QLNHModel.Store.USP_GetTotalAttendanceList">
+    <FunctionImportMapping FunctionImportName="USP_GetTotalAttendanceList" FunctionName="QuanLyNhaHangModel.Store.USP_GetTotalAttendanceList">
       <ResultMapping>
-        <ComplexTypeMapping TypeName="QLNHModel.USP_GetTotalAttendanceList_Result">
+        <ComplexTypeMapping TypeName="QuanLyNhaHangModel.USP_GetTotalAttendanceList_Result">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="idStaff" ColumnName="idStaff" />
           <ScalarProperty Name="dateCheckIn" ColumnName="dateCheckIn" />
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
-    <FunctionImportMapping FunctionImportName="USP_GetTotalBillsInDay" FunctionName="QLNHModel.Store.USP_GetTotalBillsInDay">
+    <FunctionImportMapping FunctionImportName="USP_GetTotalBillsInDay" FunctionName="QuanLyNhaHangModel.Store.USP_GetTotalBillsInDay">
       <ResultMapping>
-        <ComplexTypeMapping TypeName="QLNHModel.USP_GetTotalBillsInDay_Result">
+        <ComplexTypeMapping TypeName="QuanLyNhaHangModel.USP_GetTotalBillsInDay_Result">
           <ScalarProperty Name="idBill" ColumnName="idBill" />
           <ScalarProperty Name="dateCheckIn" ColumnName="dateCheckIn" />
           <ScalarProperty Name="dateCheckOut" ColumnName="dateCheckOut" />
@@ -231,19 +266,19 @@
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
-    <FunctionImportMapping FunctionImportName="USP_InsertAccount" FunctionName="QLNHModel.Store.USP_InsertAccount" />
-    <FunctionImportMapping FunctionImportName="USP_InsertAttendanceList" FunctionName="QLNHModel.Store.USP_InsertAttendanceList" />
-    <FunctionImportMapping FunctionImportName="USP_InsertBill" FunctionName="QLNHModel.Store.USP_InsertBill" />
-    <FunctionImportMapping FunctionImportName="USP_InsertBillInfo" FunctionName="QLNHModel.Store.USP_InsertBillInfo" />
-    <FunctionImportMapping FunctionImportName="USP_InsertBillInfoOfWareHouse" FunctionName="QLNHModel.Store.USP_InsertBillInfoOfWareHouse" />
-    <FunctionImportMapping FunctionImportName="USP_InsertBillOfWareHouse" FunctionName="QLNHModel.Store.USP_InsertBillOfWareHouse" />
-    <FunctionImportMapping FunctionImportName="USP_InsertFood" FunctionName="QLNHModel.Store.USP_InsertFood" />
-    <FunctionImportMapping FunctionImportName="USP_InsertMaterial" FunctionName="QLNHModel.Store.USP_InsertMaterial" />
-    <FunctionImportMapping FunctionImportName="USP_InsertStaff" FunctionName="QLNHModel.Store.USP_InsertStaff" />
-    <FunctionImportMapping FunctionImportName="USP_InsertUnit" FunctionName="QLNHModel.Store.USP_InsertUnit" />
-    <FunctionImportMapping FunctionImportName="USP_Login" FunctionName="QLNHModel.Store.USP_Login">
+    <FunctionImportMapping FunctionImportName="USP_InsertAccount" FunctionName="QuanLyNhaHangModel.Store.USP_InsertAccount" />
+    <FunctionImportMapping FunctionImportName="USP_InsertAttendanceList" FunctionName="QuanLyNhaHangModel.Store.USP_InsertAttendanceList" />
+    <FunctionImportMapping FunctionImportName="USP_InsertBill" FunctionName="QuanLyNhaHangModel.Store.USP_InsertBill" />
+    <FunctionImportMapping FunctionImportName="USP_InsertBillInfo" FunctionName="QuanLyNhaHangModel.Store.USP_InsertBillInfo" />
+    <FunctionImportMapping FunctionImportName="USP_InsertBillInfoOfWareHouse" FunctionName="QuanLyNhaHangModel.Store.USP_InsertBillInfoOfWareHouse" />
+    <FunctionImportMapping FunctionImportName="USP_InsertBillOfWareHouse" FunctionName="QuanLyNhaHangModel.Store.USP_InsertBillOfWareHouse" />
+    <FunctionImportMapping FunctionImportName="USP_InsertFood" FunctionName="QuanLyNhaHangModel.Store.USP_InsertFood" />
+    <FunctionImportMapping FunctionImportName="USP_InsertMaterial" FunctionName="QuanLyNhaHangModel.Store.USP_InsertMaterial" />
+    <FunctionImportMapping FunctionImportName="USP_InsertStaff" FunctionName="QuanLyNhaHangModel.Store.USP_InsertStaff" />
+    <FunctionImportMapping FunctionImportName="USP_InsertUnit" FunctionName="QuanLyNhaHangModel.Store.USP_InsertUnit" />
+    <FunctionImportMapping FunctionImportName="USP_Login" FunctionName="QuanLyNhaHangModel.Store.USP_Login">
       <ResultMapping>
-        <ComplexTypeMapping TypeName="QLNHModel.USP_Login_Result">
+        <ComplexTypeMapping TypeName="QuanLyNhaHangModel.USP_Login_Result">
           <ScalarProperty Name="userName" ColumnName="userName" />
           <ScalarProperty Name="passWord" ColumnName="passWord" />
           <ScalarProperty Name="displayName" ColumnName="displayName" />
