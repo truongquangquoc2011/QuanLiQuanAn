@@ -1,4 +1,5 @@
-﻿using QuanLyQuanAn_DongPhongNha.Manager;
+﻿using QuanLyQuanAn_DongPhongNha.Admin;
+using QuanLyQuanAn_DongPhongNha.Manager;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace QuanLyQuanAn_DongPhongNha
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLogin());
+            Application.Run(new frmAccount());
         }
     }
 }

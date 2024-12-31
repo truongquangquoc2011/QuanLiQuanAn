@@ -117,7 +117,7 @@ namespace QuanLyQuanAn_DongPhongNha.Manager
             this.pnlDesktop.Controls.Clear();
 
             // Sử dụng constructor không tham số của frmTableManager
-            frmTableManager frmTableManager = new frmTableManager
+            frmTableManager frmTableManager = new frmTableManager(LoginAccount)
             {
                 Dock = DockStyle.Fill,
                 TopLevel = false,

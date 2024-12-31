@@ -73,21 +73,20 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Cambria", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(264, 16);
-            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label4.Location = new System.Drawing.Point(198, 13);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 20);
+            this.label4.Size = new System.Drawing.Size(60, 16);
             this.label4.TabIndex = 10;
             this.label4.Text = "Giảm giá";
             // 
             // txtTotalPrice
             // 
             this.txtTotalPrice.Font = new System.Drawing.Font("Cambria", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotalPrice.Location = new System.Drawing.Point(17, 13);
-            this.txtTotalPrice.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTotalPrice.Location = new System.Drawing.Point(13, 11);
             this.txtTotalPrice.Name = "txtTotalPrice";
             this.txtTotalPrice.ReadOnly = true;
-            this.txtTotalPrice.Size = new System.Drawing.Size(237, 27);
+            this.txtTotalPrice.Size = new System.Drawing.Size(179, 23);
             this.txtTotalPrice.TabIndex = 8;
             this.txtTotalPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -96,14 +95,14 @@
             this.btnPayment.Font = new System.Drawing.Font("Cambria", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPayment.Image = ((System.Drawing.Image)(resources.GetObject("btnPayment.Image")));
             this.btnPayment.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPayment.Location = new System.Drawing.Point(410, 40);
-            this.btnPayment.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPayment.Location = new System.Drawing.Point(308, 32);
             this.btnPayment.Name = "btnPayment";
-            this.btnPayment.Size = new System.Drawing.Size(254, 79);
+            this.btnPayment.Size = new System.Drawing.Size(190, 64);
             this.btnPayment.TabIndex = 9;
             this.btnPayment.Text = "Thanh Toán";
             this.btnPayment.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnPayment.UseVisualStyleBackColor = true;
+            this.btnPayment.Click += new System.EventHandler(this.btnPayment_Click);
             // 
             // nmDiscount
             // 
@@ -113,10 +112,9 @@
             0,
             0,
             0});
-            this.nmDiscount.Location = new System.Drawing.Point(270, 61);
-            this.nmDiscount.Margin = new System.Windows.Forms.Padding(4);
+            this.nmDiscount.Location = new System.Drawing.Point(202, 50);
             this.nmDiscount.Name = "nmDiscount";
-            this.nmDiscount.Size = new System.Drawing.Size(106, 27);
+            this.nmDiscount.Size = new System.Drawing.Size(80, 23);
             this.nmDiscount.TabIndex = 7;
             // 
             // panel1
@@ -126,18 +124,20 @@
             this.panel1.Controls.Add(this.btnPayment);
             this.panel1.Controls.Add(this.nmDiscount);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 779);
+            this.panel1.Location = new System.Drawing.Point(0, 633);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(694, 132);
+            this.panel1.Size = new System.Drawing.Size(520, 107);
             this.panel1.TabIndex = 0;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(209, 22);
+            this.label6.Location = new System.Drawing.Point(157, 18);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(149, 36);
+            this.label6.Size = new System.Drawing.Size(118, 28);
             this.label6.TabIndex = 0;
             this.label6.Text = "HÓA ĐƠN";
             // 
@@ -147,8 +147,9 @@
             this.panel2.Controls.Add(this.label6);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(694, 100);
+            this.panel2.Size = new System.Drawing.Size(520, 81);
             this.panel2.TabIndex = 1;
             // 
             // columnHeader4
@@ -184,12 +185,14 @@
             this.lsvBill.GridLines = true;
             this.lsvBill.HideSelection = false;
             this.lsvBill.LabelEdit = true;
-            this.lsvBill.Location = new System.Drawing.Point(0, 100);
+            this.lsvBill.Location = new System.Drawing.Point(0, 81);
+            this.lsvBill.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lsvBill.Name = "lsvBill";
-            this.lsvBill.Size = new System.Drawing.Size(694, 679);
+            this.lsvBill.Size = new System.Drawing.Size(520, 552);
             this.lsvBill.TabIndex = 2;
             this.lsvBill.UseCompatibleStateImageBehavior = false;
             this.lsvBill.View = System.Windows.Forms.View.Details;
+            this.lsvBill.SelectedIndexChanged += new System.EventHandler(this.lsvBill_SelectedIndexChanged);
             // 
             // pnlView
             // 
@@ -197,44 +200,52 @@
             this.pnlView.Controls.Add(this.panel2);
             this.pnlView.Controls.Add(this.panel1);
             this.pnlView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlView.Location = new System.Drawing.Point(298, 0);
+            this.pnlView.Location = new System.Drawing.Point(224, 0);
+            this.pnlView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlView.Name = "pnlView";
-            this.pnlView.Size = new System.Drawing.Size(694, 911);
+            this.pnlView.Size = new System.Drawing.Size(520, 740);
             this.pnlView.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(129, 22);
+            this.label3.Location = new System.Drawing.Point(97, 18);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(138, 36);
+            this.label3.Size = new System.Drawing.Size(111, 28);
             this.label3.TabIndex = 0;
             this.label3.Text = "GỌI MÓN";
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(116, 818);
+            this.btnEdit.Image = ((System.Drawing.Image)(resources.GetObject("btnEdit.Image")));
+            this.btnEdit.Location = new System.Drawing.Point(87, 665);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(79, 84);
+            this.btnEdit.Size = new System.Drawing.Size(59, 68);
             this.btnEdit.TabIndex = 14;
             this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnLoadTable
             // 
-            this.btnLoadTable.Location = new System.Drawing.Point(15, 818);
+            this.btnLoadTable.Image = ((System.Drawing.Image)(resources.GetObject("btnLoadTable.Image")));
+            this.btnLoadTable.Location = new System.Drawing.Point(11, 665);
+            this.btnLoadTable.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLoadTable.Name = "btnLoadTable";
-            this.btnLoadTable.Size = new System.Drawing.Size(79, 84);
+            this.btnLoadTable.Size = new System.Drawing.Size(59, 68);
             this.btnLoadTable.TabIndex = 13;
             this.btnLoadTable.UseVisualStyleBackColor = true;
+            this.btnLoadTable.Click += new System.EventHandler(this.btnLoadTable_Click);
             // 
             // lblFoodPrice
             // 
             this.lblFoodPrice.Font = new System.Drawing.Font("Cambria", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFoodPrice.Location = new System.Drawing.Point(57, 675);
-            this.lblFoodPrice.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblFoodPrice.Location = new System.Drawing.Point(43, 548);
+            this.lblFoodPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFoodPrice.Name = "lblFoodPrice";
-            this.lblFoodPrice.Size = new System.Drawing.Size(403, 44);
+            this.lblFoodPrice.Size = new System.Drawing.Size(302, 36);
             this.lblFoodPrice.TabIndex = 12;
             this.lblFoodPrice.Text = "0 đ";
             this.lblFoodPrice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -244,49 +255,50 @@
             this.btnAddFood.Font = new System.Drawing.Font("Cambria", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddFood.Image = ((System.Drawing.Image)(resources.GetObject("btnAddFood.Image")));
             this.btnAddFood.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddFood.Location = new System.Drawing.Point(228, 809);
-            this.btnAddFood.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAddFood.Location = new System.Drawing.Point(171, 657);
             this.btnAddFood.Name = "btnAddFood";
-            this.btnAddFood.Size = new System.Drawing.Size(257, 96);
+            this.btnAddFood.Size = new System.Drawing.Size(193, 78);
             this.btnAddFood.TabIndex = 10;
             this.btnAddFood.Text = "Thêm món";
             this.btnAddFood.UseVisualStyleBackColor = true;
+            this.btnAddFood.Click += new System.EventHandler(this.btnAddFood_Click);
             // 
             // nmCountFood
             // 
             this.nmCountFood.Font = new System.Drawing.Font("Cambria", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nmCountFood.Location = new System.Drawing.Point(312, 725);
-            this.nmCountFood.Margin = new System.Windows.Forms.Padding(4);
+            this.nmCountFood.Location = new System.Drawing.Point(234, 589);
             this.nmCountFood.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.nmCountFood.Name = "nmCountFood";
-            this.nmCountFood.Size = new System.Drawing.Size(78, 27);
+            this.nmCountFood.Size = new System.Drawing.Size(58, 23);
             this.nmCountFood.TabIndex = 9;
             this.nmCountFood.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
+            this.nmCountFood.ValueChanged += new System.EventHandler(this.nmCountFood_ValueChanged);
             // 
             // lblNumber
             // 
             this.lblNumber.AutoSize = true;
             this.lblNumber.Font = new System.Drawing.Font("Cambria", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumber.Location = new System.Drawing.Point(78, 729);
-            this.lblNumber.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblNumber.Location = new System.Drawing.Point(58, 592);
+            this.lblNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNumber.Name = "lblNumber";
-            this.lblNumber.Size = new System.Drawing.Size(85, 20);
+            this.lblNumber.Size = new System.Drawing.Size(67, 16);
             this.lblNumber.TabIndex = 11;
             this.lblNumber.Text = "Số lượng:";
             // 
             // ptbImageFood
             // 
-            this.ptbImageFood.Location = new System.Drawing.Point(57, 430);
+            this.ptbImageFood.Location = new System.Drawing.Point(43, 349);
+            this.ptbImageFood.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ptbImageFood.Name = "ptbImageFood";
-            this.ptbImageFood.Size = new System.Drawing.Size(372, 214);
+            this.ptbImageFood.Size = new System.Drawing.Size(279, 174);
             this.ptbImageFood.TabIndex = 3;
             this.ptbImageFood.TabStop = false;
             // 
@@ -294,27 +306,32 @@
             // 
             this.cmbNameFood.Font = new System.Drawing.Font("Cambria", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNameFood.FormattingEnabled = true;
-            this.cmbNameFood.Location = new System.Drawing.Point(206, 280);
+            this.cmbNameFood.Location = new System.Drawing.Point(154, 228);
+            this.cmbNameFood.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbNameFood.Name = "cmbNameFood";
-            this.cmbNameFood.Size = new System.Drawing.Size(209, 28);
+            this.cmbNameFood.Size = new System.Drawing.Size(158, 23);
             this.cmbNameFood.TabIndex = 2;
+            this.cmbNameFood.SelectedIndexChanged += new System.EventHandler(this.cmbNameFood_SelectedIndexChanged);
             // 
             // cmbCategoryFood
             // 
             this.cmbCategoryFood.Font = new System.Drawing.Font("Cambria", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCategoryFood.FormattingEnabled = true;
-            this.cmbCategoryFood.Location = new System.Drawing.Point(206, 164);
+            this.cmbCategoryFood.Location = new System.Drawing.Point(154, 133);
+            this.cmbCategoryFood.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbCategoryFood.Name = "cmbCategoryFood";
-            this.cmbCategoryFood.Size = new System.Drawing.Size(209, 28);
+            this.cmbCategoryFood.Size = new System.Drawing.Size(158, 23);
             this.cmbCategoryFood.TabIndex = 2;
+            this.cmbCategoryFood.SelectedIndexChanged += new System.EventHandler(this.cmbCategoryFood_SelectedIndexChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cambria", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(38, 288);
+            this.label2.Location = new System.Drawing.Point(28, 234);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 20);
+            this.label2.Size = new System.Drawing.Size(53, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Món ăn";
             // 
@@ -322,9 +339,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cambria", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(38, 172);
+            this.label1.Location = new System.Drawing.Point(28, 140);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 20);
+            this.label1.Size = new System.Drawing.Size(70, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Danh mục";
             // 
@@ -334,8 +352,9 @@
             this.panel4.Controls.Add(this.label3);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(489, 100);
+            this.panel4.Size = new System.Drawing.Size(367, 81);
             this.panel4.TabIndex = 0;
             // 
             // pnlFood
@@ -353,9 +372,10 @@
             this.pnlFood.Controls.Add(this.label1);
             this.pnlFood.Controls.Add(this.panel4);
             this.pnlFood.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlFood.Location = new System.Drawing.Point(992, 0);
+            this.pnlFood.Location = new System.Drawing.Point(744, 0);
+            this.pnlFood.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlFood.Name = "pnlFood";
-            this.pnlFood.Size = new System.Drawing.Size(489, 911);
+            this.pnlFood.Size = new System.Drawing.Size(367, 740);
             this.pnlFood.TabIndex = 4;
             // 
             // pddHoaDon
@@ -372,19 +392,21 @@
             // 
             this.flpTable.Dock = System.Windows.Forms.DockStyle.Left;
             this.flpTable.Location = new System.Drawing.Point(0, 0);
+            this.flpTable.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.flpTable.Name = "flpTable";
-            this.flpTable.Size = new System.Drawing.Size(298, 911);
+            this.flpTable.Size = new System.Drawing.Size(224, 740);
             this.flpTable.TabIndex = 3;
             // 
             // frmTableManager
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1481, 911);
+            this.ClientSize = new System.Drawing.Size(1111, 740);
             this.Controls.Add(this.pnlView);
             this.Controls.Add(this.pnlFood);
             this.Controls.Add(this.flpTable);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmTableManager";
             this.Text = "frmTableManager";
             ((System.ComponentModel.ISupportInitialize)(this.nmDiscount)).EndInit();

@@ -196,6 +196,7 @@
     <Compile Include="Material.cs">
       <DependentUpon>QLNH_Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="NumberToText.cs" />
     <Compile Include="Position.cs">
       <DependentUpon>QLNH_Model1.tt</DependentUpon>
     </Compile>
@@ -216,16 +217,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLNH_Model1.edmx</DependentUpon>
     </Compile>
-    <Compile Include="sp_helpdiagramdefinition_Result.cs">
-      <DependentUpon>QLNH_Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="sp_helpdiagrams_Result.cs">
-      <DependentUpon>QLNH_Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="Staff.cs">
-      <DependentUpon>QLNH_Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="sysdiagrams.cs">
       <DependentUpon>QLNH_Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="TableFood.cs">
