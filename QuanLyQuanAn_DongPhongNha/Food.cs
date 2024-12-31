@@ -20,15 +20,6 @@ namespace QuanLyQuanAn_DongPhongNha
             this.BillInfo = new HashSet<BillInfo>();
             this.BillInfo1 = new HashSet<BillInfo>();
             this.BillInfo2 = new HashSet<BillInfo>();
-            this.BillInfo3 = new HashSet<BillInfo>();
-            this.BillInfo4 = new HashSet<BillInfo>();
-            this.BillInfo5 = new HashSet<BillInfo>();
-            this.BillInfo6 = new HashSet<BillInfo>();
-            this.BillInfo7 = new HashSet<BillInfo>();
-            this.BillInfo8 = new HashSet<BillInfo>();
-            this.BillInfo9 = new HashSet<BillInfo>();
-            this.BillInfo10 = new HashSet<BillInfo>();
-            this.BillInfo11 = new HashSet<BillInfo>();
         }
     
         public int idFood { get; set; }
@@ -44,35 +35,8 @@ namespace QuanLyQuanAn_DongPhongNha
         public virtual ICollection<BillInfo> BillInfo1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<BillInfo> BillInfo2 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<BillInfo> BillInfo3 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<BillInfo> BillInfo4 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<BillInfo> BillInfo5 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<BillInfo> BillInfo6 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<BillInfo> BillInfo7 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<BillInfo> BillInfo8 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<BillInfo> BillInfo9 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<BillInfo> BillInfo10 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<BillInfo> BillInfo11 { get; set; }
         public virtual FoodCategory FoodCategory { get; set; }
         public virtual FoodCategory FoodCategory1 { get; set; }
         public virtual FoodCategory FoodCategory2 { get; set; }
-        public virtual FoodCategory FoodCategory3 { get; set; }
-        public virtual FoodCategory FoodCategory4 { get; set; }
-        public virtual FoodCategory FoodCategory5 { get; set; }
-        public virtual FoodCategory FoodCategory6 { get; set; }
-        public virtual FoodCategory FoodCategory7 { get; set; }
-        public virtual FoodCategory FoodCategory8 { get; set; }
-        public virtual FoodCategory FoodCategory9 { get; set; }
-        public virtual FoodCategory FoodCategory10 { get; set; }
-        public virtual FoodCategory FoodCategory11 { get; set; }
     }
 }

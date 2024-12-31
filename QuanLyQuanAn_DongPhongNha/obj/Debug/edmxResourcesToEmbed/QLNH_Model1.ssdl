@@ -108,6 +108,16 @@
     <Property Name="phoneNumber" Type="nvarchar" MaxLength="10" Nullable="false" />
     <Property Name="address" Type="nvarchar" MaxLength="100" Nullable="false" />
   </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
   <EntityType Name="TableFood">
     <Key>
       <PropertyRef Name="idTable" />
@@ -123,91 +133,7 @@
     <Property Name="idUnit" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="nameUnit" Type="nvarchar" MaxLength="100" Nullable="false" />
   </EntityType>
-  <Association Name="FK__Account__idStaff__22401542">
-    <End Role="Staff" Type="Self.Staff" Multiplicity="1" />
-    <End Role="Account" Type="Self.Account" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Staff">
-        <PropertyRef Name="idStaff" />
-      </Principal>
-      <Dependent Role="Account">
-        <PropertyRef Name="idStaff" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Account__idStaff__2334397B">
-    <End Role="Staff" Type="Self.Staff" Multiplicity="1" />
-    <End Role="Account" Type="Self.Account" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Staff">
-        <PropertyRef Name="idStaff" />
-      </Principal>
-      <Dependent Role="Account">
-        <PropertyRef Name="idStaff" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Account__idStaff__24285DB4">
-    <End Role="Staff" Type="Self.Staff" Multiplicity="1" />
-    <End Role="Account" Type="Self.Account" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Staff">
-        <PropertyRef Name="idStaff" />
-      </Principal>
-      <Dependent Role="Account">
-        <PropertyRef Name="idStaff" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Account__idStaff__245D67DE">
-    <End Role="Staff" Type="Self.Staff" Multiplicity="1" />
-    <End Role="Account" Type="Self.Account" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Staff">
-        <PropertyRef Name="idStaff" />
-      </Principal>
-      <Dependent Role="Account">
-        <PropertyRef Name="idStaff" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Account__idStaff__25518C17">
-    <End Role="Staff" Type="Self.Staff" Multiplicity="1" />
-    <End Role="Account" Type="Self.Account" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Staff">
-        <PropertyRef Name="idStaff" />
-      </Principal>
-      <Dependent Role="Account">
-        <PropertyRef Name="idStaff" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Account__idStaff__2645B050">
-    <End Role="Staff" Type="Self.Staff" Multiplicity="1" />
-    <End Role="Account" Type="Self.Account" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Staff">
-        <PropertyRef Name="idStaff" />
-      </Principal>
-      <Dependent Role="Account">
-        <PropertyRef Name="idStaff" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK__Account__idStaff__628FA481">
-    <End Role="Staff" Type="Self.Staff" Multiplicity="1" />
-    <End Role="Account" Type="Self.Account" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Staff">
-        <PropertyRef Name="idStaff" />
-      </Principal>
-      <Dependent Role="Account">
-        <PropertyRef Name="idStaff" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Account__idStaff__634EBE90">
     <End Role="Staff" Type="Self.Staff" Multiplicity="1" />
     <End Role="Account" Type="Self.Account" Multiplicity="*" />
     <ReferentialConstraint>
@@ -231,18 +157,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Account__idStaff__6442E2C9">
-    <End Role="Staff" Type="Self.Staff" Multiplicity="1" />
-    <End Role="Account" Type="Self.Account" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Staff">
-        <PropertyRef Name="idStaff" />
-      </Principal>
-      <Dependent Role="Account">
-        <PropertyRef Name="idStaff" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK__Account__idStaff__6477ECF3">
     <End Role="Staff" Type="Self.Staff" Multiplicity="1" />
     <End Role="Account" Type="Self.Account" Multiplicity="*" />
@@ -255,103 +169,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Account__idStaff__65370702">
-    <End Role="Staff" Type="Self.Staff" Multiplicity="1" />
-    <End Role="Account" Type="Self.Account" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Staff">
-        <PropertyRef Name="idStaff" />
-      </Principal>
-      <Dependent Role="Account">
-        <PropertyRef Name="idStaff" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Attendanc__idSta__251C81ED">
-    <End Role="Staff" Type="Self.Staff" Multiplicity="0..1" />
-    <End Role="AttendanceList" Type="Self.AttendanceList" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Staff">
-        <PropertyRef Name="idStaff" />
-      </Principal>
-      <Dependent Role="AttendanceList">
-        <PropertyRef Name="idStaff" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Attendanc__idSta__2610A626">
-    <End Role="Staff" Type="Self.Staff" Multiplicity="0..1" />
-    <End Role="AttendanceList" Type="Self.AttendanceList" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Staff">
-        <PropertyRef Name="idStaff" />
-      </Principal>
-      <Dependent Role="AttendanceList">
-        <PropertyRef Name="idStaff" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Attendanc__idSta__2704CA5F">
-    <End Role="Staff" Type="Self.Staff" Multiplicity="0..1" />
-    <End Role="AttendanceList" Type="Self.AttendanceList" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Staff">
-        <PropertyRef Name="idStaff" />
-      </Principal>
-      <Dependent Role="AttendanceList">
-        <PropertyRef Name="idStaff" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Attendanc__idSta__2739D489">
-    <End Role="Staff" Type="Self.Staff" Multiplicity="0..1" />
-    <End Role="AttendanceList" Type="Self.AttendanceList" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Staff">
-        <PropertyRef Name="idStaff" />
-      </Principal>
-      <Dependent Role="AttendanceList">
-        <PropertyRef Name="idStaff" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Attendanc__idSta__282DF8C2">
-    <End Role="Staff" Type="Self.Staff" Multiplicity="0..1" />
-    <End Role="AttendanceList" Type="Self.AttendanceList" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Staff">
-        <PropertyRef Name="idStaff" />
-      </Principal>
-      <Dependent Role="AttendanceList">
-        <PropertyRef Name="idStaff" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Attendanc__idSta__29221CFB">
-    <End Role="Staff" Type="Self.Staff" Multiplicity="0..1" />
-    <End Role="AttendanceList" Type="Self.AttendanceList" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Staff">
-        <PropertyRef Name="idStaff" />
-      </Principal>
-      <Dependent Role="AttendanceList">
-        <PropertyRef Name="idStaff" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK__Attendanc__idSta__656C112C">
-    <End Role="Staff" Type="Self.Staff" Multiplicity="0..1" />
-    <End Role="AttendanceList" Type="Self.AttendanceList" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Staff">
-        <PropertyRef Name="idStaff" />
-      </Principal>
-      <Dependent Role="AttendanceList">
-        <PropertyRef Name="idStaff" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Attendanc__idSta__662B2B3B">
     <End Role="Staff" Type="Self.Staff" Multiplicity="0..1" />
     <End Role="AttendanceList" Type="Self.AttendanceList" Multiplicity="*" />
     <ReferentialConstraint>
@@ -375,31 +193,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Attendanc__idSta__671F4F74">
-    <End Role="Staff" Type="Self.Staff" Multiplicity="0..1" />
-    <End Role="AttendanceList" Type="Self.AttendanceList" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Staff">
-        <PropertyRef Name="idStaff" />
-      </Principal>
-      <Dependent Role="AttendanceList">
-        <PropertyRef Name="idStaff" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK__Attendanc__idSta__6754599E">
-    <End Role="Staff" Type="Self.Staff" Multiplicity="0..1" />
-    <End Role="AttendanceList" Type="Self.AttendanceList" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Staff">
-        <PropertyRef Name="idStaff" />
-      </Principal>
-      <Dependent Role="AttendanceList">
-        <PropertyRef Name="idStaff" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Attendanc__idSta__681373AD">
     <End Role="Staff" Type="Self.Staff" Multiplicity="0..1" />
     <End Role="AttendanceList" Type="Self.AttendanceList" Multiplicity="*" />
     <ReferentialConstraint>
@@ -447,114 +241,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__BillInfo__idFood__27F8EE98">
-    <End Role="Food" Type="Self.Food" Multiplicity="1" />
-    <End Role="BillInfo" Type="Self.BillInfo" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Food">
-        <PropertyRef Name="idFood" />
-      </Principal>
-      <Dependent Role="BillInfo">
-        <PropertyRef Name="idFood" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillInfo__idFood__28ED12D1">
-    <End Role="Food" Type="Self.Food" Multiplicity="1" />
-    <End Role="BillInfo" Type="Self.BillInfo" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Food">
-        <PropertyRef Name="idFood" />
-      </Principal>
-      <Dependent Role="BillInfo">
-        <PropertyRef Name="idFood" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillInfo__idFood__29E1370A">
-    <End Role="Food" Type="Self.Food" Multiplicity="1" />
-    <End Role="BillInfo" Type="Self.BillInfo" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Food">
-        <PropertyRef Name="idFood" />
-      </Principal>
-      <Dependent Role="BillInfo">
-        <PropertyRef Name="idFood" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillInfo__idFood__2A164134">
-    <End Role="Food" Type="Self.Food" Multiplicity="1" />
-    <End Role="BillInfo" Type="Self.BillInfo" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Food">
-        <PropertyRef Name="idFood" />
-      </Principal>
-      <Dependent Role="BillInfo">
-        <PropertyRef Name="idFood" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillInfo__idFood__2B0A656D">
-    <End Role="Food" Type="Self.Food" Multiplicity="1" />
-    <End Role="BillInfo" Type="Self.BillInfo" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Food">
-        <PropertyRef Name="idFood" />
-      </Principal>
-      <Dependent Role="BillInfo">
-        <PropertyRef Name="idFood" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillInfo__idFood__2BFE89A6">
-    <End Role="Food" Type="Self.Food" Multiplicity="1" />
-    <End Role="BillInfo" Type="Self.BillInfo" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Food">
-        <PropertyRef Name="idFood" />
-      </Principal>
-      <Dependent Role="BillInfo">
-        <PropertyRef Name="idFood" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillInfo__idFood__690797E6">
-    <End Role="Food" Type="Self.Food" Multiplicity="1" />
-    <End Role="BillInfo" Type="Self.BillInfo" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Food">
-        <PropertyRef Name="idFood" />
-      </Principal>
-      <Dependent Role="BillInfo">
-        <PropertyRef Name="idFood" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillInfo__idFood__69FBBC1F">
-    <End Role="Food" Type="Self.Food" Multiplicity="1" />
-    <End Role="BillInfo" Type="Self.BillInfo" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Food">
-        <PropertyRef Name="idFood" />
-      </Principal>
-      <Dependent Role="BillInfo">
-        <PropertyRef Name="idFood" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillInfo__idFood__6AEFE058">
-    <End Role="Food" Type="Self.Food" Multiplicity="1" />
-    <End Role="BillInfo" Type="Self.BillInfo" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Food">
-        <PropertyRef Name="idFood" />
-      </Principal>
-      <Dependent Role="BillInfo">
-        <PropertyRef Name="idFood" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK__BillInfo__idFood__6B24EA82">
     <End Role="Food" Type="Self.Food" Multiplicity="1" />
     <End Role="BillInfo" Type="Self.BillInfo" Multiplicity="*" />
@@ -588,114 +274,6 @@
       </Principal>
       <Dependent Role="BillInfo">
         <PropertyRef Name="idFood" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillInfoO__idBil__2AD55B43">
-    <End Role="BillOfWareHouse" Type="Self.BillOfWareHouse" Multiplicity="0..1" />
-    <End Role="BillInfoOfWareHouse" Type="Self.BillInfoOfWareHouse" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="BillOfWareHouse">
-        <PropertyRef Name="idBillOfWareHouse" />
-      </Principal>
-      <Dependent Role="BillInfoOfWareHouse">
-        <PropertyRef Name="idBillOfWareHouse" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillInfoO__idBil__2BC97F7C">
-    <End Role="BillOfWareHouse" Type="Self.BillOfWareHouse" Multiplicity="0..1" />
-    <End Role="BillInfoOfWareHouse" Type="Self.BillInfoOfWareHouse" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="BillOfWareHouse">
-        <PropertyRef Name="idBillOfWareHouse" />
-      </Principal>
-      <Dependent Role="BillInfoOfWareHouse">
-        <PropertyRef Name="idBillOfWareHouse" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillInfoO__idBil__2CBDA3B5">
-    <End Role="BillOfWareHouse" Type="Self.BillOfWareHouse" Multiplicity="0..1" />
-    <End Role="BillInfoOfWareHouse" Type="Self.BillInfoOfWareHouse" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="BillOfWareHouse">
-        <PropertyRef Name="idBillOfWareHouse" />
-      </Principal>
-      <Dependent Role="BillInfoOfWareHouse">
-        <PropertyRef Name="idBillOfWareHouse" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillInfoO__idBil__2CF2ADDF">
-    <End Role="BillOfWareHouse" Type="Self.BillOfWareHouse" Multiplicity="0..1" />
-    <End Role="BillInfoOfWareHouse" Type="Self.BillInfoOfWareHouse" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="BillOfWareHouse">
-        <PropertyRef Name="idBillOfWareHouse" />
-      </Principal>
-      <Dependent Role="BillInfoOfWareHouse">
-        <PropertyRef Name="idBillOfWareHouse" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillInfoO__idBil__2DE6D218">
-    <End Role="BillOfWareHouse" Type="Self.BillOfWareHouse" Multiplicity="0..1" />
-    <End Role="BillInfoOfWareHouse" Type="Self.BillInfoOfWareHouse" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="BillOfWareHouse">
-        <PropertyRef Name="idBillOfWareHouse" />
-      </Principal>
-      <Dependent Role="BillInfoOfWareHouse">
-        <PropertyRef Name="idBillOfWareHouse" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillInfoO__idBil__2EDAF651">
-    <End Role="BillOfWareHouse" Type="Self.BillOfWareHouse" Multiplicity="0..1" />
-    <End Role="BillInfoOfWareHouse" Type="Self.BillInfoOfWareHouse" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="BillOfWareHouse">
-        <PropertyRef Name="idBillOfWareHouse" />
-      </Principal>
-      <Dependent Role="BillInfoOfWareHouse">
-        <PropertyRef Name="idBillOfWareHouse" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillInfoO__idBil__6BE40491">
-    <End Role="BillOfWareHouse" Type="Self.BillOfWareHouse" Multiplicity="0..1" />
-    <End Role="BillInfoOfWareHouse" Type="Self.BillInfoOfWareHouse" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="BillOfWareHouse">
-        <PropertyRef Name="idBillOfWareHouse" />
-      </Principal>
-      <Dependent Role="BillInfoOfWareHouse">
-        <PropertyRef Name="idBillOfWareHouse" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillInfoO__idBil__6CD828CA">
-    <End Role="BillOfWareHouse" Type="Self.BillOfWareHouse" Multiplicity="0..1" />
-    <End Role="BillInfoOfWareHouse" Type="Self.BillInfoOfWareHouse" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="BillOfWareHouse">
-        <PropertyRef Name="idBillOfWareHouse" />
-      </Principal>
-      <Dependent Role="BillInfoOfWareHouse">
-        <PropertyRef Name="idBillOfWareHouse" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillInfoO__idBil__6DCC4D03">
-    <End Role="BillOfWareHouse" Type="Self.BillOfWareHouse" Multiplicity="0..1" />
-    <End Role="BillInfoOfWareHouse" Type="Self.BillInfoOfWareHouse" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="BillOfWareHouse">
-        <PropertyRef Name="idBillOfWareHouse" />
-      </Principal>
-      <Dependent Role="BillInfoOfWareHouse">
-        <PropertyRef Name="idBillOfWareHouse" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -735,114 +313,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__BillInfoO__idMat__2DB1C7EE">
-    <End Role="Material" Type="Self.Material" Multiplicity="0..1" />
-    <End Role="BillInfoOfWareHouse" Type="Self.BillInfoOfWareHouse" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Material">
-        <PropertyRef Name="idMaterial" />
-      </Principal>
-      <Dependent Role="BillInfoOfWareHouse">
-        <PropertyRef Name="idMaterial" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillInfoO__idMat__2EA5EC27">
-    <End Role="Material" Type="Self.Material" Multiplicity="0..1" />
-    <End Role="BillInfoOfWareHouse" Type="Self.BillInfoOfWareHouse" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Material">
-        <PropertyRef Name="idMaterial" />
-      </Principal>
-      <Dependent Role="BillInfoOfWareHouse">
-        <PropertyRef Name="idMaterial" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillInfoO__idMat__2F9A1060">
-    <End Role="Material" Type="Self.Material" Multiplicity="0..1" />
-    <End Role="BillInfoOfWareHouse" Type="Self.BillInfoOfWareHouse" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Material">
-        <PropertyRef Name="idMaterial" />
-      </Principal>
-      <Dependent Role="BillInfoOfWareHouse">
-        <PropertyRef Name="idMaterial" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillInfoO__idMat__2FCF1A8A">
-    <End Role="Material" Type="Self.Material" Multiplicity="0..1" />
-    <End Role="BillInfoOfWareHouse" Type="Self.BillInfoOfWareHouse" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Material">
-        <PropertyRef Name="idMaterial" />
-      </Principal>
-      <Dependent Role="BillInfoOfWareHouse">
-        <PropertyRef Name="idMaterial" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillInfoO__idMat__30C33EC3">
-    <End Role="Material" Type="Self.Material" Multiplicity="0..1" />
-    <End Role="BillInfoOfWareHouse" Type="Self.BillInfoOfWareHouse" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Material">
-        <PropertyRef Name="idMaterial" />
-      </Principal>
-      <Dependent Role="BillInfoOfWareHouse">
-        <PropertyRef Name="idMaterial" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillInfoO__idMat__31B762FC">
-    <End Role="Material" Type="Self.Material" Multiplicity="0..1" />
-    <End Role="BillInfoOfWareHouse" Type="Self.BillInfoOfWareHouse" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Material">
-        <PropertyRef Name="idMaterial" />
-      </Principal>
-      <Dependent Role="BillInfoOfWareHouse">
-        <PropertyRef Name="idMaterial" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillInfoO__idMat__6EC0713C">
-    <End Role="Material" Type="Self.Material" Multiplicity="0..1" />
-    <End Role="BillInfoOfWareHouse" Type="Self.BillInfoOfWareHouse" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Material">
-        <PropertyRef Name="idMaterial" />
-      </Principal>
-      <Dependent Role="BillInfoOfWareHouse">
-        <PropertyRef Name="idMaterial" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillInfoO__idMat__6FB49575">
-    <End Role="Material" Type="Self.Material" Multiplicity="0..1" />
-    <End Role="BillInfoOfWareHouse" Type="Self.BillInfoOfWareHouse" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Material">
-        <PropertyRef Name="idMaterial" />
-      </Principal>
-      <Dependent Role="BillInfoOfWareHouse">
-        <PropertyRef Name="idMaterial" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillInfoO__idMat__70A8B9AE">
-    <End Role="Material" Type="Self.Material" Multiplicity="0..1" />
-    <End Role="BillInfoOfWareHouse" Type="Self.BillInfoOfWareHouse" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Material">
-        <PropertyRef Name="idMaterial" />
-      </Principal>
-      <Dependent Role="BillInfoOfWareHouse">
-        <PropertyRef Name="idMaterial" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK__BillInfoO__idMat__70DDC3D8">
     <End Role="Material" Type="Self.Material" Multiplicity="0..1" />
     <End Role="BillInfoOfWareHouse" Type="Self.BillInfoOfWareHouse" Multiplicity="*" />
@@ -876,114 +346,6 @@
       </Principal>
       <Dependent Role="BillInfoOfWareHouse">
         <PropertyRef Name="idMaterial" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillOfWar__userN__308E3499">
-    <End Role="Account" Type="Self.Account" Multiplicity="0..1" />
-    <End Role="BillOfWareHouse" Type="Self.BillOfWareHouse" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Account">
-        <PropertyRef Name="userName" />
-      </Principal>
-      <Dependent Role="BillOfWareHouse">
-        <PropertyRef Name="userName" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillOfWar__userN__318258D2">
-    <End Role="Account" Type="Self.Account" Multiplicity="0..1" />
-    <End Role="BillOfWareHouse" Type="Self.BillOfWareHouse" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Account">
-        <PropertyRef Name="userName" />
-      </Principal>
-      <Dependent Role="BillOfWareHouse">
-        <PropertyRef Name="userName" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillOfWar__userN__32767D0B">
-    <End Role="Account" Type="Self.Account" Multiplicity="0..1" />
-    <End Role="BillOfWareHouse" Type="Self.BillOfWareHouse" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Account">
-        <PropertyRef Name="userName" />
-      </Principal>
-      <Dependent Role="BillOfWareHouse">
-        <PropertyRef Name="userName" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillOfWar__userN__32AB8735">
-    <End Role="Account" Type="Self.Account" Multiplicity="0..1" />
-    <End Role="BillOfWareHouse" Type="Self.BillOfWareHouse" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Account">
-        <PropertyRef Name="userName" />
-      </Principal>
-      <Dependent Role="BillOfWareHouse">
-        <PropertyRef Name="userName" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillOfWar__userN__339FAB6E">
-    <End Role="Account" Type="Self.Account" Multiplicity="0..1" />
-    <End Role="BillOfWareHouse" Type="Self.BillOfWareHouse" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Account">
-        <PropertyRef Name="userName" />
-      </Principal>
-      <Dependent Role="BillOfWareHouse">
-        <PropertyRef Name="userName" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillOfWar__userN__3493CFA7">
-    <End Role="Account" Type="Self.Account" Multiplicity="0..1" />
-    <End Role="BillOfWareHouse" Type="Self.BillOfWareHouse" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Account">
-        <PropertyRef Name="userName" />
-      </Principal>
-      <Dependent Role="BillOfWareHouse">
-        <PropertyRef Name="userName" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillOfWar__userN__719CDDE7">
-    <End Role="Account" Type="Self.Account" Multiplicity="0..1" />
-    <End Role="BillOfWareHouse" Type="Self.BillOfWareHouse" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Account">
-        <PropertyRef Name="userName" />
-      </Principal>
-      <Dependent Role="BillOfWareHouse">
-        <PropertyRef Name="userName" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillOfWar__userN__72910220">
-    <End Role="Account" Type="Self.Account" Multiplicity="0..1" />
-    <End Role="BillOfWareHouse" Type="Self.BillOfWareHouse" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Account">
-        <PropertyRef Name="userName" />
-      </Principal>
-      <Dependent Role="BillOfWareHouse">
-        <PropertyRef Name="userName" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__BillOfWar__userN__73852659">
-    <End Role="Account" Type="Self.Account" Multiplicity="0..1" />
-    <End Role="BillOfWareHouse" Type="Self.BillOfWareHouse" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Account">
-        <PropertyRef Name="userName" />
-      </Principal>
-      <Dependent Role="BillOfWareHouse">
-        <PropertyRef Name="userName" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -1023,114 +385,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Food__idFC__336AA144">
-    <End Role="FoodCategory" Type="Self.FoodCategory" Multiplicity="1" />
-    <End Role="Food" Type="Self.Food" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="FoodCategory">
-        <PropertyRef Name="idFC" />
-      </Principal>
-      <Dependent Role="Food">
-        <PropertyRef Name="idFC" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Food__idFC__345EC57D">
-    <End Role="FoodCategory" Type="Self.FoodCategory" Multiplicity="1" />
-    <End Role="Food" Type="Self.Food" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="FoodCategory">
-        <PropertyRef Name="idFC" />
-      </Principal>
-      <Dependent Role="Food">
-        <PropertyRef Name="idFC" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Food__idFC__3552E9B6">
-    <End Role="FoodCategory" Type="Self.FoodCategory" Multiplicity="1" />
-    <End Role="Food" Type="Self.Food" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="FoodCategory">
-        <PropertyRef Name="idFC" />
-      </Principal>
-      <Dependent Role="Food">
-        <PropertyRef Name="idFC" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Food__idFC__3587F3E0">
-    <End Role="FoodCategory" Type="Self.FoodCategory" Multiplicity="1" />
-    <End Role="Food" Type="Self.Food" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="FoodCategory">
-        <PropertyRef Name="idFC" />
-      </Principal>
-      <Dependent Role="Food">
-        <PropertyRef Name="idFC" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Food__idFC__367C1819">
-    <End Role="FoodCategory" Type="Self.FoodCategory" Multiplicity="1" />
-    <End Role="Food" Type="Self.Food" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="FoodCategory">
-        <PropertyRef Name="idFC" />
-      </Principal>
-      <Dependent Role="Food">
-        <PropertyRef Name="idFC" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Food__idFC__37703C52">
-    <End Role="FoodCategory" Type="Self.FoodCategory" Multiplicity="1" />
-    <End Role="Food" Type="Self.Food" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="FoodCategory">
-        <PropertyRef Name="idFC" />
-      </Principal>
-      <Dependent Role="Food">
-        <PropertyRef Name="idFC" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Food__idFC__74794A92">
-    <End Role="FoodCategory" Type="Self.FoodCategory" Multiplicity="1" />
-    <End Role="Food" Type="Self.Food" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="FoodCategory">
-        <PropertyRef Name="idFC" />
-      </Principal>
-      <Dependent Role="Food">
-        <PropertyRef Name="idFC" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Food__idFC__756D6ECB">
-    <End Role="FoodCategory" Type="Self.FoodCategory" Multiplicity="1" />
-    <End Role="Food" Type="Self.Food" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="FoodCategory">
-        <PropertyRef Name="idFC" />
-      </Principal>
-      <Dependent Role="Food">
-        <PropertyRef Name="idFC" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Food__idFC__76619304">
-    <End Role="FoodCategory" Type="Self.FoodCategory" Multiplicity="1" />
-    <End Role="Food" Type="Self.Food" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="FoodCategory">
-        <PropertyRef Name="idFC" />
-      </Principal>
-      <Dependent Role="Food">
-        <PropertyRef Name="idFC" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK__Food__idFC__76969D2E">
     <End Role="FoodCategory" Type="Self.FoodCategory" Multiplicity="1" />
     <End Role="Food" Type="Self.Food" Multiplicity="*" />
@@ -1167,114 +421,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Material__idUnit__36470DEF">
-    <End Role="Unit" Type="Self.Unit" Multiplicity="0..1" />
-    <End Role="Material" Type="Self.Material" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Unit">
-        <PropertyRef Name="idUnit" />
-      </Principal>
-      <Dependent Role="Material">
-        <PropertyRef Name="idUnit" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Material__idUnit__373B3228">
-    <End Role="Unit" Type="Self.Unit" Multiplicity="0..1" />
-    <End Role="Material" Type="Self.Material" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Unit">
-        <PropertyRef Name="idUnit" />
-      </Principal>
-      <Dependent Role="Material">
-        <PropertyRef Name="idUnit" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Material__idUnit__382F5661">
-    <End Role="Unit" Type="Self.Unit" Multiplicity="0..1" />
-    <End Role="Material" Type="Self.Material" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Unit">
-        <PropertyRef Name="idUnit" />
-      </Principal>
-      <Dependent Role="Material">
-        <PropertyRef Name="idUnit" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Material__idUnit__3864608B">
-    <End Role="Unit" Type="Self.Unit" Multiplicity="0..1" />
-    <End Role="Material" Type="Self.Material" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Unit">
-        <PropertyRef Name="idUnit" />
-      </Principal>
-      <Dependent Role="Material">
-        <PropertyRef Name="idUnit" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Material__idUnit__395884C4">
-    <End Role="Unit" Type="Self.Unit" Multiplicity="0..1" />
-    <End Role="Material" Type="Self.Material" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Unit">
-        <PropertyRef Name="idUnit" />
-      </Principal>
-      <Dependent Role="Material">
-        <PropertyRef Name="idUnit" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Material__idUnit__3A4CA8FD">
-    <End Role="Unit" Type="Self.Unit" Multiplicity="0..1" />
-    <End Role="Material" Type="Self.Material" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Unit">
-        <PropertyRef Name="idUnit" />
-      </Principal>
-      <Dependent Role="Material">
-        <PropertyRef Name="idUnit" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Material__idUnit__7755B73D">
-    <End Role="Unit" Type="Self.Unit" Multiplicity="0..1" />
-    <End Role="Material" Type="Self.Material" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Unit">
-        <PropertyRef Name="idUnit" />
-      </Principal>
-      <Dependent Role="Material">
-        <PropertyRef Name="idUnit" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Material__idUnit__7849DB76">
-    <End Role="Unit" Type="Self.Unit" Multiplicity="0..1" />
-    <End Role="Material" Type="Self.Material" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Unit">
-        <PropertyRef Name="idUnit" />
-      </Principal>
-      <Dependent Role="Material">
-        <PropertyRef Name="idUnit" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Material__idUnit__793DFFAF">
-    <End Role="Unit" Type="Self.Unit" Multiplicity="0..1" />
-    <End Role="Material" Type="Self.Material" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Unit">
-        <PropertyRef Name="idUnit" />
-      </Principal>
-      <Dependent Role="Material">
-        <PropertyRef Name="idUnit" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK__Material__idUnit__797309D9">
     <End Role="Unit" Type="Self.Unit" Multiplicity="0..1" />
     <End Role="Material" Type="Self.Material" Multiplicity="*" />
@@ -1308,114 +454,6 @@
       </Principal>
       <Dependent Role="Material">
         <PropertyRef Name="idUnit" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Staff__idPositio__39237A9A">
-    <End Role="Position" Type="Self.Position" Multiplicity="1" />
-    <End Role="Staff" Type="Self.Staff" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Position">
-        <PropertyRef Name="idPosition" />
-      </Principal>
-      <Dependent Role="Staff">
-        <PropertyRef Name="idPosition" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Staff__idPositio__3A179ED3">
-    <End Role="Position" Type="Self.Position" Multiplicity="1" />
-    <End Role="Staff" Type="Self.Staff" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Position">
-        <PropertyRef Name="idPosition" />
-      </Principal>
-      <Dependent Role="Staff">
-        <PropertyRef Name="idPosition" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Staff__idPositio__3B0BC30C">
-    <End Role="Position" Type="Self.Position" Multiplicity="1" />
-    <End Role="Staff" Type="Self.Staff" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Position">
-        <PropertyRef Name="idPosition" />
-      </Principal>
-      <Dependent Role="Staff">
-        <PropertyRef Name="idPosition" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Staff__idPositio__3B40CD36">
-    <End Role="Position" Type="Self.Position" Multiplicity="1" />
-    <End Role="Staff" Type="Self.Staff" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Position">
-        <PropertyRef Name="idPosition" />
-      </Principal>
-      <Dependent Role="Staff">
-        <PropertyRef Name="idPosition" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Staff__idPositio__3C34F16F">
-    <End Role="Position" Type="Self.Position" Multiplicity="1" />
-    <End Role="Staff" Type="Self.Staff" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Position">
-        <PropertyRef Name="idPosition" />
-      </Principal>
-      <Dependent Role="Staff">
-        <PropertyRef Name="idPosition" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Staff__idPositio__3D2915A8">
-    <End Role="Position" Type="Self.Position" Multiplicity="1" />
-    <End Role="Staff" Type="Self.Staff" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Position">
-        <PropertyRef Name="idPosition" />
-      </Principal>
-      <Dependent Role="Staff">
-        <PropertyRef Name="idPosition" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Staff__idPositio__7A3223E8">
-    <End Role="Position" Type="Self.Position" Multiplicity="1" />
-    <End Role="Staff" Type="Self.Staff" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Position">
-        <PropertyRef Name="idPosition" />
-      </Principal>
-      <Dependent Role="Staff">
-        <PropertyRef Name="idPosition" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Staff__idPositio__7B264821">
-    <End Role="Position" Type="Self.Position" Multiplicity="1" />
-    <End Role="Staff" Type="Self.Staff" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Position">
-        <PropertyRef Name="idPosition" />
-      </Principal>
-      <Dependent Role="Staff">
-        <PropertyRef Name="idPosition" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Staff__idPositio__7C1A6C5A">
-    <End Role="Position" Type="Self.Position" Multiplicity="1" />
-    <End Role="Staff" Type="Self.Staff" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Position">
-        <PropertyRef Name="idPosition" />
-      </Principal>
-      <Dependent Role="Staff">
-        <PropertyRef Name="idPosition" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -1607,37 +645,10 @@
     <EntitySet Name="Material" EntityType="Self.Material" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Position" EntityType="Self.Position" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Staff" EntityType="Self.Staff" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TableFood" EntityType="Self.TableFood" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Unit" EntityType="Self.Unit" Schema="dbo" store:Type="Tables" />
-    <AssociationSet Name="FK__Account__idStaff__22401542" Association="Self.FK__Account__idStaff__22401542">
-      <End Role="Staff" EntitySet="Staff" />
-      <End Role="Account" EntitySet="Account" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Account__idStaff__2334397B" Association="Self.FK__Account__idStaff__2334397B">
-      <End Role="Staff" EntitySet="Staff" />
-      <End Role="Account" EntitySet="Account" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Account__idStaff__24285DB4" Association="Self.FK__Account__idStaff__24285DB4">
-      <End Role="Staff" EntitySet="Staff" />
-      <End Role="Account" EntitySet="Account" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Account__idStaff__245D67DE" Association="Self.FK__Account__idStaff__245D67DE">
-      <End Role="Staff" EntitySet="Staff" />
-      <End Role="Account" EntitySet="Account" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Account__idStaff__25518C17" Association="Self.FK__Account__idStaff__25518C17">
-      <End Role="Staff" EntitySet="Staff" />
-      <End Role="Account" EntitySet="Account" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Account__idStaff__2645B050" Association="Self.FK__Account__idStaff__2645B050">
-      <End Role="Staff" EntitySet="Staff" />
-      <End Role="Account" EntitySet="Account" />
-    </AssociationSet>
     <AssociationSet Name="FK__Account__idStaff__628FA481" Association="Self.FK__Account__idStaff__628FA481">
-      <End Role="Staff" EntitySet="Staff" />
-      <End Role="Account" EntitySet="Account" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Account__idStaff__634EBE90" Association="Self.FK__Account__idStaff__634EBE90">
       <End Role="Staff" EntitySet="Staff" />
       <End Role="Account" EntitySet="Account" />
     </AssociationSet>
@@ -1645,47 +656,11 @@
       <End Role="Staff" EntitySet="Staff" />
       <End Role="Account" EntitySet="Account" />
     </AssociationSet>
-    <AssociationSet Name="FK__Account__idStaff__6442E2C9" Association="Self.FK__Account__idStaff__6442E2C9">
-      <End Role="Staff" EntitySet="Staff" />
-      <End Role="Account" EntitySet="Account" />
-    </AssociationSet>
     <AssociationSet Name="FK__Account__idStaff__6477ECF3" Association="Self.FK__Account__idStaff__6477ECF3">
       <End Role="Staff" EntitySet="Staff" />
       <End Role="Account" EntitySet="Account" />
     </AssociationSet>
-    <AssociationSet Name="FK__Account__idStaff__65370702" Association="Self.FK__Account__idStaff__65370702">
-      <End Role="Staff" EntitySet="Staff" />
-      <End Role="Account" EntitySet="Account" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Attendanc__idSta__251C81ED" Association="Self.FK__Attendanc__idSta__251C81ED">
-      <End Role="Staff" EntitySet="Staff" />
-      <End Role="AttendanceList" EntitySet="AttendanceList" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Attendanc__idSta__2610A626" Association="Self.FK__Attendanc__idSta__2610A626">
-      <End Role="Staff" EntitySet="Staff" />
-      <End Role="AttendanceList" EntitySet="AttendanceList" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Attendanc__idSta__2704CA5F" Association="Self.FK__Attendanc__idSta__2704CA5F">
-      <End Role="Staff" EntitySet="Staff" />
-      <End Role="AttendanceList" EntitySet="AttendanceList" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Attendanc__idSta__2739D489" Association="Self.FK__Attendanc__idSta__2739D489">
-      <End Role="Staff" EntitySet="Staff" />
-      <End Role="AttendanceList" EntitySet="AttendanceList" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Attendanc__idSta__282DF8C2" Association="Self.FK__Attendanc__idSta__282DF8C2">
-      <End Role="Staff" EntitySet="Staff" />
-      <End Role="AttendanceList" EntitySet="AttendanceList" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Attendanc__idSta__29221CFB" Association="Self.FK__Attendanc__idSta__29221CFB">
-      <End Role="Staff" EntitySet="Staff" />
-      <End Role="AttendanceList" EntitySet="AttendanceList" />
-    </AssociationSet>
     <AssociationSet Name="FK__Attendanc__idSta__656C112C" Association="Self.FK__Attendanc__idSta__656C112C">
-      <End Role="Staff" EntitySet="Staff" />
-      <End Role="AttendanceList" EntitySet="AttendanceList" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Attendanc__idSta__662B2B3B" Association="Self.FK__Attendanc__idSta__662B2B3B">
       <End Role="Staff" EntitySet="Staff" />
       <End Role="AttendanceList" EntitySet="AttendanceList" />
     </AssociationSet>
@@ -1693,15 +668,7 @@
       <End Role="Staff" EntitySet="Staff" />
       <End Role="AttendanceList" EntitySet="AttendanceList" />
     </AssociationSet>
-    <AssociationSet Name="FK__Attendanc__idSta__671F4F74" Association="Self.FK__Attendanc__idSta__671F4F74">
-      <End Role="Staff" EntitySet="Staff" />
-      <End Role="AttendanceList" EntitySet="AttendanceList" />
-    </AssociationSet>
     <AssociationSet Name="FK__Attendanc__idSta__6754599E" Association="Self.FK__Attendanc__idSta__6754599E">
-      <End Role="Staff" EntitySet="Staff" />
-      <End Role="AttendanceList" EntitySet="AttendanceList" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Attendanc__idSta__681373AD" Association="Self.FK__Attendanc__idSta__681373AD">
       <End Role="Staff" EntitySet="Staff" />
       <End Role="AttendanceList" EntitySet="AttendanceList" />
     </AssociationSet>
@@ -1717,42 +684,6 @@
       <End Role="Bill" EntitySet="Bill" />
       <End Role="BillInfo" EntitySet="BillInfo" />
     </AssociationSet>
-    <AssociationSet Name="FK__BillInfo__idFood__27F8EE98" Association="Self.FK__BillInfo__idFood__27F8EE98">
-      <End Role="Food" EntitySet="Food" />
-      <End Role="BillInfo" EntitySet="BillInfo" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillInfo__idFood__28ED12D1" Association="Self.FK__BillInfo__idFood__28ED12D1">
-      <End Role="Food" EntitySet="Food" />
-      <End Role="BillInfo" EntitySet="BillInfo" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillInfo__idFood__29E1370A" Association="Self.FK__BillInfo__idFood__29E1370A">
-      <End Role="Food" EntitySet="Food" />
-      <End Role="BillInfo" EntitySet="BillInfo" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillInfo__idFood__2A164134" Association="Self.FK__BillInfo__idFood__2A164134">
-      <End Role="Food" EntitySet="Food" />
-      <End Role="BillInfo" EntitySet="BillInfo" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillInfo__idFood__2B0A656D" Association="Self.FK__BillInfo__idFood__2B0A656D">
-      <End Role="Food" EntitySet="Food" />
-      <End Role="BillInfo" EntitySet="BillInfo" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillInfo__idFood__2BFE89A6" Association="Self.FK__BillInfo__idFood__2BFE89A6">
-      <End Role="Food" EntitySet="Food" />
-      <End Role="BillInfo" EntitySet="BillInfo" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillInfo__idFood__690797E6" Association="Self.FK__BillInfo__idFood__690797E6">
-      <End Role="Food" EntitySet="Food" />
-      <End Role="BillInfo" EntitySet="BillInfo" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillInfo__idFood__69FBBC1F" Association="Self.FK__BillInfo__idFood__69FBBC1F">
-      <End Role="Food" EntitySet="Food" />
-      <End Role="BillInfo" EntitySet="BillInfo" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillInfo__idFood__6AEFE058" Association="Self.FK__BillInfo__idFood__6AEFE058">
-      <End Role="Food" EntitySet="Food" />
-      <End Role="BillInfo" EntitySet="BillInfo" />
-    </AssociationSet>
     <AssociationSet Name="FK__BillInfo__idFood__6B24EA82" Association="Self.FK__BillInfo__idFood__6B24EA82">
       <End Role="Food" EntitySet="Food" />
       <End Role="BillInfo" EntitySet="BillInfo" />
@@ -1765,42 +696,6 @@
       <End Role="Food" EntitySet="Food" />
       <End Role="BillInfo" EntitySet="BillInfo" />
     </AssociationSet>
-    <AssociationSet Name="FK__BillInfoO__idBil__2AD55B43" Association="Self.FK__BillInfoO__idBil__2AD55B43">
-      <End Role="BillOfWareHouse" EntitySet="BillOfWareHouse" />
-      <End Role="BillInfoOfWareHouse" EntitySet="BillInfoOfWareHouse" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillInfoO__idBil__2BC97F7C" Association="Self.FK__BillInfoO__idBil__2BC97F7C">
-      <End Role="BillOfWareHouse" EntitySet="BillOfWareHouse" />
-      <End Role="BillInfoOfWareHouse" EntitySet="BillInfoOfWareHouse" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillInfoO__idBil__2CBDA3B5" Association="Self.FK__BillInfoO__idBil__2CBDA3B5">
-      <End Role="BillOfWareHouse" EntitySet="BillOfWareHouse" />
-      <End Role="BillInfoOfWareHouse" EntitySet="BillInfoOfWareHouse" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillInfoO__idBil__2CF2ADDF" Association="Self.FK__BillInfoO__idBil__2CF2ADDF">
-      <End Role="BillOfWareHouse" EntitySet="BillOfWareHouse" />
-      <End Role="BillInfoOfWareHouse" EntitySet="BillInfoOfWareHouse" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillInfoO__idBil__2DE6D218" Association="Self.FK__BillInfoO__idBil__2DE6D218">
-      <End Role="BillOfWareHouse" EntitySet="BillOfWareHouse" />
-      <End Role="BillInfoOfWareHouse" EntitySet="BillInfoOfWareHouse" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillInfoO__idBil__2EDAF651" Association="Self.FK__BillInfoO__idBil__2EDAF651">
-      <End Role="BillOfWareHouse" EntitySet="BillOfWareHouse" />
-      <End Role="BillInfoOfWareHouse" EntitySet="BillInfoOfWareHouse" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillInfoO__idBil__6BE40491" Association="Self.FK__BillInfoO__idBil__6BE40491">
-      <End Role="BillOfWareHouse" EntitySet="BillOfWareHouse" />
-      <End Role="BillInfoOfWareHouse" EntitySet="BillInfoOfWareHouse" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillInfoO__idBil__6CD828CA" Association="Self.FK__BillInfoO__idBil__6CD828CA">
-      <End Role="BillOfWareHouse" EntitySet="BillOfWareHouse" />
-      <End Role="BillInfoOfWareHouse" EntitySet="BillInfoOfWareHouse" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillInfoO__idBil__6DCC4D03" Association="Self.FK__BillInfoO__idBil__6DCC4D03">
-      <End Role="BillOfWareHouse" EntitySet="BillOfWareHouse" />
-      <End Role="BillInfoOfWareHouse" EntitySet="BillInfoOfWareHouse" />
-    </AssociationSet>
     <AssociationSet Name="FK__BillInfoO__idBil__6E01572D" Association="Self.FK__BillInfoO__idBil__6E01572D">
       <End Role="BillOfWareHouse" EntitySet="BillOfWareHouse" />
       <End Role="BillInfoOfWareHouse" EntitySet="BillInfoOfWareHouse" />
@@ -1811,42 +706,6 @@
     </AssociationSet>
     <AssociationSet Name="FK__BillInfoO__idBil__6FE99F9F" Association="Self.FK__BillInfoO__idBil__6FE99F9F">
       <End Role="BillOfWareHouse" EntitySet="BillOfWareHouse" />
-      <End Role="BillInfoOfWareHouse" EntitySet="BillInfoOfWareHouse" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillInfoO__idMat__2DB1C7EE" Association="Self.FK__BillInfoO__idMat__2DB1C7EE">
-      <End Role="Material" EntitySet="Material" />
-      <End Role="BillInfoOfWareHouse" EntitySet="BillInfoOfWareHouse" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillInfoO__idMat__2EA5EC27" Association="Self.FK__BillInfoO__idMat__2EA5EC27">
-      <End Role="Material" EntitySet="Material" />
-      <End Role="BillInfoOfWareHouse" EntitySet="BillInfoOfWareHouse" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillInfoO__idMat__2F9A1060" Association="Self.FK__BillInfoO__idMat__2F9A1060">
-      <End Role="Material" EntitySet="Material" />
-      <End Role="BillInfoOfWareHouse" EntitySet="BillInfoOfWareHouse" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillInfoO__idMat__2FCF1A8A" Association="Self.FK__BillInfoO__idMat__2FCF1A8A">
-      <End Role="Material" EntitySet="Material" />
-      <End Role="BillInfoOfWareHouse" EntitySet="BillInfoOfWareHouse" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillInfoO__idMat__30C33EC3" Association="Self.FK__BillInfoO__idMat__30C33EC3">
-      <End Role="Material" EntitySet="Material" />
-      <End Role="BillInfoOfWareHouse" EntitySet="BillInfoOfWareHouse" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillInfoO__idMat__31B762FC" Association="Self.FK__BillInfoO__idMat__31B762FC">
-      <End Role="Material" EntitySet="Material" />
-      <End Role="BillInfoOfWareHouse" EntitySet="BillInfoOfWareHouse" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillInfoO__idMat__6EC0713C" Association="Self.FK__BillInfoO__idMat__6EC0713C">
-      <End Role="Material" EntitySet="Material" />
-      <End Role="BillInfoOfWareHouse" EntitySet="BillInfoOfWareHouse" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillInfoO__idMat__6FB49575" Association="Self.FK__BillInfoO__idMat__6FB49575">
-      <End Role="Material" EntitySet="Material" />
-      <End Role="BillInfoOfWareHouse" EntitySet="BillInfoOfWareHouse" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillInfoO__idMat__70A8B9AE" Association="Self.FK__BillInfoO__idMat__70A8B9AE">
-      <End Role="Material" EntitySet="Material" />
       <End Role="BillInfoOfWareHouse" EntitySet="BillInfoOfWareHouse" />
     </AssociationSet>
     <AssociationSet Name="FK__BillInfoO__idMat__70DDC3D8" Association="Self.FK__BillInfoO__idMat__70DDC3D8">
@@ -1861,42 +720,6 @@
       <End Role="Material" EntitySet="Material" />
       <End Role="BillInfoOfWareHouse" EntitySet="BillInfoOfWareHouse" />
     </AssociationSet>
-    <AssociationSet Name="FK__BillOfWar__userN__308E3499" Association="Self.FK__BillOfWar__userN__308E3499">
-      <End Role="Account" EntitySet="Account" />
-      <End Role="BillOfWareHouse" EntitySet="BillOfWareHouse" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillOfWar__userN__318258D2" Association="Self.FK__BillOfWar__userN__318258D2">
-      <End Role="Account" EntitySet="Account" />
-      <End Role="BillOfWareHouse" EntitySet="BillOfWareHouse" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillOfWar__userN__32767D0B" Association="Self.FK__BillOfWar__userN__32767D0B">
-      <End Role="Account" EntitySet="Account" />
-      <End Role="BillOfWareHouse" EntitySet="BillOfWareHouse" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillOfWar__userN__32AB8735" Association="Self.FK__BillOfWar__userN__32AB8735">
-      <End Role="Account" EntitySet="Account" />
-      <End Role="BillOfWareHouse" EntitySet="BillOfWareHouse" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillOfWar__userN__339FAB6E" Association="Self.FK__BillOfWar__userN__339FAB6E">
-      <End Role="Account" EntitySet="Account" />
-      <End Role="BillOfWareHouse" EntitySet="BillOfWareHouse" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillOfWar__userN__3493CFA7" Association="Self.FK__BillOfWar__userN__3493CFA7">
-      <End Role="Account" EntitySet="Account" />
-      <End Role="BillOfWareHouse" EntitySet="BillOfWareHouse" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillOfWar__userN__719CDDE7" Association="Self.FK__BillOfWar__userN__719CDDE7">
-      <End Role="Account" EntitySet="Account" />
-      <End Role="BillOfWareHouse" EntitySet="BillOfWareHouse" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillOfWar__userN__72910220" Association="Self.FK__BillOfWar__userN__72910220">
-      <End Role="Account" EntitySet="Account" />
-      <End Role="BillOfWareHouse" EntitySet="BillOfWareHouse" />
-    </AssociationSet>
-    <AssociationSet Name="FK__BillOfWar__userN__73852659" Association="Self.FK__BillOfWar__userN__73852659">
-      <End Role="Account" EntitySet="Account" />
-      <End Role="BillOfWareHouse" EntitySet="BillOfWareHouse" />
-    </AssociationSet>
     <AssociationSet Name="FK__BillOfWar__userN__73BA3083" Association="Self.FK__BillOfWar__userN__73BA3083">
       <End Role="Account" EntitySet="Account" />
       <End Role="BillOfWareHouse" EntitySet="BillOfWareHouse" />
@@ -1908,42 +731,6 @@
     <AssociationSet Name="FK__BillOfWar__userN__75A278F5" Association="Self.FK__BillOfWar__userN__75A278F5">
       <End Role="Account" EntitySet="Account" />
       <End Role="BillOfWareHouse" EntitySet="BillOfWareHouse" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Food__idFC__336AA144" Association="Self.FK__Food__idFC__336AA144">
-      <End Role="FoodCategory" EntitySet="FoodCategory" />
-      <End Role="Food" EntitySet="Food" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Food__idFC__345EC57D" Association="Self.FK__Food__idFC__345EC57D">
-      <End Role="FoodCategory" EntitySet="FoodCategory" />
-      <End Role="Food" EntitySet="Food" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Food__idFC__3552E9B6" Association="Self.FK__Food__idFC__3552E9B6">
-      <End Role="FoodCategory" EntitySet="FoodCategory" />
-      <End Role="Food" EntitySet="Food" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Food__idFC__3587F3E0" Association="Self.FK__Food__idFC__3587F3E0">
-      <End Role="FoodCategory" EntitySet="FoodCategory" />
-      <End Role="Food" EntitySet="Food" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Food__idFC__367C1819" Association="Self.FK__Food__idFC__367C1819">
-      <End Role="FoodCategory" EntitySet="FoodCategory" />
-      <End Role="Food" EntitySet="Food" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Food__idFC__37703C52" Association="Self.FK__Food__idFC__37703C52">
-      <End Role="FoodCategory" EntitySet="FoodCategory" />
-      <End Role="Food" EntitySet="Food" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Food__idFC__74794A92" Association="Self.FK__Food__idFC__74794A92">
-      <End Role="FoodCategory" EntitySet="FoodCategory" />
-      <End Role="Food" EntitySet="Food" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Food__idFC__756D6ECB" Association="Self.FK__Food__idFC__756D6ECB">
-      <End Role="FoodCategory" EntitySet="FoodCategory" />
-      <End Role="Food" EntitySet="Food" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Food__idFC__76619304" Association="Self.FK__Food__idFC__76619304">
-      <End Role="FoodCategory" EntitySet="FoodCategory" />
-      <End Role="Food" EntitySet="Food" />
     </AssociationSet>
     <AssociationSet Name="FK__Food__idFC__76969D2E" Association="Self.FK__Food__idFC__76969D2E">
       <End Role="FoodCategory" EntitySet="FoodCategory" />
@@ -1957,42 +744,6 @@
       <End Role="FoodCategory" EntitySet="FoodCategory" />
       <End Role="Food" EntitySet="Food" />
     </AssociationSet>
-    <AssociationSet Name="FK__Material__idUnit__36470DEF" Association="Self.FK__Material__idUnit__36470DEF">
-      <End Role="Unit" EntitySet="Unit" />
-      <End Role="Material" EntitySet="Material" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Material__idUnit__373B3228" Association="Self.FK__Material__idUnit__373B3228">
-      <End Role="Unit" EntitySet="Unit" />
-      <End Role="Material" EntitySet="Material" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Material__idUnit__382F5661" Association="Self.FK__Material__idUnit__382F5661">
-      <End Role="Unit" EntitySet="Unit" />
-      <End Role="Material" EntitySet="Material" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Material__idUnit__3864608B" Association="Self.FK__Material__idUnit__3864608B">
-      <End Role="Unit" EntitySet="Unit" />
-      <End Role="Material" EntitySet="Material" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Material__idUnit__395884C4" Association="Self.FK__Material__idUnit__395884C4">
-      <End Role="Unit" EntitySet="Unit" />
-      <End Role="Material" EntitySet="Material" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Material__idUnit__3A4CA8FD" Association="Self.FK__Material__idUnit__3A4CA8FD">
-      <End Role="Unit" EntitySet="Unit" />
-      <End Role="Material" EntitySet="Material" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Material__idUnit__7755B73D" Association="Self.FK__Material__idUnit__7755B73D">
-      <End Role="Unit" EntitySet="Unit" />
-      <End Role="Material" EntitySet="Material" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Material__idUnit__7849DB76" Association="Self.FK__Material__idUnit__7849DB76">
-      <End Role="Unit" EntitySet="Unit" />
-      <End Role="Material" EntitySet="Material" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Material__idUnit__793DFFAF" Association="Self.FK__Material__idUnit__793DFFAF">
-      <End Role="Unit" EntitySet="Unit" />
-      <End Role="Material" EntitySet="Material" />
-    </AssociationSet>
     <AssociationSet Name="FK__Material__idUnit__797309D9" Association="Self.FK__Material__idUnit__797309D9">
       <End Role="Unit" EntitySet="Unit" />
       <End Role="Material" EntitySet="Material" />
@@ -2004,42 +755,6 @@
     <AssociationSet Name="FK__Material__idUnit__7B5B524B" Association="Self.FK__Material__idUnit__7B5B524B">
       <End Role="Unit" EntitySet="Unit" />
       <End Role="Material" EntitySet="Material" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Staff__idPositio__39237A9A" Association="Self.FK__Staff__idPositio__39237A9A">
-      <End Role="Position" EntitySet="Position" />
-      <End Role="Staff" EntitySet="Staff" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Staff__idPositio__3A179ED3" Association="Self.FK__Staff__idPositio__3A179ED3">
-      <End Role="Position" EntitySet="Position" />
-      <End Role="Staff" EntitySet="Staff" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Staff__idPositio__3B0BC30C" Association="Self.FK__Staff__idPositio__3B0BC30C">
-      <End Role="Position" EntitySet="Position" />
-      <End Role="Staff" EntitySet="Staff" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Staff__idPositio__3B40CD36" Association="Self.FK__Staff__idPositio__3B40CD36">
-      <End Role="Position" EntitySet="Position" />
-      <End Role="Staff" EntitySet="Staff" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Staff__idPositio__3C34F16F" Association="Self.FK__Staff__idPositio__3C34F16F">
-      <End Role="Position" EntitySet="Position" />
-      <End Role="Staff" EntitySet="Staff" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Staff__idPositio__3D2915A8" Association="Self.FK__Staff__idPositio__3D2915A8">
-      <End Role="Position" EntitySet="Position" />
-      <End Role="Staff" EntitySet="Staff" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Staff__idPositio__7A3223E8" Association="Self.FK__Staff__idPositio__7A3223E8">
-      <End Role="Position" EntitySet="Position" />
-      <End Role="Staff" EntitySet="Staff" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Staff__idPositio__7B264821" Association="Self.FK__Staff__idPositio__7B264821">
-      <End Role="Position" EntitySet="Position" />
-      <End Role="Staff" EntitySet="Staff" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Staff__idPositio__7C1A6C5A" Association="Self.FK__Staff__idPositio__7C1A6C5A">
-      <End Role="Position" EntitySet="Position" />
-      <End Role="Staff" EntitySet="Staff" />
     </AssociationSet>
     <AssociationSet Name="FK__Staff__idPositio__7C4F7684" Association="Self.FK__Staff__idPositio__7C4F7684">
       <End Role="Position" EntitySet="Position" />

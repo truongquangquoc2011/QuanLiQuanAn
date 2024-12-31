@@ -103,6 +103,16 @@ namespace QuanLyQuanAn_DongPhongNha.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap search {
+            get {
+                object obj = ResourceManager.GetObject("search", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap z6082482714773_bf623f5af48e7aae891ba3ff45a42b3a {
             get {
                 object obj = ResourceManager.GetObject("z6082482714773_bf623f5af48e7aae891ba3ff45a42b3a", resourceCulture);

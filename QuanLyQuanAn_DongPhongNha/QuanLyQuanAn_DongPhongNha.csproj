@@ -225,6 +225,9 @@
     <Compile Include="Staff.cs">
       <DependentUpon>QLNH_Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>QLNH_Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="TableFood.cs">
       <DependentUpon>QLNH_Model1.tt</DependentUpon>
     </Compile>
@@ -372,14 +375,15 @@
   <ItemGroup>
     <Content Include="QLNH_Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>QLNH_Model1.edmx</DependentUpon>
       <LastGenOutput>QLNH_Model1.Context.cs</LastGenOutput>
+      <DependentUpon>QLNH_Model1.edmx</DependentUpon>
     </Content>
     <Content Include="QLNH_Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>QLNH_Model1.edmx</DependentUpon>
       <LastGenOutput>QLNH_Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\search.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
