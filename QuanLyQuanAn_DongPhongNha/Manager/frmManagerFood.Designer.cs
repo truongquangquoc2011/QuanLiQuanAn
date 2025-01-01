@@ -41,6 +41,10 @@
             this.txtTotalFood = new System.Windows.Forms.TextBox();
             this.btnSearchFood = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.cmbNameFC = new System.Windows.Forms.ComboBox();
+            this.txtPrice = new System.Windows.Forms.TextBox();
+            this.txtFoodName = new System.Windows.Forms.TextBox();
+            this.txtFoodID = new System.Windows.Forms.TextBox();
             this.btnShowFood = new System.Windows.Forms.Button();
             this.cbStatus = new System.Windows.Forms.CheckBox();
             this.ptbImageOfFood = new System.Windows.Forms.PictureBox();
@@ -51,10 +55,6 @@
             this.lblNameFood = new System.Windows.Forms.Label();
             this.lblFoodID = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.txtFoodID = new System.Windows.Forms.TextBox();
-            this.txtFoodName = new System.Windows.Forms.TextBox();
-            this.txtPrice = new System.Windows.Forms.TextBox();
-            this.cmbNameFC = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFoodList)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbImageOfFood)).BeginInit();
@@ -115,14 +115,16 @@
             this.giaMon,
             this.danAnh,
             this.trangThai});
-            this.dgvFoodList.Location = new System.Drawing.Point(-1, 121);
+            this.dgvFoodList.Location = new System.Drawing.Point(-1, 98);
+            this.dgvFoodList.Margin = new System.Windows.Forms.Padding(2);
             this.dgvFoodList.Name = "dgvFoodList";
             this.dgvFoodList.ReadOnly = true;
             this.dgvFoodList.RowHeadersWidth = 82;
             this.dgvFoodList.RowTemplate.Height = 33;
             this.dgvFoodList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvFoodList.Size = new System.Drawing.Size(850, 790);
+            this.dgvFoodList.Size = new System.Drawing.Size(638, 642);
             this.dgvFoodList.TabIndex = 11;
+            this.dgvFoodList.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvFoodList_CellMouseClick);
             // 
             // danAnh
             // 
@@ -135,33 +137,36 @@
             // txtSearchFood
             // 
             this.txtSearchFood.Font = new System.Drawing.Font("Cambria", 10.875F, System.Drawing.FontStyle.Bold);
-            this.txtSearchFood.Location = new System.Drawing.Point(198, 15);
-            this.txtSearchFood.Margin = new System.Windows.Forms.Padding(6);
+            this.txtSearchFood.Location = new System.Drawing.Point(148, 12);
+            this.txtSearchFood.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtSearchFood.Name = "txtSearchFood";
-            this.txtSearchFood.Size = new System.Drawing.Size(567, 29);
+            this.txtSearchFood.Size = new System.Drawing.Size(426, 24);
             this.txtSearchFood.TabIndex = 8;
+            this.txtSearchFood.TextChanged += new System.EventHandler(this.txtSearchFood_TextChanged);
+            this.txtSearchFood.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSearchFood_KeyPress);
             // 
             // txtTotalFood
             // 
             this.txtTotalFood.Enabled = false;
             this.txtTotalFood.Font = new System.Drawing.Font("Cambria", 10.875F, System.Drawing.FontStyle.Bold);
             this.txtTotalFood.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtTotalFood.Location = new System.Drawing.Point(-1, 71);
-            this.txtTotalFood.Margin = new System.Windows.Forms.Padding(6);
+            this.txtTotalFood.Location = new System.Drawing.Point(-1, 58);
+            this.txtTotalFood.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTotalFood.Name = "txtTotalFood";
             this.txtTotalFood.ReadOnly = true;
-            this.txtTotalFood.Size = new System.Drawing.Size(850, 29);
+            this.txtTotalFood.Size = new System.Drawing.Size(638, 24);
             this.txtTotalFood.TabIndex = 9;
+            this.txtTotalFood.TextChanged += new System.EventHandler(this.txtTotalFood_TextChanged);
             // 
             // btnSearchFood
             // 
             this.btnSearchFood.Font = new System.Drawing.Font("Cambria", 10.875F, System.Drawing.FontStyle.Bold);
             this.btnSearchFood.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchFood.Image")));
             this.btnSearchFood.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearchFood.Location = new System.Drawing.Point(-1, 6);
-            this.btnSearchFood.Margin = new System.Windows.Forms.Padding(6);
+            this.btnSearchFood.Location = new System.Drawing.Point(-1, 5);
+            this.btnSearchFood.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSearchFood.Name = "btnSearchFood";
-            this.btnSearchFood.Size = new System.Drawing.Size(176, 44);
+            this.btnSearchFood.Size = new System.Drawing.Size(132, 36);
             this.btnSearchFood.TabIndex = 10;
             this.btnSearchFood.Text = "Tìm món ăn";
             this.btnSearchFood.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -185,20 +190,55 @@
             this.panel2.Controls.Add(this.lblFoodID);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.Font = new System.Drawing.Font("Cambria", 10.875F, System.Drawing.FontStyle.Bold);
-            this.panel2.Location = new System.Drawing.Point(875, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(6);
+            this.panel2.Location = new System.Drawing.Point(657, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(606, 911);
+            this.panel2.Size = new System.Drawing.Size(454, 740);
             this.panel2.TabIndex = 12;
+            // 
+            // cmbNameFC
+            // 
+            this.cmbNameFC.FormattingEnabled = true;
+            this.cmbNameFC.Location = new System.Drawing.Point(167, 176);
+            this.cmbNameFC.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbNameFC.Name = "cmbNameFC";
+            this.cmbNameFC.Size = new System.Drawing.Size(209, 24);
+            this.cmbNameFC.TabIndex = 12;
+            // 
+            // txtPrice
+            // 
+            this.txtPrice.Location = new System.Drawing.Point(167, 237);
+            this.txtPrice.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(209, 24);
+            this.txtPrice.TabIndex = 11;
+            this.txtPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrice_KeyPress);
+            // 
+            // txtFoodName
+            // 
+            this.txtFoodName.Location = new System.Drawing.Point(167, 114);
+            this.txtFoodName.Margin = new System.Windows.Forms.Padding(2);
+            this.txtFoodName.Name = "txtFoodName";
+            this.txtFoodName.Size = new System.Drawing.Size(209, 24);
+            this.txtFoodName.TabIndex = 10;
+            this.txtFoodName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFoodName_KeyPress);
+            // 
+            // txtFoodID
+            // 
+            this.txtFoodID.Location = new System.Drawing.Point(167, 52);
+            this.txtFoodID.Margin = new System.Windows.Forms.Padding(2);
+            this.txtFoodID.Name = "txtFoodID";
+            this.txtFoodID.Size = new System.Drawing.Size(209, 24);
+            this.txtFoodID.TabIndex = 9;
             // 
             // btnShowFood
             // 
             this.btnShowFood.Font = new System.Drawing.Font("Cambria", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShowFood.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnShowFood.Location = new System.Drawing.Point(15, 825);
-            this.btnShowFood.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnShowFood.Location = new System.Drawing.Point(11, 670);
+            this.btnShowFood.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnShowFood.Name = "btnShowFood";
-            this.btnShowFood.Size = new System.Drawing.Size(169, 72);
+            this.btnShowFood.Size = new System.Drawing.Size(127, 58);
             this.btnShowFood.TabIndex = 8;
             this.btnShowFood.Text = "Hiển thị";
             this.btnShowFood.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -208,29 +248,31 @@
             // 
             this.cbStatus.AutoSize = true;
             this.cbStatus.ForeColor = System.Drawing.Color.White;
-            this.cbStatus.Location = new System.Drawing.Point(294, 370);
+            this.cbStatus.Location = new System.Drawing.Point(220, 301);
+            this.cbStatus.Margin = new System.Windows.Forms.Padding(2);
             this.cbStatus.Name = "cbStatus";
-            this.cbStatus.Size = new System.Drawing.Size(112, 26);
+            this.cbStatus.Size = new System.Drawing.Size(92, 21);
             this.cbStatus.TabIndex = 7;
             this.cbStatus.Text = "Đang bán";
             this.cbStatus.UseVisualStyleBackColor = true;
+            this.cbStatus.CheckedChanged += new System.EventHandler(this.cbStatus_CheckedChanged);
             // 
             // ptbImageOfFood
             // 
-            this.ptbImageOfFood.Location = new System.Drawing.Point(120, 405);
-            this.ptbImageOfFood.Margin = new System.Windows.Forms.Padding(6);
+            this.ptbImageOfFood.Location = new System.Drawing.Point(90, 329);
+            this.ptbImageOfFood.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ptbImageOfFood.Name = "ptbImageOfFood";
-            this.ptbImageOfFood.Size = new System.Drawing.Size(380, 329);
+            this.ptbImageOfFood.Size = new System.Drawing.Size(285, 267);
             this.ptbImageOfFood.TabIndex = 6;
             this.ptbImageOfFood.TabStop = false;
             // 
             // lblLinkImage
             // 
             this.lblLinkImage.ForeColor = System.Drawing.Color.White;
-            this.lblLinkImage.Location = new System.Drawing.Point(120, 752);
-            this.lblLinkImage.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblLinkImage.Location = new System.Drawing.Point(90, 611);
+            this.lblLinkImage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLinkImage.Name = "lblLinkImage";
-            this.lblLinkImage.Size = new System.Drawing.Size(380, 34);
+            this.lblLinkImage.Size = new System.Drawing.Size(285, 28);
             this.lblLinkImage.TabIndex = 2;
             this.lblLinkImage.Text = "......";
             this.lblLinkImage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -239,10 +281,10 @@
             // 
             this.lblFoodStatus.AutoSize = true;
             this.lblFoodStatus.ForeColor = System.Drawing.Color.White;
-            this.lblFoodStatus.Location = new System.Drawing.Point(64, 374);
-            this.lblFoodStatus.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblFoodStatus.Location = new System.Drawing.Point(48, 304);
+            this.lblFoodStatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFoodStatus.Name = "lblFoodStatus";
-            this.lblFoodStatus.Size = new System.Drawing.Size(99, 22);
+            this.lblFoodStatus.Size = new System.Drawing.Size(79, 17);
             this.lblFoodStatus.TabIndex = 2;
             this.lblFoodStatus.Text = "Trạng thái";
             // 
@@ -250,10 +292,10 @@
             // 
             this.lblPrice.AutoSize = true;
             this.lblPrice.ForeColor = System.Drawing.Color.White;
-            this.lblPrice.Location = new System.Drawing.Point(64, 299);
-            this.lblPrice.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblPrice.Location = new System.Drawing.Point(48, 243);
+            this.lblPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(38, 22);
+            this.lblPrice.Size = new System.Drawing.Size(31, 17);
             this.lblPrice.TabIndex = 2;
             this.lblPrice.Text = "Giá";
             // 
@@ -261,10 +303,10 @@
             // 
             this.lblNameFc.AutoSize = true;
             this.lblNameFc.ForeColor = System.Drawing.Color.White;
-            this.lblNameFc.Location = new System.Drawing.Point(64, 223);
-            this.lblNameFc.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblNameFc.Location = new System.Drawing.Point(48, 181);
+            this.lblNameFc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNameFc.Name = "lblNameFc";
-            this.lblNameFc.Size = new System.Drawing.Size(96, 22);
+            this.lblNameFc.Size = new System.Drawing.Size(77, 17);
             this.lblNameFc.TabIndex = 2;
             this.lblNameFc.Text = "Danh mục";
             // 
@@ -272,10 +314,10 @@
             // 
             this.lblNameFood.AutoSize = true;
             this.lblNameFood.ForeColor = System.Drawing.Color.White;
-            this.lblNameFood.Location = new System.Drawing.Point(64, 147);
-            this.lblNameFood.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblNameFood.Location = new System.Drawing.Point(48, 119);
+            this.lblNameFood.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNameFood.Name = "lblNameFood";
-            this.lblNameFood.Size = new System.Drawing.Size(110, 22);
+            this.lblNameFood.Size = new System.Drawing.Size(88, 17);
             this.lblNameFood.TabIndex = 2;
             this.lblNameFood.Text = "Tên món ăn";
             // 
@@ -283,10 +325,10 @@
             // 
             this.lblFoodID.AutoSize = true;
             this.lblFoodID.ForeColor = System.Drawing.Color.White;
-            this.lblFoodID.Location = new System.Drawing.Point(64, 71);
-            this.lblFoodID.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblFoodID.Location = new System.Drawing.Point(48, 58);
+            this.lblFoodID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFoodID.Name = "lblFoodID";
-            this.lblFoodID.Size = new System.Drawing.Size(79, 22);
+            this.lblFoodID.Size = new System.Drawing.Size(63, 17);
             this.lblFoodID.TabIndex = 2;
             this.lblFoodID.Text = "Mã món";
             // 
@@ -294,48 +336,18 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // txtFoodID
-            // 
-            this.txtFoodID.Location = new System.Drawing.Point(223, 64);
-            this.txtFoodID.Name = "txtFoodID";
-            this.txtFoodID.Size = new System.Drawing.Size(277, 29);
-            this.txtFoodID.TabIndex = 9;
-            // 
-            // txtFoodName
-            // 
-            this.txtFoodName.Location = new System.Drawing.Point(223, 140);
-            this.txtFoodName.Name = "txtFoodName";
-            this.txtFoodName.Size = new System.Drawing.Size(277, 29);
-            this.txtFoodName.TabIndex = 10;
-            this.txtFoodName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFoodName_KeyPress);
-            // 
-            // txtPrice
-            // 
-            this.txtPrice.Location = new System.Drawing.Point(223, 292);
-            this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(277, 29);
-            this.txtPrice.TabIndex = 11;
-            this.txtPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrice_KeyPress);
-            // 
-            // cmbNameFC
-            // 
-            this.cmbNameFC.FormattingEnabled = true;
-            this.cmbNameFC.Location = new System.Drawing.Point(223, 216);
-            this.cmbNameFC.Name = "cmbNameFC";
-            this.cmbNameFC.Size = new System.Drawing.Size(277, 29);
-            this.cmbNameFC.TabIndex = 12;
-            // 
             // frmManagerFood
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1481, 911);
+            this.ClientSize = new System.Drawing.Size(1111, 740);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.dgvFoodList);
             this.Controls.Add(this.txtSearchFood);
             this.Controls.Add(this.txtTotalFood);
             this.Controls.Add(this.btnSearchFood);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmManagerFood";
             this.Text = "frmManagerFood";
             ((System.ComponentModel.ISupportInitialize)(this.dgvFoodList)).EndInit();
