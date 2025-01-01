@@ -20,6 +20,9 @@ namespace QuanLyQuanAn_DongPhongNha
             this.Food = new HashSet<Food>();
             this.Food1 = new HashSet<Food>();
             this.Food2 = new HashSet<Food>();
+            this.Food3 = new HashSet<Food>();
+            this.Food4 = new HashSet<Food>();
+            this.Food5 = new HashSet<Food>();
         }
     
         public int idFC { get; set; }
@@ -31,5 +34,11 @@ namespace QuanLyQuanAn_DongPhongNha
         public virtual ICollection<Food> Food1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Food> Food2 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Food> Food3 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Food> Food4 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Food> Food5 { get; set; }
     }
 }
