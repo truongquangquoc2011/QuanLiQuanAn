@@ -389,6 +389,7 @@ namespace QuanLyQuanAn_DongPhongNha.Manager
                             db.USP_CheckOut(discount, finalTotalPrice, payperID, idBill);
                             showInfoFood(table.idTable);
                             table.statusTable = "Trống";
+                            db.SaveChanges();
                             loadTable();
                         }
                     }
