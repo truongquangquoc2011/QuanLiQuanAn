@@ -291,7 +291,11 @@ namespace QuanLyQuanAn_DongPhongNha.Manager
                     {
                         db.USP_InsertBillInfo(idBill, idFood, count);
                     }
+
                     table.statusTable = "Có người";
+
+                    db.SaveChanges();
+
 
                     // lay thong tin mon an an dat vao listView
                     showInfoFood(table.idTable);
@@ -535,6 +539,7 @@ namespace QuanLyQuanAn_DongPhongNha.Manager
             TableFood table = lsvBill.Tag as TableFood;
             UpdateFoodQuantityInDatabase();
             showInfoFood(table.idTable);
+           
         }
         #endregion
     }
