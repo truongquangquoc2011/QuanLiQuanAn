@@ -301,7 +301,7 @@ namespace QuanLyQuanAn_DongPhongNha.Manager
             hideSubMenu();
             lblTitle.Text = "Thêm nhà cung cấp";
             this.pnlDesktop.Controls.Clear();
-            frmAddWareHouse frmAddWareHouse = new frmAddWareHouse()
+            frmAddWareHouse frmAddWareHouse = new frmAddWareHouse(LoginAccount)
             {
                 Dock = DockStyle.Fill,
                 TopLevel = false,
