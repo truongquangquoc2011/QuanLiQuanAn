@@ -12,17 +12,12 @@ namespace QuanLyQuanAn_DongPhongNha
     using System;
     using System.Collections.Generic;
     
-    public partial class AttendanceList
+    public partial class sysdiagrams
     {
-        public int id { get; set; }
-        public string idStaff { get; set; }
-        public System.DateTime dateCheckIn { get; set; }
-    
-        public virtual Staff Staff { get; set; }
-        public virtual Staff Staff1 { get; set; }
-        public virtual Staff Staff2 { get; set; }
-        public virtual Staff Staff3 { get; set; }
-        public virtual Staff Staff4 { get; set; }
-        public virtual Staff Staff5 { get; set; }
+        public string name { get; set; }
+        public int principal_id { get; set; }
+        public int diagram_id { get; set; }
+        public Nullable<int> version { get; set; }
+        public byte[] definition { get; set; }
     }
 }

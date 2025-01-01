@@ -243,8 +243,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLNH_Model1.edmx</DependentUpon>
     </Compile>
+    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>QLNH_Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams_Result.cs">
+      <DependentUpon>QLNH_Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="Staff.cs">
+      <DependentUpon>QLNH_Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagrams.cs">
       <DependentUpon>QLNH_Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="TableFood.cs">
@@ -397,8 +406,8 @@
   <ItemGroup>
     <Content Include="QLNH_Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>QLNH_Model1.edmx</DependentUpon>
       <LastGenOutput>QLNH_Model1.Context.cs</LastGenOutput>
+      <DependentUpon>QLNH_Model1.edmx</DependentUpon>
     </Content>
     <Content Include="QLNH_Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
