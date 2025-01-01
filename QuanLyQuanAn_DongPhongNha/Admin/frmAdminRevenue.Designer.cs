@@ -28,6 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.lblTopFoodChart = new System.Windows.Forms.Label();
             this.lblTotalRevenue = new System.Windows.Forms.Label();
             this.pnTotalRevenue = new System.Windows.Forms.Panel();
@@ -55,10 +59,12 @@
             this.rbt_month = new System.Windows.Forms.RadioButton();
             this.rbt_today = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
+            this.FoodChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.pnTotalRevenue.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvViewRevenue)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFoodRevenue)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.FoodChart)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTopFoodChart
@@ -252,6 +258,7 @@
             this.dtpkToDate.Name = "dtpkToDate";
             this.dtpkToDate.Size = new System.Drawing.Size(153, 23);
             this.dtpkToDate.TabIndex = 49;
+            this.dtpkToDate.ValueChanged += new System.EventHandler(this.dtpkToDate_ValueChanged);
             // 
             // dtpkFromDate
             // 
@@ -262,6 +269,8 @@
             this.dtpkFromDate.Name = "dtpkFromDate";
             this.dtpkFromDate.Size = new System.Drawing.Size(153, 23);
             this.dtpkFromDate.TabIndex = 49;
+            this.dtpkFromDate.ValueChanged += new System.EventHandler(this.dtpkFromDate_ValueChanged);
+            this.dtpkFromDate.MouseUp += new System.Windows.Forms.MouseEventHandler(this.dtpkFromDate_MouseUp);
             // 
             // btn_print
             // 
@@ -274,6 +283,7 @@
             this.btn_print.TabIndex = 48;
             this.btn_print.Text = "Xuất Phiếu";
             this.btn_print.UseVisualStyleBackColor = true;
+            this.btn_print.Click += new System.EventHandler(this.btn_print_Click);
             // 
             // lbl_den
             // 
@@ -312,6 +322,7 @@
             this.rbt_seeAll.TabStop = true;
             this.rbt_seeAll.Text = "Xem Tất Cả";
             this.rbt_seeAll.UseVisualStyleBackColor = true;
+            this.rbt_seeAll.CheckedChanged += new System.EventHandler(this.rbt_seeAll_CheckedChanged);
             // 
             // rbt_year
             // 
@@ -326,6 +337,7 @@
             this.rbt_year.TabStop = true;
             this.rbt_year.Text = "Năm";
             this.rbt_year.UseVisualStyleBackColor = true;
+            this.rbt_year.CheckedChanged += new System.EventHandler(this.rbt_year_CheckedChanged);
             // 
             // rbt_month
             // 
@@ -340,6 +352,7 @@
             this.rbt_month.TabStop = true;
             this.rbt_month.Text = "Tháng";
             this.rbt_month.UseVisualStyleBackColor = true;
+            this.rbt_month.CheckedChanged += new System.EventHandler(this.rbt_month_CheckedChanged);
             // 
             // rbt_today
             // 
@@ -354,6 +367,7 @@
             this.rbt_today.TabStop = true;
             this.rbt_today.Text = "Hôm Nay";
             this.rbt_today.UseVisualStyleBackColor = true;
+            this.rbt_today.CheckedChanged += new System.EventHandler(this.rbt_today_CheckedChanged);
             // 
             // label1
             // 
@@ -367,11 +381,35 @@
             this.label1.TabIndex = 28;
             this.label1.Text = "Thống Kê Hóa Đơn";
             // 
+            // FoodChart
+            // 
+            chartArea3.Name = "ChartArea";
+            this.FoodChart.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.FoodChart.Legends.Add(legend3);
+            this.FoodChart.Location = new System.Drawing.Point(13, 358);
+            this.FoodChart.Margin = new System.Windows.Forms.Padding(6);
+            this.FoodChart.Name = "FoodChart";
+            this.FoodChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Fire;
+            series5.ChartArea = "ChartArea";
+            series5.IsVisibleInLegend = false;
+            series5.Legend = "Legend1";
+            series5.Name = "FoodName";
+            series6.ChartArea = "ChartArea";
+            series6.Legend = "Legend1";
+            series6.Name = "Số món ăn đã bán";
+            this.FoodChart.Series.Add(series5);
+            this.FoodChart.Series.Add(series6);
+            this.FoodChart.Size = new System.Drawing.Size(365, 368);
+            this.FoodChart.TabIndex = 50;
+            this.FoodChart.Text = "chart1";
+            // 
             // frmAdminRevenue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1111, 740);
+            this.Controls.Add(this.FoodChart);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvFoodRevenue);
             this.Controls.Add(this.lblFoodRevenue);
@@ -388,6 +426,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvFoodRevenue)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.FoodChart)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -422,5 +461,6 @@
         private System.Windows.Forms.RadioButton rbt_month;
         private System.Windows.Forms.RadioButton rbt_today;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart FoodChart;
     }
 }
