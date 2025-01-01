@@ -20,15 +20,9 @@ namespace QuanLyQuanAn_DongPhongNha
             this.Account = new HashSet<Account>();
             this.Account1 = new HashSet<Account>();
             this.Account2 = new HashSet<Account>();
-            this.Account3 = new HashSet<Account>();
-            this.Account4 = new HashSet<Account>();
-            this.Account5 = new HashSet<Account>();
             this.AttendanceList = new HashSet<AttendanceList>();
             this.AttendanceList1 = new HashSet<AttendanceList>();
             this.AttendanceList2 = new HashSet<AttendanceList>();
-            this.AttendanceList3 = new HashSet<AttendanceList>();
-            this.AttendanceList4 = new HashSet<AttendanceList>();
-            this.AttendanceList5 = new HashSet<AttendanceList>();
         }
     
         public string idStaff { get; set; }
@@ -47,28 +41,13 @@ namespace QuanLyQuanAn_DongPhongNha
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Account> Account2 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Account> Account3 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Account> Account4 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Account> Account5 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<AttendanceList> AttendanceList { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<AttendanceList> AttendanceList1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<AttendanceList> AttendanceList2 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<AttendanceList> AttendanceList3 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<AttendanceList> AttendanceList4 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<AttendanceList> AttendanceList5 { get; set; }
         public virtual Position Position { get; set; }
         public virtual Position Position1 { get; set; }
         public virtual Position Position2 { get; set; }
-        public virtual Position Position3 { get; set; }
-        public virtual Position Position4 { get; set; }
-        public virtual Position Position5 { get; set; }
     }
 }

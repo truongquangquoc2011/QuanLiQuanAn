@@ -20,9 +20,6 @@ namespace QuanLyQuanAn_DongPhongNha
             this.Staff = new HashSet<Staff>();
             this.Staff1 = new HashSet<Staff>();
             this.Staff2 = new HashSet<Staff>();
-            this.Staff3 = new HashSet<Staff>();
-            this.Staff4 = new HashSet<Staff>();
-            this.Staff5 = new HashSet<Staff>();
         }
     
         public int idPosition { get; set; }
@@ -35,11 +32,5 @@ namespace QuanLyQuanAn_DongPhongNha
         public virtual ICollection<Staff> Staff1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Staff> Staff2 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Staff> Staff3 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Staff> Staff4 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Staff> Staff5 { get; set; }
     }
 }
