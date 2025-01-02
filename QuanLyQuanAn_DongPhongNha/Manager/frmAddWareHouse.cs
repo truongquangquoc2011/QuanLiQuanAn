@@ -528,14 +528,15 @@ namespace QuanLyQuanAn_DongPhongNha.Manager
         private void pdHoaDon_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
 
-            var tenNhaHang = "Cuộc Hẹn Sau Giờ Làm";
-            var diaChi = "Đại học Công nghệ TP.HCM (Thu Duc Campus)";
-            var phone = "0772722361";
+            var tenNhaHang = "Động Phông Nha";
+            var diaChi = "Đại học Công nghệ TP.HCM (Sài Gòn Campus)";
+            var phone = "0901791799";
             string idBill = txtIdBillOfWareHouse.Text;
 
             var w = pdHoaDon.DefaultPageSettings.PaperSize.Width;
             // lo go quan an
-            e.Graphics.DrawImage(Image.FromFile(@"..\..\Image\Icon\logo_quanAN.png"), w / 4 - 20, 20, 100, 100);
+            e.Graphics.DrawImage(Image.FromFile(@"D:\winform\real\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\Resources\469095960_1607615440150776_5157970610393270350_n.jpg"),w / 4 - 20, 20, 100, 100
+);
             // ten nha hang
             e.Graphics.DrawString(tenNhaHang.ToUpper(), new Font("Courier New", 30, FontStyle.Bold), Brushes.Black, new Point(100, 120));
             // so hoa don

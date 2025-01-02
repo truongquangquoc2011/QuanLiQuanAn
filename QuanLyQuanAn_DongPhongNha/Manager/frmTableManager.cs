@@ -412,9 +412,9 @@ namespace QuanLyQuanAn_DongPhongNha.Manager
         // in hoa don 
         private void dpHoaDon_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            var tenNhaHang = "Cuộc Hẹn Sau Giờ Làm";
-            var diaChi = "Đại học Công nghệ TP.HCM (Thu Duc Campus)";
-            var phone = "0772722361";
+            var tenNhaHang = "Động Phong Nha";
+            var diaChi = "Đại học Công nghệ TP.HCM (Sài Gòn Campus)";
+            var phone = "0901791799";
 
             TableFood table = lsvBill.Tag as TableFood;
 
@@ -429,8 +429,10 @@ namespace QuanLyQuanAn_DongPhongNha.Manager
             }
 
             var w = pdHoaDon.DefaultPageSettings.PaperSize.Width;
-            e.Graphics.DrawImage(Image.FromFile(@"..\..\Image\Icon\logo_quanAN.png"), w / 4 - 20, 20, 100, 100);
-            e.Graphics.DrawString(tenNhaHang.ToUpper(), new Font("Courier New", 30, FontStyle.Bold), Brushes.Black, new Point(100, 120));
+            e.Graphics.DrawImage(
+                Image.FromFile(@"D:\winform\real\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\Resources\469095960_1607615440150776_5157970610393270350_n.jpg"),
+                w / 4 - 20, 20, 100, 100
+            ); e.Graphics.DrawString(tenNhaHang.ToUpper(), new Font("Courier New", 30, FontStyle.Bold), Brushes.Black, new Point(100, 120));
             e.Graphics.DrawString(String.Format("Số hóa đơn: {0}", hoaDon), new Font("Courier New", 15, FontStyle.Bold), Brushes.Black, new Point(w / 2 + 190, 85));
             e.Graphics.DrawString(table.nameTable, new Font("Courier New", 30, FontStyle.Bold), Brushes.Black, new Point(w / 2 + 220, 140));
             Pen blackPen = new Pen(Color.Black, 1);
