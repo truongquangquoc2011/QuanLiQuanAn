@@ -114,7 +114,7 @@ namespace QuanLyQuanAn_DongPhongNha.Manager
             rtbAddress.Text = string.Empty;
         }
         #endregion
-
+        
         #region Event
         private void txtStaffID_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -260,6 +260,5 @@ namespace QuanLyQuanAn_DongPhongNha.Manager
             }
         }
         #endregion
-
     }
 }

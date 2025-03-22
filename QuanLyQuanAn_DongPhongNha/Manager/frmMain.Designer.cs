@@ -38,10 +38,6 @@
             this.btnInfo = new System.Windows.Forms.Button();
             this.btnLogOut = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pnlSubWareHouse = new System.Windows.Forms.Panel();
-            this.btnAddBillOfWareHouse = new System.Windows.Forms.Button();
-            this.btnInfoWareHouse = new System.Windows.Forms.Button();
-            this.btnWareHouse = new System.Windows.Forms.Button();
             this.pnlSubAdmin = new System.Windows.Forms.Panel();
             this.btnOpenFormAccount = new System.Windows.Forms.Button();
             this.btnOpenFormStaff = new System.Windows.Forms.Button();
@@ -58,7 +54,6 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlMenu.SuspendLayout();
-            this.pnlSubWareHouse.SuspendLayout();
             this.pnlSubAdmin.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,16 +66,18 @@
             this.panel1.Controls.Add(this.lblTitle);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1718, 138);
+            this.panel1.Size = new System.Drawing.Size(1933, 172);
             this.panel1.TabIndex = 2;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, -8);
+            this.pictureBox1.Location = new System.Drawing.Point(0, -10);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(213, 150);
+            this.pictureBox1.Size = new System.Drawing.Size(240, 188);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -89,9 +86,9 @@
             // 
             this.lblClock.Font = new System.Drawing.Font("Cambria", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblClock.ForeColor = System.Drawing.Color.White;
-            this.lblClock.Location = new System.Drawing.Point(826, 0);
+            this.lblClock.Location = new System.Drawing.Point(929, 0);
             this.lblClock.Name = "lblClock";
-            this.lblClock.Size = new System.Drawing.Size(239, 57);
+            this.lblClock.Size = new System.Drawing.Size(269, 71);
             this.lblClock.TabIndex = 2;
             this.lblClock.Text = "...";
             this.lblClock.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -104,9 +101,10 @@
             this.btnDisplayName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDisplayName.Font = new System.Drawing.Font("Cambria", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDisplayName.ForeColor = System.Drawing.Color.White;
-            this.btnDisplayName.Location = new System.Drawing.Point(1071, 0);
+            this.btnDisplayName.Location = new System.Drawing.Point(1205, 0);
+            this.btnDisplayName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDisplayName.Name = "btnDisplayName";
-            this.btnDisplayName.Size = new System.Drawing.Size(239, 57);
+            this.btnDisplayName.Size = new System.Drawing.Size(269, 71);
             this.btnDisplayName.TabIndex = 1;
             this.btnDisplayName.UseVisualStyleBackColor = true;
             // 
@@ -114,9 +112,9 @@
             // 
             this.lblTitle.Font = new System.Drawing.Font("Cambria", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblTitle.Location = new System.Drawing.Point(488, 57);
+            this.lblTitle.Location = new System.Drawing.Point(549, 71);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(553, 62);
+            this.lblTitle.Size = new System.Drawing.Size(622, 78);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Trang chủ";
             // 
@@ -127,8 +125,6 @@
             this.pnlMenu.Controls.Add(this.btnInfo);
             this.pnlMenu.Controls.Add(this.btnLogOut);
             this.pnlMenu.Controls.Add(this.panel2);
-            this.pnlMenu.Controls.Add(this.pnlSubWareHouse);
-            this.pnlMenu.Controls.Add(this.btnWareHouse);
             this.pnlMenu.Controls.Add(this.pnlSubAdmin);
             this.pnlMenu.Controls.Add(this.btnAdmin);
             this.pnlMenu.Controls.Add(this.btnOpenFormAttendance);
@@ -136,9 +132,10 @@
             this.pnlMenu.Controls.Add(this.btnOrder);
             this.pnlMenu.Controls.Add(this.flowLayoutPanel1);
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlMenu.Location = new System.Drawing.Point(0, 138);
+            this.pnlMenu.Location = new System.Drawing.Point(0, 172);
+            this.pnlMenu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(213, 913);
+            this.pnlMenu.Size = new System.Drawing.Size(240, 1142);
             this.pnlMenu.TabIndex = 3;
             // 
             // btnInfo
@@ -150,9 +147,10 @@
             this.btnInfo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInfo.Font = new System.Drawing.Font("Cambria", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInfo.Location = new System.Drawing.Point(0, 480);
+            this.btnInfo.Location = new System.Drawing.Point(0, 466);
+            this.btnInfo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnInfo.Name = "btnInfo";
-            this.btnInfo.Size = new System.Drawing.Size(213, 44);
+            this.btnInfo.Size = new System.Drawing.Size(240, 55);
             this.btnInfo.TabIndex = 10;
             this.btnInfo.Text = "Thông tin";
             this.btnInfo.UseVisualStyleBackColor = false;
@@ -167,9 +165,10 @@
             this.btnLogOut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogOut.Font = new System.Drawing.Font("Cambria", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogOut.Location = new System.Drawing.Point(0, 840);
+            this.btnLogOut.Location = new System.Drawing.Point(0, 1051);
+            this.btnLogOut.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Size = new System.Drawing.Size(213, 44);
+            this.btnLogOut.Size = new System.Drawing.Size(240, 55);
             this.btnLogOut.TabIndex = 9;
             this.btnLogOut.Text = "Đăng xuất";
             this.btnLogOut.UseVisualStyleBackColor = false;
@@ -178,72 +177,11 @@
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 884);
+            this.panel2.Location = new System.Drawing.Point(0, 1106);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(213, 29);
+            this.panel2.Size = new System.Drawing.Size(240, 36);
             this.panel2.TabIndex = 8;
-            // 
-            // pnlSubWareHouse
-            // 
-            this.pnlSubWareHouse.Controls.Add(this.btnAddBillOfWareHouse);
-            this.pnlSubWareHouse.Controls.Add(this.btnInfoWareHouse);
-            this.pnlSubWareHouse.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlSubWareHouse.Location = new System.Drawing.Point(0, 417);
-            this.pnlSubWareHouse.Name = "pnlSubWareHouse";
-            this.pnlSubWareHouse.Padding = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.pnlSubWareHouse.Size = new System.Drawing.Size(213, 63);
-            this.pnlSubWareHouse.TabIndex = 7;
-            // 
-            // btnAddBillOfWareHouse
-            // 
-            this.btnAddBillOfWareHouse.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnAddBillOfWareHouse.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAddBillOfWareHouse.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
-            this.btnAddBillOfWareHouse.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
-            this.btnAddBillOfWareHouse.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnAddBillOfWareHouse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddBillOfWareHouse.Font = new System.Drawing.Font("Cambria", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddBillOfWareHouse.Location = new System.Drawing.Point(6, 31);
-            this.btnAddBillOfWareHouse.Name = "btnAddBillOfWareHouse";
-            this.btnAddBillOfWareHouse.Size = new System.Drawing.Size(201, 31);
-            this.btnAddBillOfWareHouse.TabIndex = 4;
-            this.btnAddBillOfWareHouse.Text = "Nhập đơn mới";
-            this.btnAddBillOfWareHouse.UseVisualStyleBackColor = false;
-            this.btnAddBillOfWareHouse.Click += new System.EventHandler(this.btnAddBillOfWareHouse_Click);
-            // 
-            // btnInfoWareHouse
-            // 
-            this.btnInfoWareHouse.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnInfoWareHouse.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnInfoWareHouse.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
-            this.btnInfoWareHouse.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
-            this.btnInfoWareHouse.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnInfoWareHouse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInfoWareHouse.Font = new System.Drawing.Font("Cambria", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInfoWareHouse.Location = new System.Drawing.Point(6, 0);
-            this.btnInfoWareHouse.Name = "btnInfoWareHouse";
-            this.btnInfoWareHouse.Size = new System.Drawing.Size(201, 31);
-            this.btnInfoWareHouse.TabIndex = 3;
-            this.btnInfoWareHouse.Text = "Thông tin kho";
-            this.btnInfoWareHouse.UseVisualStyleBackColor = false;
-            this.btnInfoWareHouse.Click += new System.EventHandler(this.btnInfoWareHouse_Click);
-            // 
-            // btnWareHouse
-            // 
-            this.btnWareHouse.BackColor = System.Drawing.Color.Linen;
-            this.btnWareHouse.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnWareHouse.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
-            this.btnWareHouse.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
-            this.btnWareHouse.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnWareHouse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnWareHouse.Font = new System.Drawing.Font("Cambria", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnWareHouse.Location = new System.Drawing.Point(0, 373);
-            this.btnWareHouse.Name = "btnWareHouse";
-            this.btnWareHouse.Size = new System.Drawing.Size(213, 44);
-            this.btnWareHouse.TabIndex = 6;
-            this.btnWareHouse.Text = "Kho";
-            this.btnWareHouse.UseVisualStyleBackColor = false;
-            this.btnWareHouse.Click += new System.EventHandler(this.btnWareHouse_Click);
             // 
             // pnlSubAdmin
             // 
@@ -254,10 +192,11 @@
             this.pnlSubAdmin.Controls.Add(this.btnOpenFormFood);
             this.pnlSubAdmin.Controls.Add(this.btnOpenFormRevenue);
             this.pnlSubAdmin.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlSubAdmin.Location = new System.Drawing.Point(0, 186);
+            this.pnlSubAdmin.Location = new System.Drawing.Point(0, 232);
+            this.pnlSubAdmin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnlSubAdmin.Name = "pnlSubAdmin";
-            this.pnlSubAdmin.Padding = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.pnlSubAdmin.Size = new System.Drawing.Size(213, 187);
+            this.pnlSubAdmin.Padding = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.pnlSubAdmin.Size = new System.Drawing.Size(240, 234);
             this.pnlSubAdmin.TabIndex = 5;
             // 
             // btnOpenFormAccount
@@ -269,9 +208,10 @@
             this.btnOpenFormAccount.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
             this.btnOpenFormAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOpenFormAccount.Font = new System.Drawing.Font("Cambria", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOpenFormAccount.Location = new System.Drawing.Point(6, 155);
+            this.btnOpenFormAccount.Location = new System.Drawing.Point(7, 195);
+            this.btnOpenFormAccount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnOpenFormAccount.Name = "btnOpenFormAccount";
-            this.btnOpenFormAccount.Size = new System.Drawing.Size(201, 31);
+            this.btnOpenFormAccount.Size = new System.Drawing.Size(226, 39);
             this.btnOpenFormAccount.TabIndex = 8;
             this.btnOpenFormAccount.Text = "Tài khoản";
             this.btnOpenFormAccount.UseVisualStyleBackColor = false;
@@ -286,9 +226,10 @@
             this.btnOpenFormStaff.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
             this.btnOpenFormStaff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOpenFormStaff.Font = new System.Drawing.Font("Cambria", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOpenFormStaff.Location = new System.Drawing.Point(6, 124);
+            this.btnOpenFormStaff.Location = new System.Drawing.Point(7, 156);
+            this.btnOpenFormStaff.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnOpenFormStaff.Name = "btnOpenFormStaff";
-            this.btnOpenFormStaff.Size = new System.Drawing.Size(201, 31);
+            this.btnOpenFormStaff.Size = new System.Drawing.Size(226, 39);
             this.btnOpenFormStaff.TabIndex = 7;
             this.btnOpenFormStaff.Text = "Nhân viên";
             this.btnOpenFormStaff.UseVisualStyleBackColor = false;
@@ -303,9 +244,10 @@
             this.btnOpenFromTable.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
             this.btnOpenFromTable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOpenFromTable.Font = new System.Drawing.Font("Cambria", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOpenFromTable.Location = new System.Drawing.Point(6, 93);
+            this.btnOpenFromTable.Location = new System.Drawing.Point(7, 117);
+            this.btnOpenFromTable.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnOpenFromTable.Name = "btnOpenFromTable";
-            this.btnOpenFromTable.Size = new System.Drawing.Size(201, 31);
+            this.btnOpenFromTable.Size = new System.Drawing.Size(226, 39);
             this.btnOpenFromTable.TabIndex = 6;
             this.btnOpenFromTable.Text = "Bàn ăn";
             this.btnOpenFromTable.UseVisualStyleBackColor = false;
@@ -320,9 +262,10 @@
             this.btnOpenFormCategory.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
             this.btnOpenFormCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOpenFormCategory.Font = new System.Drawing.Font("Cambria", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOpenFormCategory.Location = new System.Drawing.Point(6, 62);
+            this.btnOpenFormCategory.Location = new System.Drawing.Point(7, 78);
+            this.btnOpenFormCategory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnOpenFormCategory.Name = "btnOpenFormCategory";
-            this.btnOpenFormCategory.Size = new System.Drawing.Size(201, 31);
+            this.btnOpenFormCategory.Size = new System.Drawing.Size(226, 39);
             this.btnOpenFormCategory.TabIndex = 5;
             this.btnOpenFormCategory.Text = "Danh mục món";
             this.btnOpenFormCategory.UseVisualStyleBackColor = false;
@@ -337,9 +280,10 @@
             this.btnOpenFormFood.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
             this.btnOpenFormFood.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOpenFormFood.Font = new System.Drawing.Font("Cambria", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOpenFormFood.Location = new System.Drawing.Point(6, 31);
+            this.btnOpenFormFood.Location = new System.Drawing.Point(7, 39);
+            this.btnOpenFormFood.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnOpenFormFood.Name = "btnOpenFormFood";
-            this.btnOpenFormFood.Size = new System.Drawing.Size(201, 31);
+            this.btnOpenFormFood.Size = new System.Drawing.Size(226, 39);
             this.btnOpenFormFood.TabIndex = 4;
             this.btnOpenFormFood.Text = "Món ăn";
             this.btnOpenFormFood.UseVisualStyleBackColor = false;
@@ -354,9 +298,10 @@
             this.btnOpenFormRevenue.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
             this.btnOpenFormRevenue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOpenFormRevenue.Font = new System.Drawing.Font("Cambria", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOpenFormRevenue.Location = new System.Drawing.Point(6, 0);
+            this.btnOpenFormRevenue.Location = new System.Drawing.Point(7, 0);
+            this.btnOpenFormRevenue.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnOpenFormRevenue.Name = "btnOpenFormRevenue";
-            this.btnOpenFormRevenue.Size = new System.Drawing.Size(201, 31);
+            this.btnOpenFormRevenue.Size = new System.Drawing.Size(226, 39);
             this.btnOpenFormRevenue.TabIndex = 3;
             this.btnOpenFormRevenue.Text = "Thống kê";
             this.btnOpenFormRevenue.UseVisualStyleBackColor = false;
@@ -371,9 +316,10 @@
             this.btnAdmin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
             this.btnAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdmin.Font = new System.Drawing.Font("Cambria", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdmin.Location = new System.Drawing.Point(0, 142);
+            this.btnAdmin.Location = new System.Drawing.Point(0, 177);
+            this.btnAdmin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAdmin.Name = "btnAdmin";
-            this.btnAdmin.Size = new System.Drawing.Size(213, 44);
+            this.btnAdmin.Size = new System.Drawing.Size(240, 55);
             this.btnAdmin.TabIndex = 4;
             this.btnAdmin.Text = "Quản lý";
             this.btnAdmin.UseVisualStyleBackColor = false;
@@ -388,9 +334,10 @@
             this.btnOpenFormAttendance.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.btnOpenFormAttendance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOpenFormAttendance.Font = new System.Drawing.Font("Cambria", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOpenFormAttendance.Location = new System.Drawing.Point(0, 98);
+            this.btnOpenFormAttendance.Location = new System.Drawing.Point(0, 122);
+            this.btnOpenFormAttendance.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnOpenFormAttendance.Name = "btnOpenFormAttendance";
-            this.btnOpenFormAttendance.Size = new System.Drawing.Size(213, 44);
+            this.btnOpenFormAttendance.Size = new System.Drawing.Size(240, 55);
             this.btnOpenFormAttendance.TabIndex = 3;
             this.btnOpenFormAttendance.Text = "Chấm công";
             this.btnOpenFormAttendance.UseVisualStyleBackColor = false;
@@ -405,9 +352,10 @@
             this.btnFind.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnFind.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFind.Font = new System.Drawing.Font("Cambria", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFind.Location = new System.Drawing.Point(0, 54);
+            this.btnFind.Location = new System.Drawing.Point(0, 67);
+            this.btnFind.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnFind.Name = "btnFind";
-            this.btnFind.Size = new System.Drawing.Size(213, 44);
+            this.btnFind.Size = new System.Drawing.Size(240, 55);
             this.btnFind.TabIndex = 2;
             this.btnFind.Text = "Tra cứu";
             this.btnFind.UseVisualStyleBackColor = false;
@@ -423,9 +371,10 @@
             this.btnOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOrder.Font = new System.Drawing.Font("Cambria", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOrder.ForeColor = System.Drawing.Color.Black;
-            this.btnOrder.Location = new System.Drawing.Point(0, 10);
+            this.btnOrder.Location = new System.Drawing.Point(0, 12);
+            this.btnOrder.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnOrder.Name = "btnOrder";
-            this.btnOrder.Size = new System.Drawing.Size(213, 44);
+            this.btnOrder.Size = new System.Drawing.Size(240, 55);
             this.btnOrder.TabIndex = 1;
             this.btnOrder.Text = "Đặt món";
             this.btnOrder.UseVisualStyleBackColor = false;
@@ -435,8 +384,9 @@
             // 
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(213, 10);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(240, 12);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // pnlDesktop
@@ -444,28 +394,29 @@
             this.pnlDesktop.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlDesktop.Location = new System.Drawing.Point(219, 144);
+            this.pnlDesktop.Location = new System.Drawing.Point(246, 180);
+            this.pnlDesktop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnlDesktop.Name = "pnlDesktop";
-            this.pnlDesktop.Size = new System.Drawing.Size(1481, 911);
+            this.pnlDesktop.Size = new System.Drawing.Size(1666, 1139);
             this.pnlDesktop.TabIndex = 4;
             this.pnlDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlDesktop_Paint);
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1718, 1051);
+            this.ClientSize = new System.Drawing.Size(1933, 1314);
             this.Controls.Add(this.pnlDesktop);
             this.Controls.Add(this.pnlMenu);
             this.Controls.Add(this.panel1);
-            this.MinimumSize = new System.Drawing.Size(1718, 1018);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MinimumSize = new System.Drawing.Size(1930, 1258);
             this.Name = "frmMain";
             this.Text = "Giao Dien Quan Ly ";
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlMenu.ResumeLayout(false);
-            this.pnlSubWareHouse.ResumeLayout(false);
             this.pnlSubAdmin.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -482,10 +433,6 @@
         private System.Windows.Forms.Button btnInfo;
         private System.Windows.Forms.Button btnLogOut;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel pnlSubWareHouse;
-        private System.Windows.Forms.Button btnAddBillOfWareHouse;
-        private System.Windows.Forms.Button btnInfoWareHouse;
-        private System.Windows.Forms.Button btnWareHouse;
         private System.Windows.Forms.Panel pnlSubAdmin;
         private System.Windows.Forms.Button btnOpenFormAccount;
         private System.Windows.Forms.Button btnOpenFormStaff;

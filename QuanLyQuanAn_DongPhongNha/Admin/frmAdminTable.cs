@@ -292,5 +292,10 @@ namespace QuanLyQuanAn_DongPhongNha.Admin
             }
         }
         #endregion
+
+        private void frmAdminTable_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -298,9 +298,7 @@ namespace QuanLyQuanAn_DongPhongNha.Admin
         #region Event
         private void rbt_seeAll_CheckedChanged(object sender, EventArgs e)
         {
-            DateTime today = DateTime.Now;
-            dtpkFromDate.Value = DateTime.Parse("01/01/2023");
-            dtpkToDate.Value = new DateTime(today.Year, today.Month, today.Day);
+            load();
         }
         private void rbt_today_CheckedChanged(object sender, EventArgs e)
         {

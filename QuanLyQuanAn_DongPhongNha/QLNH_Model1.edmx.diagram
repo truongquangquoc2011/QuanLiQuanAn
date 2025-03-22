@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="11039855f5ec4d24899a811bca832dfe" Name="Diagram1">
+      <Diagram DiagramId="690b07ae0a4f407f8538d61638c00d23" Name="Diagram1">
         <EntityTypeShape EntityType="QLNHModel.Account" Width="1.5" PointX="5.25" PointY="4" IsExpanded="true" />
         <EntityTypeShape EntityType="QLNHModel.AttendanceList" Width="1.5" PointX="5.25" PointY="8" IsExpanded="true" />
         <EntityTypeShape EntityType="QLNHModel.Bill" Width="1.5" PointX="7.5" PointY="4.125" IsExpanded="true" />
@@ -16,7 +16,6 @@
         <EntityTypeShape EntityType="QLNHModel.Material" Width="1.5" PointX="7.5" PointY="16.125" IsExpanded="true" />
         <EntityTypeShape EntityType="QLNHModel.Position" Width="1.5" PointX="0.75" PointY="6" IsExpanded="true" />
         <EntityTypeShape EntityType="QLNHModel.Staff" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
-        <EntityTypeShape EntityType="QLNHModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
         <EntityTypeShape EntityType="QLNHModel.TableFood" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="QLNHModel.Unit" Width="1.5" PointX="5.25" PointY="16.5" IsExpanded="true" />
         <AssociationConnector Association="QLNHModel.FK__Account__idStaff__628FA481" ManuallyRouted="false" />

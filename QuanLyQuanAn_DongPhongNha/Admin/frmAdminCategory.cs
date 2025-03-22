@@ -269,5 +269,10 @@ namespace QuanLyQuanAn_DongPhongNha.Admin
         {
 
         }
+
+        private void frmAdminCategory_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -92,6 +92,9 @@ namespace QuanLyQuanAn_DongPhongNha.Manager
             this.Close();
         }
 
+
         #endregion
+
+       
     }
 }
