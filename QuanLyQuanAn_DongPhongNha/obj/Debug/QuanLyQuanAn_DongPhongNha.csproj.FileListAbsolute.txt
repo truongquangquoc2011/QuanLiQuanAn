@@ -108,7 +108,6 @@ D:\winform\real\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_Do
 D:\winform\real\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Admin.frmAdminStaff.resources
 D:\winform\real\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Admin.frmAdminTable.resources
 D:\winform\real\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.frmAccount.resources
-D:\winform\real\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.frmAddWareHouse.resources
 D:\winform\real\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.frmAttendanceList.resources
 D:\winform\real\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\quanLyNhaHang_Nhom4.Manager.frmEditPosition.resources
 D:\winform\real\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.frmHome.resources
@@ -117,7 +116,6 @@ D:\winform\real\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_Do
 D:\winform\real\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.frmMain.resources
 D:\winform\real\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.frmManagerFood.resources
 D:\winform\real\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.frmTableManager.resources
-D:\winform\real\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.frmWareHouse.resources
 D:\winform\real\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Manager.msg.resources
 D:\winform\real\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.Properties.Resources.resources
 D:\winform\real\QuanLiQuanAn\QuanLyQuanAn_DongPhongNha\obj\Debug\QuanLyQuanAn_DongPhongNha.csproj.GenerateResource.cache

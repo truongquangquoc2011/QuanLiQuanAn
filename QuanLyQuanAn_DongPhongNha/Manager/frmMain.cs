@@ -51,7 +51,7 @@ namespace QuanLyQuanAn_DongPhongNha.Manager
         void changeAccount(int type)
         {
             btnAdmin.Enabled = type == 1;
-            btnWareHouse.Enabled = type == 1;
+            //btnWareHouse.Enabled = type == 1;
             btnOpenFormAttendance.Enabled = type == 1;
             //lblXinChao.Text = "Xin chào " + loginAccount.DisplayName + " !";
             btnDisplayName.Text = "Xin chào " + loginAccount.displayName + " !";
@@ -73,15 +73,15 @@ namespace QuanLyQuanAn_DongPhongNha.Manager
             {
                 pnlSubAdmin.Visible = false;
             }
-            if (pnlSubWareHouse.Visible)
-            {
-                pnlSubWareHouse.Visible = false;
-            }
+            //if (pnlSubWareHouse.Visible)
+            //{
+            //    pnlSubWareHouse.Visible = false;
+            //}
         }
         private void customizeDesing()
         {
             pnlSubAdmin.Visible = false;
-            pnlSubWareHouse.Visible = false;
+            //pnlSubWareHouse.Visible = false;
         }
         private void showSubMeNu(Panel subMenu)
         {
@@ -276,40 +276,14 @@ namespace QuanLyQuanAn_DongPhongNha.Manager
             frmAdminAccount.Show();
         }
 
-        private void btnWareHouse_Click(object sender, EventArgs e)
-        {
-            showSubMeNu(pnlSubWareHouse);
-        }
+        //private void btnWareHouse_Click(object sender, EventArgs e)
+        //{
+        //    showSubMeNu(pnlSubWareHouse);
+        //}
 
-        private void btnInfoWareHouse_Click(object sender, EventArgs e)
-        {
-            hideSubMenu();
-            lblTitle.Text = "Quản lý thông tin đơn hàng";
-            this.pnlDesktop.Controls.Clear();
-            frmWareHouse frmWareHouse = new frmWareHouse()
-            {
-                Dock = DockStyle.Fill,
-                TopLevel = false,
-                TopMost = true,
-            };
-            this.pnlDesktop.Controls.Add((frmWareHouse)frmWareHouse);
-            frmWareHouse.Show();
-        }
+       
 
-        private void btnAddBillOfWareHouse_Click(object sender, EventArgs e)
-        {
-            hideSubMenu();
-            lblTitle.Text = "Thêm nhà cung cấp";
-            this.pnlDesktop.Controls.Clear();
-            frmAddWareHouse frmAddWareHouse = new frmAddWareHouse(LoginAccount)
-            {
-                Dock = DockStyle.Fill,
-                TopLevel = false,
-                TopMost = true,
-            };
-            this.pnlDesktop.Controls.Add((frmAddWareHouse)frmAddWareHouse);
-            frmAddWareHouse.Show();
-        }
+        
 
         private void btnInfo_Click(object sender, EventArgs e)
         {

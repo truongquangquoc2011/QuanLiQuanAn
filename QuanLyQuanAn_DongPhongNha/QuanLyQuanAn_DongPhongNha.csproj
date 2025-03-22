@@ -153,12 +153,6 @@
     <Compile Include="Manager\frmAccount.Designer.cs">
       <DependentUpon>frmAccount.cs</DependentUpon>
     </Compile>
-    <Compile Include="Manager\frmAddWareHouse.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Manager\frmAddWareHouse.Designer.cs">
-      <DependentUpon>frmAddWareHouse.cs</DependentUpon>
-    </Compile>
     <Compile Include="Manager\frmAttendanceList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,12 +201,6 @@
     <Compile Include="Manager\frmTableManager.Designer.cs">
       <DependentUpon>frmTableManager.cs</DependentUpon>
     </Compile>
-    <Compile Include="Manager\frmWareHouse.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Manager\frmWareHouse.Designer.cs">
-      <DependentUpon>frmWareHouse.cs</DependentUpon>
-    </Compile>
     <Compile Include="Manager\MessageBox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -243,17 +231,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLNH_Model1.edmx</DependentUpon>
     </Compile>
-    <Compile Include="sp_helpdiagramdefinition_Result.cs">
-      <DependentUpon>QLNH_Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="sp_helpdiagrams_Result.cs">
-      <DependentUpon>QLNH_Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="Staff.cs">
-      <DependentUpon>QLNH_Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="sysdiagrams.cs">
       <DependentUpon>QLNH_Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="TableFood.cs">
@@ -313,9 +292,6 @@
     <EmbeddedResource Include="Manager\frmAccount.resx">
       <DependentUpon>frmAccount.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Manager\frmAddWareHouse.resx">
-      <DependentUpon>frmAddWareHouse.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Manager\frmAttendanceList.resx">
       <DependentUpon>frmAttendanceList.cs</DependentUpon>
     </EmbeddedResource>
@@ -339,9 +315,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Manager\frmTableManager.resx">
       <DependentUpon>frmTableManager.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Manager\frmWareHouse.resx">
-      <DependentUpon>frmWareHouse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manager\MessageBox.resx">
       <DependentUpon>MessageBox.cs</DependentUpon>
